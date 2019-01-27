@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tanusitvanyok_left_article h1 {
+	margin-top: 2%;
+	color: #178616;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+}
+
+.tanusitvanyok_left_article {
+		width: 100%;
+		height: auto;
+		margin-bottom: 120px
+	}
+
+section ul{
+	padding: 10px;
+	list-style-type: none;
+}
+
+section ul li{
+	padding-top: 2%;
+	color: #717070;
+	font-weight: bold;
+	text-align: left;
+	font-size: 25px;
+	width: 90%;
+}
+
+section ul li a{
+	text-decoration: none;
+	color: #717070;
+}
+
+section ul li a:hover{
+	color: green;
+}
+	
+
+.zoom {
+    transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+@media (max-width : 650px ){
+	.tanusitvanyok_left_article {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (min-width: 651px) and (max-width: 768px) {	
+	.tanusitvanyok_left_article {
+		width: 100%;
+		height: auto;
+	}
+}
+

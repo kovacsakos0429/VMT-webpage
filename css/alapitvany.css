@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+.alapitvany_left_article {
+	width: 100%;
+	float: left;
+	margin-bottom: 100px;
+	height: auto;
+}
+
+
+section h1 {
+	margin-top: 2%;
+	color: #178616;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+}
+
+
+.alapitvany_left_article p {
+	padding-right: 10%;
+	text-align: justify;
+	line-height: 30px;
+	margin-top: 20px;
+	padding-left: 10%;
+	color: #717070;
+	font-size: 22px;
+}
+
+.alapitvany_left_article span {
+	font-weight: bold;
+}
+
+

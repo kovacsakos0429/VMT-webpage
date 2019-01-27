@@ -1,0 +1,249 @@
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {margin: 0px;}
+
+p {margin: 0px;}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+
+.menedzsment_left_article h1 {
+	margin-top: 2%;
+	color: #178616;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+}
+
+.container-table100 h2{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #5E5D5E;
+	font-size: 22px;
+}
+
+.menedzsment_left_article {
+	width: 100%;
+	float: left;
+	height: auto;
+	margin-bottom: 100px;
+}
+
+footer{
+	margin-bottom: -3px
+}
+.container-table100 {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 10px;
+}
+.container-table100 a{
+	text-decoration: none;
+	color: #727272;
+	
+}
+.container-table100 a:hover{
+	color: darkgreen;
+	font-weight: bold;
+}
+
+.wrap-table100 {
+  width: 98%;
+  box-shadow: 5px 5px 10px #888888;
+  border-radius: 10px;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+table * {
+  position: relative;
+}
+table td{
+  padding-left: 1%;
+  padding-top: 1%; 
+  padding-bottom: 1%; 
+  padding-right: 1%
+}
+
+table thead tr {
+  height: 60px;
+  background: #357255
+}
+table tbody tr {
+  height: 50px;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table td, table th {
+  text-align: left;
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+
+
+.table100-head th{
+  font-size: 18px;
+  color: #ffff;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  font-size: 16px;
+  color: #727272;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:hover {
+  color: #727272;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+tbody .column1{
+	text-align: justify;
+}
+
+.column1 {
+  width: 30%;
+  text-align: center
+}
+
+.column2 {
+  width: 20%;
+  text-align: center;	
+}
+
+.column3 {
+  width: 15%;
+  text-align: center;
+}
+
+.column4 {
+  width: 15%;
+  text-align: center;
+	
+}
+
+.column5 {
+  width: 10%;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  table {
+    display: block;
+  }
+  table > *, table tr, table td, table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    height: auto;
+    padding: 20px 0;
+	
+  }
+  table tbody tr td {
+    padding-left: 40% !important;
+    margin-bottom: 10px;
+	padding-right: 1%;
+  }
+  table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  table tbody tr td:before {
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: 0;
+  }
+  table tbody tr td:nth-child(1):before {
+    content: "Adat";
+  }
+  table tbody tr td:nth-child(2):before {
+    content: "Elérhetőség";
+  }
+  table tbody tr td:nth-child(3):before {
+    content: "Előállításáért felelős";
+  }
+  table tbody tr td:nth-child(4):before {
+    content: "Frissítés";
+  }
+  table tbody tr td:nth-child(5):before {
+    content: "Megőrzés";
+  }
+
+  .column4,
+  .column5,
+  .column6 {
+    text-align: left;
+  }
+
+  .column4,
+  .column5,
+  .column6,
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%;
+	text-align: justify;
+  }
+
+  tbody tr {
+    font-size: 14px;
+  }
+	
+	
+}
+
+@media (max-width: 650px) {
+  .container-table100 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+

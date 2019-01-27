@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+
+section{
+	font-family: "Source Sans Pro";
+	color: #A5A5A5;
+}
+
+section h1 {
+	margin-top: 2%;
+	margin-bottom: 1%;
+	color: #178616;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+}
+section p {
+	padding-right: 1%;
+	text-align: justify;
+	line-height: 25px;
+	margin-top: 20px;
+	margin-bottom: 0;
+	padding-left: 1%;
+	color: #717070;
+	font-size: 20px;
+}
+.alvasdiagnosztika_left_article p {
+	padding-right: 2%;
+	text-align: justify;
+	line-height: 20px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding-left: 2%;
+	color: #717070;
+	font-size: 20px;
+	
+}
+
+.alvasdiagnosztika_left_article h3 {
+	padding-right: 2%;
+	text-align: justify;
+	line-height: 25px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding-left: 2%;
+	color: #178616;
+	font-size: 20px;
+}
+
+.row h3{
+	padding-right: 2%;
+	text-align: justify;
+	line-height: 25px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding-left: 1%;
+	color: #178616;
+	font-size: 20px;
+	font-family: "Source Sans Pro";
+}
+
+.row ul{
+	padding: 10px;
+	list-style-type: none;
+	font-family: "Source Sans Pro";
+	color: #A5A5A5;
+}
+
+.row li{
+	padding-top: 1%;
+	color: #717070;
+	text-align: left;
+	font-size: 20px;
+	padding-left: 40px;
+	padding-bottom: 20px;
+}
+
+.alvasdiagnosztika_left_article {
+	background-color: #F0F0E1;
+	width: 59%;
+	float: left;
+	font-family: "Source Sans Pro";
+	color: #343434;
+	padding-bottom: 1px;
+}
+section ul{
+	padding: 10px;
+	list-style-type: none;
+}
+
+section ul li{
+	padding-top: 1%;
+	color: #717070;
+	text-align: left;
+	font-size: 20px;
+	padding-left: 40px;
+	font-weight: bold;
+	
+}
+
+section ul a{
+	color: #727272;
+}
+
+section ul a:hover{
+	color: darkgreen;
+	font-weight: bold;
+}
+
+.row ul a{
+	color: #727272;
+}
+
+.row ul a:hover{
+	color: darkgreen;
+	font-weight: bold;
+}
+
+
+@media (min-width: 651px) and (max-width: 768px) {
+	.alvasdiagnosztika_left_article {
+		width: 100%;
+		height: auto;
+	}
+	
+	.alvasdiagnosztika_left_article h3 {
+		text-align: center;
+		
+	}
+	
+	.row h3{
+		text-align: center
+	}
+	
+	section ul li{
+		text-align: center;
+		padding-left: 1%;
+	}
+}
+
+@media (max-width : 650px ){
+	.alvasdiagnosztika_left_article {
+		width: 100%;
+		height: auto;
+	}
+	
+	.alvasdiagnosztika_left_article h3 {
+		text-align: center;
+		
+	}
+	
+	.row h3{
+		text-align: center
+	}
+	
+	section ul li{
+		text-align: center;
+		padding-left: 1%;
+	}
+}

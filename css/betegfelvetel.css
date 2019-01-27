@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+
+section h1 {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	color: #178616;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px
+}
+
+.container section{
+	background: #F0F0E1;
+}
+
+.betegfelvetel_right_article{
+	margin-bottom: 120px;
+	background: #F0F0E1;
+	height: auto;
+}
+
+.betegfelvetel_right_article h1 {
+	margin-top: 3%;
+	color: #178616;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px
+}
+.betegfelvetel_right_article {
+	width: 49%;
+	float: left;
+	margin-right: 1%
+}
+
+.betegfelvetel_left_article {
+	width: 50%;
+	float: left;
+	background: #F0F0E1;
+	height: auto;
+}
+
+
+section ul{
+	padding: 10px;
+	list-style-type: none;
+}
+
+section ul li{
+	padding-top: 2%;
+	color: #717070;
+	font-weight: bold;
+	text-align: center;
+	font-size: 22px;
+	width: 80%;
+	
+}
+
+section ul li a{
+	text-decoration: none;
+	color: #717070;
+}
+
+section ul li a:hover{
+	color: green;
+}
+
+
+@media (max-width : 650px ){
+	
+	.betegfelvetel_left_article {
+		width: 100%;
+		height: auto;
+	}
+	
+	.betegfelvetel_right_article {
+		width: 96%;
+		height: auto;
+		margin-left: 2%
+	}
+
+}
+
+
+
+@media (min-width: 651px) and (max-width: 768px) {
+	
+	
+	.betegfelvetel_left_article {
+		width: 100%;
+		height: auto;
+	}
+	
+	.betegfelvetel_right_article {
+		width: 100%;
+		height: auto;
+	}
+}

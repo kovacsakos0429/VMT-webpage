@@ -21,7 +21,7 @@ footer {
 html, body {
  height: 100%;
  position: relative;
-}
+}menu
 
 
 .slideDown{
@@ -933,6 +933,10 @@ header nav ul li:hover ul{
 		display: none;
 	}
 	
+	.news{
+		display: inline-block;
+		width: 25%;
+	}
 	
 	.right_article {
 		width: 40%;

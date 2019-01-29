@@ -38,24 +38,16 @@ th, td {
 	padding-bottom: 130px
 }
 
-.contact_left_article {
-	background-color: #F0F0E1;
-	width: 40%;
-	float: left;
-	font-family: "Source Sans Pro";
-	color: #343434;
-	padding-bottom: 15px;
-	height: auto;
-}
 
 
-.contact_right_article {
+.gondozo_right_article {
 	width: 58%;
 	float: left;
 	height: auto;
+	margin-bottom: 150px;
 }
 
-.contact_slideshow-container iframe{
+.gondozo_slideshow-container iframe{
 	width: 100%;
 	height: 450px;
 	margin: auto;
@@ -64,62 +56,63 @@ th, td {
 
 
 @media (max-width : 650px ){
-	.contact_left_article {
+	.gondozo_left_article {
 		width: 90%;
 		padding-left: 5%;
 		height: auto;
 	}
 	
-	.contact_right_article {
+	.gondozo_right_article {
 		width: 80%;
 		height: auto;
 		padding-bottom: 25px;
 		padding-right: 10%;
 		padding-left: 10%;
-	}
-	.vp{
-		margin-bottom: 120px;
+		
 	}
 }
 
 
 @media (min-width: 651px) and (max-width: 768px) {
-	.contact_left_article {
+	.gondozo_left_article {
 		width: 90%;
 		height: auto;
 		padding-left: 5%;
 	}
 	
-	.contact_right_article {
+	.gondozo_right_article {
 		width: 96%;
 		height: auto;
-		margin-bottom: 55px;
+		padding-bottom: 25px;
 		padding-right: 2%;
 		padding-left: 2%;
 	}
 
-	.contact_slideshow-container iframe{
+	.gondozo_slideshow-container iframe{
 		width: 98%;
 		margin: auto;
 		display: block;
 	}
-	.vp{
-		margin-bottom: 120px;
-	}
 }
 
 @media (min-width: 769px) and (max-width: 1366px) {
-	.contact_right_article {
-		width: 58%;
+	.gondozo_right_article {
+		width: 40%;
 		height: auto;
 		padding-bottom: 25px;
 		padding-right: 0%;
 		padding-left: 0%;
 		padding-top: 25px
 	}
+	
+	.gondozo_left_article {
+		width: 40%;
+		height: auto;
+		padding-left: 5%;
+	}
 
 	
-	.contact_slideshow-container{
+	.gondozo_slideshow-container{
 		width: 100%;
 		position:relative;
 		margin: auto;
@@ -127,32 +120,26 @@ th, td {
 		
 	}
 	
-	.contact_slideshow-container iframe{
+	.gondozo_slideshow-container iframe{
 		width: 100%;
 		display: block;
 		margin: auto;
-	}
-	.vp{
-		margin-bottom: 120px;
 	}
 }
 
 @media (min-width: 1366px) {
 	
-	.contact_slideshow-container{
+	.gondozo_slideshow-container{
 		width: 100%;
 		position:relative;
 		margin: auto;
 		margin-top: 10px;
 	}
 	
-	.contact_slideshow-container img{
+	.gondozo_slideshow-container img{
 		width: 100%;
 		margin: auto;
 		
-	}
-	.contact_right_article{
-		margin-bottom: 150px;
 	}
 	
 }

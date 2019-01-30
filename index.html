@@ -122,7 +122,7 @@
     		<a class="next" onclick="plusIndex(+1)">&#10095;</a>
    	  </div>
     	<br />
-   	  <div style="text-align:center;">
+   	  <div style="text-align:center;" class="fade-in one">
     		<span class="dots" onclick="currentSlide(1)"> </span>
     		<span class="dots" onclick="currentSlide(2)"></span>
     		<span class="dots" onclick="currentSlide(3)"></span>
@@ -347,25 +347,25 @@
 	var win = $(window);
 	var allMods = $(".row blockDisplay");
 
+	allMods.each(function(i, el) {
+	  var el = $(el);
+	  if (el.visible(true)) {
+		el.addClass("already-visible");
+	  }
+	});
 
-allMods.each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible");
-  }
-});
 
-	
-win.scroll(function(event) {
-  allMods.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in");
-    }
-  });
-});
+	win.scroll(function(event) {
+	  allMods.each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+		  el.addClass("come-in");
+		}
+	  });
+	});
 
 </script>
+
 
 
 </body>

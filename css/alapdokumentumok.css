@@ -15,13 +15,10 @@ section{
 	width: 100%;
 	height: auto;
 	text-align: center;
-	padding-right: 1%;
-	padding-left: 1%;
 	margin-bottom: 130px;
 }
 
 figure {
-	
 	text-align: center;
 	font-style: italic;
 	text-indent: 0;
@@ -38,6 +35,10 @@ figure {
 	margin: 1em;
 }
 
+.figure a{
+	text-decoration: none;
+}
+
 
 figcaption{
 	padding-top: 1em;
@@ -49,11 +50,6 @@ img.scaled {
   width: 100%;
 }
 
-
-figure a{
-	text-decoration: none;
-	color: #717070;
-}
 
 	
 
@@ -72,12 +68,52 @@ figure a{
 		width: 100%;
 		height: auto;
 	}
+	.figure{
+		width: 100%;
+		display: block;
+		margin: 1em;
+		text-align: center;
+	}
+	figure{
+		text-align: center;
+		width: 50%;
+	}
+	
+	
+	
 }
 
 @media (min-width: 651px) and (max-width: 768px) {	
 	.alapdokumentumok_left_article {
 		width: 100%;
 		height: auto;
+		
+	}
+	.figure{
+		width: 100%;
+		display: block;
+		margin: 1em;
+		text-align: center;
+	}
+	figure{
+		text-align: center;
+		width: 50%;
 	}
 }
 
+@media (min-width: 769px) and (max-width: 1366px) {	
+	.alapdokumentumok_left_article {
+		width: 100%;
+		height: auto;
+		
+	}
+	.figure{
+		width: 25%;
+		display: inline-block;
+		margin: 4em;
+	}
+	
+	.egyedi{
+		padding-top: 0.9em;
+	}
+}

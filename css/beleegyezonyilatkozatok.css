@@ -3,6 +3,7 @@
 
 .nyilatkozatok_left_article h1 {
 	margin-top: 2%;
+	margin-bottom: 2%;
 	color: #178616;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -11,34 +12,38 @@
 }
 
 .nyilatkozatok_left_article {
-		width: 100%;
-		height: auto;
-		margin-bottom: 110px;
-	}
-
-section ul{
-	padding: 10px;
-	list-style-type: none;
+	width: 100%;
+	height: auto;
+	margin-bottom: 110px;
+	text-align: center;
 }
 
-section ul li{
-	padding-top: 2%;
+figure {
+	text-align: center;
+	font-style: italic;
+	text-indent: 0;
+	border: thin silver solid;
+	padding: 2em;
 	color: #717070;
 	font-weight: bold;
-	text-align: left;
-	font-size: 25px;
-	width: 90%;
+	font-size: 22px;
 }
 
-section ul li a{
+.figure{
+	width: 18%;
+	display: inline-block;
+	margin: 1em;
+}
+
+.figure a{
 	text-decoration: none;
-	color: #717070;
 }
 
-section ul li a:hover{
-	color: green;
+
+img.scaled {
+  width: 100%;
 }
-	
+
 
 .zoom {
     transition: transform .2s; /* Animation */
@@ -46,19 +51,65 @@ section ul li a:hover{
 
 .zoom:hover {
     transform: scale(1.5);
+	box-shadow: 5px 5px 10px #888888;
 }
 
+
 @media (max-width : 650px ){
-	.nyilatkozatok_left_article {
+	.alapdokumentumok_left_article {
 		width: 100%;
 		height: auto;
 	}
+	.figure{
+		width: 100%;
+		display: block;
+		margin: 1em;
+		text-align: center;
+	}
+	figure{
+		text-align: center;
+		width: 50%;
+	}
+	
+	
+	
 }
 
 @media (min-width: 651px) and (max-width: 768px) {	
-	.nyilatkozatok_left_article {
+	.alapdokumentumok_left_article {
 		width: 100%;
 		height: auto;
+		
+	}
+	.figure{
+		width: 100%;
+		display: block;
+		margin: 1em;
+		text-align: center;
+	}
+	figure{
+		text-align: center;
+		width: 50%;
 	}
 }
 
+@media (min-width: 769px) and (max-width: 1366px) {	
+	.alapdokumentumok_left_article {
+		width: 100%;
+		height: auto;
+		
+	}
+	.figure{
+		width: 35%;
+		display: inline-block;
+		margin: 1em;
+	}
+	
+	.egyedi{
+		padding-top: 1.9em;
+	}
+	
+	figure{
+		width: 50%;
+	}
+}

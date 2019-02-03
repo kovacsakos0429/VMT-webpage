@@ -223,6 +223,16 @@ header nav ul li:hover ul{
 	z-index: 999;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
 
 /*navbar end */
 
@@ -414,16 +424,6 @@ header nav ul li:hover ul{
 	margin-top: 0px;
 	background-image: url(../images/header-bg.jpg);
 	
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
 }
 
 

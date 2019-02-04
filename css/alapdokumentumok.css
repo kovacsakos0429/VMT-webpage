@@ -27,12 +27,14 @@ figure {
 	color: #717070;
 	font-weight: bold;
 	font-size: 22px;
+
 }
 
 .figure{
 	width: 22%;
 	display: inline-block;
 	margin: 1em;
+	
 }
 
 .figure a{

@@ -2,26 +2,26 @@
 
 
 .container {
- min-height: 100vh; /* will cover the 100% of viewport */
- overflow: hidden;
- display: block;
- position: relative;
- padding-bottom: 100px; /* height of your footer */
+	 min-height: 100vh; /* will cover the 100% of viewport */
+	 overflow: hidden;
+	 display: block;
+	 position: relative;
+	 padding-bottom: 100px; /* height of your footer */
 
 }
 
 footer {
- position: absolute;
- bottom: 0;
- width: 100%;
- height: 86px;	
- box-shadow: 0 -2px 25px 4px black;
+	 position: absolute;
+	 bottom: 0;
+	 width: 100%;
+	 height: 86px;	
+	 box-shadow: 0 -2px 25px 4px black;
 }
 
 html, body {
- height: 100%;
- position: relative;
-}menu
+	 height: 100%;
+	 position: relative;
+}
 
 
 
@@ -608,7 +608,6 @@ header nav ul li:hover ul{
 	padding-top: 7px;
 	text-shadow: 1px 1px grey;
 	color: #FFFFFF;
-	
 }
 
 .social p a{
@@ -796,7 +795,20 @@ header nav ul li:hover ul{
 	.secciones article{
 		padding: 20px;
 	}	
+	.social p {
+		width: 50%;
+		text-align: center;
+		line-height: 0;
+		padding-top: 7px;
+	}
 	
+	footer {
+	 position: absolute;
+	 bottom: 0;
+	 width: 100%;
+	 height: 140px;	
+	 box-shadow: 0 -2px 25px 4px black;
+	}
 }
 
 @media (max-width: 768px){

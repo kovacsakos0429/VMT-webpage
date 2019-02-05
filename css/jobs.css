@@ -124,13 +124,41 @@ img.scaled {
 		width: 100%;
 		height: auto;
 	}
-
+	
+	.jobs_left_article h1{
+		font-size: 20px;
+		margin-top: 4%;
+	}
+	.jobs_right_article h1{
+		font-size: 20px;
+	}
+	
+	section ul li{
+		font-size: 20px;
+	
+	}
+	.jobs_right_article .figure{
+		width: 80%;
+	}
 }
 
 
 
 @media (min-width: 651px) and (max-width: 768px) {
 	
+	.jobs_left_article h1{
+		font-size: 22px;
+		margin-top: 4%;
+	}
+	
+	.jobs_right_article h1{
+		font-size: 22px;
+	}
+	
+	section ul li{
+		font-size: 20px;
+	
+	}
 	
 	.jobs_left_article {
 		width: 100%;
@@ -141,5 +169,14 @@ img.scaled {
 		width: 100%;
 		height: auto;
 	}
+	.jobs_right_article .figure{
+		width: 60%;
+	}
 }
 
+@media (min-width: 769px) and (max-width: 1366px) {
+	
+	.jobs_right_article .figure{
+		width: 60%;
+	}
+}

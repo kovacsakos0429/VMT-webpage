@@ -167,60 +167,155 @@ body {
 /* navbar */
 #menu{
 	z-index: 9999;
-	text-align: center;
-    box-shadow: -1px 5px 10px 	#484848;
+    box-shadow: -1px 5px 10px #9C9595;
 }
 
-.secondary_header2 ul{
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	background:#000000;
-	position: relative;
+.navigation {
+	height: 50px;
+	background: #262626;
 }
 
-.secondary_header2 ul li{
-	display: inline-block;
-	font-size: 16px;
+
+.nav-container {
+  	margin: 0 auto;
 }
 
-.secondary_header2 ul li a{
-	text-decoration: none;
-	color: aliceblue;
-	padding: 15px;
-	display: block;
+nav {
+  	float: left;
 }
-
-.secondary_header2 ul li:hover{
-	background:#4D4D4D;
+nav ul {
+  	list-style: none;
+  	margin: 0;
+  	padding: 0;
 }
-
-.secondary_header2 ul ul{
-	position: absolute;
+nav ul li {
+  	float: left;
+  	position: relative;
+	font-size: calc(5px + (17 - 5) * ((100vw - 768px) / (1920 - 768)));
+}
+nav ul li a, nav ul li a:visited {
+  	display: block;
+  	padding: 0 17px;
+  	line-height: 50px;
+  	color: #ffffff;
+  	text-decoration: none;
+}
+nav ul li a:hover, nav ul li a:visited:hover {
+  	background: rgba(50,169,35,1);
+	background: -moz-linear-gradient(45deg, rgba(50,169,35,1) 0%, rgba(9,66,0,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(50,169,35,1)), color-stop(100%, rgba(9,66,0,1)));
+	background: -webkit-linear-gradient(45deg, rgba(50,169,35,1) 0%, rgba(9,66,0,1) 100%);
+	background: -o-linear-gradient(45deg, rgba(50,169,35,1) 0%, rgba(9,66,0,1) 100%);
+	background: -ms-linear-gradient(45deg, rgba(50,169,35,1) 0%, rgba(9,66,0,1) 100%);
+	background: linear-gradient(45deg, rgba(50,169,35,1) 0%, rgba(9,66,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32a923', endColorstr='#094200', GradientType=1 );
+  	color: #ffffff;
+}
+nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
+  	padding-left: 4px;
+  	content: " ▾";
+}
+nav ul li ul li {
+  	min-width: 200px;
+  
+}
+nav ul li ul li a {
+ 	padding: 15px;
+  	line-height: 20px;
 	min-width: 200px;
-	background: grey;
-	display: none;
-	box-shadow:  5px 5px 30px #000000;
-	text-align: left;
 }
 
-.secondary_header2 ul ul li{
-	display: block;
-	background: grey;
+.nav-dropdown {
+  	position: absolute;
+	background: rgba(0, 0, 0, 0.95);
+  	display: none;
+  	z-index: 1;
+  	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.65);
 }
 
-.secondary_header2 .fa-bars{
-	background: black;
-	color: white;
-	font-size: 30px;
-	padding: 0.6em;
-	cursor: pointer;
-	display: none;
+/* Mobile navigation */
+.nav-mobile {
+  	display: none;
+  	position:relative;
+  	top: 0;
+  	right: 0;
+  	background: #262626;
+  	height: 50px;
 }
 
-header nav ul li:hover ul{
-	display: block;
-	z-index: 999;
+
+
+@media only screen and (max-width: 768px) {
+  .nav-mobile {
+	  display: block;
+	  width: 30%;
+  }
+
+  nav {
+	  width: 100%;
+  }
+  nav ul {
+	  display: none;
+  }
+  nav ul li {
+	  float: none;
+	  font-size: 16px;
+	  background: rgba(0, 0, 0, 0.9);
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: 769px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 11px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active3 span {
+  background-color: transparent;
+}
+#nav-toggle.active3 span:before, #nav-toggle.active3 span:after {
+  top: 0;
+}
+#nav-toggle.active3 span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active3 span:after {
+  transform: rotate(-45deg);
 }
 
 .sticky {
@@ -515,8 +610,8 @@ header nav ul li:hover ul{
 }
 
 .row .columns p {
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 .row .blockDisplay {
@@ -720,12 +815,20 @@ header nav ul li:hover ul{
 		height: auto;
 	}
 	
+	.container .left_article h3{
+		font-size: 20px
+	}
+	
+	.container .left_article p{
+		font-size: 16px
+	}
+	
 	.right_article {
-		width: 80%;
+		width: 96%;
 		height: auto;
 		padding-bottom: 25px;
-		padding-right: 10%;
-		padding-left: 10%;
+		padding-right: 2%;
+		padding-left: 2%;
 		
 	}
 
@@ -738,7 +841,7 @@ header nav ul li:hover ul{
 		padding-top: 0PX;
 		padding-right: 0PX;
 		padding-bottom: 0PX;
-		padding-left: 0PX;
+		padding-left: 0px;
 	}
 	
 	.news {
@@ -754,10 +857,7 @@ header nav ul li:hover ul{
 		text-align: center;
 	}
 	
-	.columns p {
-		padding-left: 10px;
-		padding-right: 10px;
-	}
+	
 	
 	.column_half.left_half {
 		width: 100%;
@@ -816,30 +916,6 @@ header nav ul li:hover ul{
 	#menu{
 		text-align: left;
 	}
-	.secondary_header2 .fa-bars{
-		display: block;
-		text-align: center;
-	}
-	
-	.secondary_header2 ul{
-		display: none;
-		position: static;
-		background: #4D4D4D;
-	}
-	
-	.secondary_header2 ul li{
-		display: block;
-	}
-	
-	.secondary_header2 ul ul{
-		position: static;
-		background: #e3e3e3;
-	}
-	.secondary_header2 .fa-sort-desc{
-		color:#292929;
-		float: right;
-		padding-left: 2px;
-	}
 	
 	.prev, .next{
 		position: absolute;
@@ -856,6 +932,11 @@ header nav ul li:hover ul{
 		width: none;
 		flex-basis: 0;
 		flex-grow: 1;
+	}
+	
+	.row .columns p {
+		padding-left: 2%;
+		padding-right: 2%;
 	}
 }
 
@@ -908,6 +989,10 @@ header nav ul li:hover ul{
 		padding-left: 14px;
 		padding-right: 14px;
 	}
+	.row .columns p {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
 	
 	.column_half.left_half {
 		width: 100%;
@@ -918,14 +1003,14 @@ header nav ul li:hover ul{
 	}
 	
 	.slideshow-container{
-		width: 98%;
+		width: 100%;
 		position:relative;
 		margin: auto;
 		margin-top: 20px;
 	}
 	
 	.slideshow-container img{
-		width: 98%;
+		width: 100%;
 		margin: auto;
 		display: block;
 	}

@@ -144,11 +144,11 @@ tbody tr:hover {
   }
   table tbody tr {
     height: auto;
-    padding: 37px 0;
+    padding: 20px 0;
   }
   table tbody tr td {
     padding-left: 40% !important;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
   }
   table tbody tr td:last-child {
     margin-bottom: 0;
@@ -160,8 +160,8 @@ tbody tr:hover {
     font-weight: unset;
     position: absolute;
     width: 40%;
-    left: 25px;
-    top: 2px;
+    left: 20px;
+    top: 3px;
   }
   
   table tbody tr td:nth-child(2):before {
@@ -189,14 +189,22 @@ tbody tr:hover {
   tbody tr {
     font-size: 14px;
   }
-	
+	.column1 {
+		width: 50%;
+		text-align: center;
+		font-size: 18px;
+		
+	}
+
+	.column2 {
+		width: 50%;
+		text-align: center;	
+		font-size: 18px
+	}
 	
 }
 
 @media (max-width: 650px) {
-  .container-table100 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
+ 
 }
 

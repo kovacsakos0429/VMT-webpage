@@ -1,18 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
 
-section h1 {
+.betegfelvetel h1{
 	margin-top: 2%;
 	margin-bottom: 2%;
 	color: #178616;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 30px
-}
-
-.container section{
-	background: #F0F0E1;
+	font-size: 30px;
+	text-shadow: 2px 2px 5px #888888;
 }
 
 .betegfelvetel_right_article{
@@ -21,14 +18,6 @@ section h1 {
 	height: auto;
 }
 
-.betegfelvetel_right_article h1 {
-	margin-top: 3%;
-	color: #178616;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 30px
-}
 .betegfelvetel_right_article {
 	width: 49%;
 	float: left;
@@ -43,29 +32,41 @@ section h1 {
 }
 
 
-section ul{
+.betegfelvetel_left_article ul{
 	padding: 10px;
 	list-style-type: none;
 }
 
-section ul li{
-	padding-top: 2%;
+.betegfelvetel_left_article ul li{
+	padding-top: 1%;
 	color: #717070;
-	font-weight: bold;
-	text-align: center;
+	text-align: left;
 	font-size: 22px;
-	width: 80%;
+	padding-left: 40px;
+	font-weight: bold;
 	
 }
 
-section ul li a{
-	text-decoration: none;
-	color: #717070;
+.betegfelvetel_left_article ul a{
+	color: #727272;
 }
 
-section ul li a:hover{
-	color: green;
+.betegfelvetel_left_article ul a:hover{
+	color: darkgreen;
+	font-weight: bold;
 }
+
+.betegfelvetel_left_article h3 {
+	padding-right: 2%;
+	text-align: justify;
+	line-height: 25px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding-left: 2%;
+	color: #178616;
+	font-size: 25px;
+}
+
 
 
 @media (max-width : 650px ){
@@ -78,7 +79,27 @@ section ul li a:hover{
 	.betegfelvetel_right_article {
 		width: 96%;
 		height: auto;
-		margin-left: 2%
+		margin-left: 2%;
+		margin-bottom: 200px;
+	}
+	
+	
+	.betegfelvetel_left_article h3 {
+		text-align: center;
+		font-size: 18px;
+		
+	}
+	
+	.betegfelvetel h1 {
+		font-size: 20px;
+		margin-top: 35px;
+	}
+	
+	
+	.betegfelvetel_left_article ul li{
+		text-align: center;
+		padding-left: 1%;
+		font-size: 18px;
 	}
 
 }
@@ -87,14 +108,32 @@ section ul li a:hover{
 
 @media (min-width: 651px) and (max-width: 768px) {
 	
-	
 	.betegfelvetel_left_article {
 		width: 100%;
 		height: auto;
 	}
 	
 	.betegfelvetel_right_article {
-		width: 100%;
+		width: 96%;
 		height: auto;
+		padding-left: 2%;
+		padding-right: 2%;
+		
+	}
+	
+	.betegfelvetel_left_article h3 {
+		text-align: center;
+		
+	}
+	
+	.betegfelvetel h1 {
+		font-size: 22px;
+		margin-top: 25px;
+	}
+	
+	.betegfelvetel ul li{
+		text-align: center;
+		padding-left: 1%;
+		font-size: 20px
 	}
 }

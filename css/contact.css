@@ -1,18 +1,22 @@
 @charset "UTF-8";
 
-section{
+.contact{
 	height: auto;
 	margin-bottom: 100px;
 }
 
-section h1 {
+.contact h1 {
 	margin-top: 2%;
 	margin-bottom: 2%;
 	color: #178616;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 30px
+	font-size: 30px;
+}
+
+.cim{
+	text-shadow: 2px 2px 5px #888888;
 }
 
 
@@ -71,13 +75,17 @@ th, td {
 		height: auto;
 	}
 	
-	section h1 {
-		padding-top: 3%;
+	.contact h1 {
+		margin-top: 35px;
 		margin-bottom: 0%;
 		color: #178616;
 		font-weight: bold;
 		text-transform: uppercase;
 		text-align: center;
+		font-size: 18px
+	}
+	
+	.contact .cim{
 		font-size: 20px
 	}
 	
@@ -137,7 +145,7 @@ th, td {
 		padding-left: 10%
 	}
 	
-	section h1 {
+	.contact h1 {
 		padding-top: 2%;
 		margin-bottom: 0%;
 		color: #178616;

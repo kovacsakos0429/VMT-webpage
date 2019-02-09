@@ -1,17 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
 
-section h1 {
+.alapdokumentumok_left_article h1 {
 	margin-top: 2%;
 	margin-bottom: 2%;
 	color: #178616;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 30px;
+	font-size: 35px;
+	text-shadow: 2px 2px 5px #888888;
 }
 
-section{
+.alapdokumentumok_left_article{
 	width: 100%;
 	height: auto;
 	text-align: center;
@@ -43,8 +44,8 @@ figure {
 
 
 figcaption{
-	padding-top: 1em;
-	padding-bottom: 1em;
+	white-space:pre-line;
+	word-wrap: break-word;
 }
 
 
@@ -89,6 +90,12 @@ img.scaled {
 		height: auto;
 		
 	}
+	
+	.alapdokumentumok_left_article h1{
+		font-size: 22px;
+		margin-top: 4%
+	}
+	
 	.figure{
 		width: 100%;
 		display: block;
@@ -113,7 +120,27 @@ img.scaled {
 		margin: 4em;
 	}
 	
-	.egyedi{
-		padding-top: 0.9em;
+}
+
+@media (max-width : 650px ){
+	.alapdokumentumok_left_article h1{
+		font-size: 20px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	.alapdokumentumok_left_article{
+		
+		margin-bottom: 200px;
+	}
+	
+	.figure{
+		width: 50%;
+		margin-left: 25%;
+		display: block;
+	}
+	figure{
+		text-align: center;
+		width: 70%;
+		font-size: 16px;
 	}
 }

@@ -3,11 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tüdőgyógyintézet</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/script.js" type="text/javascript"></script>
 <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
 <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -24,74 +25,83 @@
   <header>
     <div class="primary_header">
       <h1 class="title wrapper"> 
-		  <img src="./images/logo.png" class="mobile_img" alt=""/>
+		  <img src="./images/logo.png" class="mobile_img slideDown" alt=""/>
 		  <img src="./images/nev.png" class="default_img slideDown" alt=""/></h1>
     </div>
-    <nav class="secondary_header2" id="menu">
-      <div><em class="fa fa-bars"></em></div>
-      <ul>
-        <li class="active"><a href="#">INTÉZETÜNK<em class="fa fa-sort-desc"></em></a>
-          <ul class="nav-dropdown">
+   <section class="navigation" id="menu">
+  <div class="nav-container">
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li class="active">
+          <a href="#!">INTÉZETÜNK</a>
+			<ul class="nav-dropdown">
 				<li><a href="index">BEMUTATKOZÁS</a></li>
 				<li><a href="tortenet">A KÓRHÁZ TÖRTÉNETE</a></li>
 				<li><a href="menedzsment">MENEDZSMENT</a></li>
         		<li><a href="alapitvany">ALAPÍTVÁNYUNK</a></li>
         		<li><a href="images/terkep.jpg" data-lightbox="terkep">TÉRKÉP</a></li>
-
-        	</ul>
-		</li>
-		<li><a href="#">FEKVŐBETEG ELLÁTÁS<i class="fa fa-sort-desc"></i></a>
+          	</ul>
+        </li>
+        <li>
+          <a href="#!">FEKVŐBETEG ELLÁTÁS</a>
 			<ul class="nav-dropdown">
-				<li><a href="#">I. PULMONOLÓGIA (AKTÍV)</a></li>
-				<li><a href="#">II. PULMONOLÓGIA (KRÓNIKUS)</a></li>
-				<li><a href="#">III. PULMONOLÓGIA (REHABILITÁCIÓ)</a></li>
-        	</ul>
-		</li>
-		<li><a href="#">JÁRÓBETEG ELLÁTÁS<i class="fa fa-sort-desc"></i></a>
-			<ul class="nav-dropdown">
+					<li><a href="#">I. PULMONOLÓGIA (AKTÍV)</a></li>
+					<li><a href="#">II. PULMONOLÓGIA (KRÓNIKUS)</a></li>
+					<li><a href="#">III. PULMONOLÓGIA (REHABILITÁCIÓ)</a></li>
+          	</ul>
+        </li>
+        <li>
+          <a href="#!">JÁRÓBETEG ELLÁTÁS</a>
+			  <ul class="nav-dropdown">
 				<li><a href="#">ORVOSI DIAGNOSZTIKA</a></li>
 				<li><a href="alvasdiagnosztika">ALVÁSDIAGNOSZTIKA</a></li>
 				<li><a href="#">FIZIOTERÁPIA</a></li>
 				<li><a href="#">SZAKRENDELÉSEK</a></li>
 				<li><a href="#">VESZPRÉMI TÜDŐGONDOZÓ</a></li>
-        	</ul>
-		</li>
-        <li><a href="#">SZOLGÁLTATÁSOK<i class="fa fa-sort-desc"></i></a>
-			<ul class="nav-dropdown">
-       		  	<li><a href="#">ROBERT KOCH PATIKA</a></li>
+			  </ul>
+        </li>
+        <li>
+          <a href="#!">SZOLGÁLTATÁSOK</a>
+			 <ul class="nav-dropdown">
+				<li><a href="#">ROBERT KOCH PATIKA</a></li>
         		<li><a href="#">VENDÉGHÁZ</a></li>
         		<li><a href="#">SZOLGÁLTATÓ HÁZ</a></li>
 				<li><a href="#">DJP PONT</a></li>
 				<li><a href="bufe">BÜFÉ</a></li>
 				<li><a href="documents/etlap.pdf" onclick="target='newwindow'">ÉLELMEZÉS - ÉTLAP</a></li>
 				<li><a href="#">EGYÉB TÉRÍTÉSI DÍJAK</a></li>
-        	</ul>
-		</li>
-        <li><a href="#">KÖZÉRDEKŰ ADATOK<i class="fa fa-sort-desc"></i></a>
-			<ul class="nav-dropdown">
+			  </ul>
+        </li>
+        <li>
+          <a href="#!">KÖZÉRDEKŰ ADATOK</a>
+			  <ul class="nav-dropdown">
 				<li><a href="alapdokumentumok">ALAPDOKUMENTUMOK</a></li>
-       		  	<li><a href="akl">ÁLTALÁNOS KÖZZÉTÉTELI LISTA</a></li>
+				<li><a href="akl">ÁLTALÁNOS KÖZZÉTÉTELI LISTA</a></li>
 				<li><a href="palyazatok">PÁLYÁZATOK</a></li>
-        		<li><a href="kozbeszerzesek">KÖZBESZERZÉSEK</a></li>
-        		<li><a href="koltsegvetes">KÖLTSÉGVETÉSI BESZÁMOLÓK</a></li>
+				<li><a href="kozbeszerzesek">KÖZBESZERZÉSEK</a></li>
+				<li><a href="koltsegvetes">KÖLTSÉGVETÉSI BESZÁMOLÓK</a></li>
 				<li><a href="tanusitvanyok">TANÚSÍTVÁNYOK</a></li>
 				<li><a href="archivum">ARCHÍVUM</a></li>
-        	</ul>
-		</li>
-        <li><a href="#">BETEGTÁJÉKOZTATÓ<i class="fa fa-sort-desc"></i></a>
-        	<ul class="nav-dropdown">
+			  </ul>
+        </li>
+		<li>
+          <a href="#!">BETEGTÁJÉKOZTATÓ</a>
+			  <ul class="nav-dropdown">
 				<li><a href="betegfelvetel">BETEGFELVÉTEL</a></li>
        		  	<li><a href="mellekek">MELLÉKEK</a></li>
         		<li><a href="hazirend">HÁZIREND</a></li>
 				<li><a href="betegjog">BETEGEK JOGAI ÉS KÖTELEZETTSÉGEI</a></li>
         		<li><a href="documents/betegjogi_kepviselo.pdf" onclick="target='newwindow'">BETEGJOGI KÉPVISELŐ</a></li>
 				<li><a href="beleegyezonyilatkozatok">BELEEGYEZŐ NYILATKOZATOK</a></li>
-        	</ul>
-		</li>
-        <li><a href="allasok">ÁLLÁSAJÁNLATOK</a></li>
-        <li><a href="elerhetosegek">ELÉRHETŐSÉGEK</a></li>
+			  </ul>
+        </li>
+         <li><a href="allasok">ÁLLÁSAJÁNLATOK</a></li>
+		 <li><a href="elerhetosegek">ELÉRHETŐSÉGEK</a></li>
       </ul>
     </nav>
+  </div>
+</section>
   </header>
   <section>
 	<article class="left_article fade-in one">
@@ -209,10 +219,8 @@
   </footer>
 </div>
 	
-	
 <script>
-	//navbar
-	
+		//navbar
 	window.onscroll = function() {
 		"use strict";
 		myFunction();
@@ -227,28 +235,15 @@
 			} else {
 				navbar.classList.remove("sticky");
 			}
+            if($(window).width() < 650) {
+                  navbar.classList.remove("sticky");
+            }
 			
 		}
 	
-		//a régi navbar
-      $("nav div").click(function() {
-            $("ul").slideToggle();
-            $("ul ul").css("display", "none");
-      });
-
-      $("ul li").click(function() {
-            $("ul ul").slideUp();
-            $(this).find('ul').slideToggle();
-      });
-
-      $(window).resize(function() {
-            if($(window).width() > 768) {
-                  $("ul").removeAttr('style');
-            }
-      });
-	//új navbar részletei 
-	(function($) { // Begin jQuery
-			$(function() { // DOM ready
+		(function($) { // Begin jQuery
+			"use strict";
+		  $(function() { // DOM ready
 			// If a link has a dropdown, add sub menu toggle.
 			$('nav ul li a:not(:only-child)').click(function(e) {
 			  $(this).siblings('.nav-dropdown').toggle();
@@ -266,12 +261,13 @@
 			});
 			// Hamburger to X toggle
 			$('#nav-toggle').on('click', function() {
-			  this.classList.toggle('active');
+			  this.classList.toggle('active3');
 			});
 		  }); // end DOM ready
-	})(jQuery); // end jQuery
-	
-</script>
+})(jQuery); // end jQuery
+
+</script>	
+
 <script>
 	//Slider
 	var slideIndex = 1;

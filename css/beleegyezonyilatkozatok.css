@@ -37,6 +37,7 @@ figure {
 
 .figure a{
 	text-decoration: none;
+	color: #717070;
 }
 
 
@@ -56,45 +57,56 @@ img.scaled {
 
 
 @media (max-width : 650px ){
-	.alapdokumentumok_left_article {
+	
+	.nyilatkozatok_left_article {
 		width: 100%;
-		height: auto;
-	}
-	.figure{
-		width: 100%;
-		display: block;
-		margin: 1em;
-		text-align: center;
-	}
-	figure{
-		text-align: center;
-		width: 50%;
+		margin-bottom: 200px;
 	}
 	
+	.nyilatkozatok_left_article h1{
+		font-size: 20px;
+		padding-top: 4%;
+	}
+	
+	.figure{
+		width: 93%;
+		display: block;
+	}
+	
+	figure{
+		width: 50%;
+		font-size: 20px;
+	}
 	
 	
 }
 
 @media (min-width: 651px) and (max-width: 768px) {	
-	.alapdokumentumok_left_article {
+	.nyilatkozatok_left_article {
 		width: 100%;
 		height: auto;
-		
+		margin-bottom: 200px;
 	}
+	
+	.nyilatkozatok_left_article h1{
+		font-size: 22px;
+		padding-top: 2%;
+	}
+	
 	.figure{
-		width: 100%;
+		width: 96%;
 		display: block;
 		margin: 1em;
-		text-align: center;
 	}
+	
 	figure{
-		text-align: center;
-		width: 50%;
+		width: 40%;
+		font-size: 22px;
 	}
 }
 
 @media (min-width: 769px) and (max-width: 1366px) {	
-	.alapdokumentumok_left_article {
+	.nyilatkozatok_left_article {
 		width: 100%;
 		height: auto;
 		

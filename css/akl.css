@@ -14,13 +14,14 @@ ul, li {
 }
 
 
-.menedzsment_left_article h1 {
+.akl_left_article h1 {
 	margin-top: 2%;
 	color: #178616;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 30px;
+	text-shadow: 2px 2px 5px #888888;
 }
 
 .container-table100 h2{
@@ -30,16 +31,14 @@ ul, li {
 	font-size: 22px;
 }
 
-.menedzsment_left_article {
+.akl_left_article {
 	width: 100%;
 	float: left;
 	height: auto;
 	margin-bottom: 100px;
 }
 
-footer{
-	margin-bottom: -3px
-}
+
 .container-table100 {
   width: 100%;
   min-height: 100vh;
@@ -162,6 +161,14 @@ tbody .column1{
 	
 }
 
+.social p{
+	padding-bottom: 20px;
+}
+
+.copyright{
+	padding-bottom: 10px;
+}
+
 .column5 {
   width: 10%;
   text-align: center;
@@ -240,9 +247,24 @@ tbody .column1{
 }
 
 @media (max-width: 650px) {
-  .container-table100 {
-    padding-left: 15px;
-    padding-right: 15px;
+  	.container-table100 {
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 50px;
   }
+	
+	.akl_left_article h1 {
+		margin-top: 25px;
+		font-size: 20px;
+	}
+	
+	.container-table100 h2{
+		margin-top: 15px;
+		margin-bottom: 15px;
+		font-size: 18px;
+	}
+
+
+
 }
 

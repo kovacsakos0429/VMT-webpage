@@ -24,8 +24,7 @@
 table{
 	width: auto;
 	font-size: 25px;
-	padding: 10px;
-	margin-left: 2%;
+	margin-left: 1%;
 	margin-top: 10%;
 }
 
@@ -54,7 +53,7 @@ th, td {
 
 
 .contact_right_article {
-	width: 58%;
+	width: 59%;
 	float: left;
 	height: auto;
 }
@@ -93,17 +92,17 @@ th, td {
 		width: 100%;
 		font-size: 20px;
 		margin-top: 1%;
-		padding-left: 1%;
+		padding-left: 0%;
 		overflow-wrap: break-word;;
 	}
 
 	
 	.contact_right_article {
-		width: 90%;
+		width: 96%;
 		height: auto;
 		padding-bottom: 25px;
-		padding-right: 5%;
-		padding-left: 5%;
+		padding-right: 2%;
+		padding-left: 2%;
 	}
 	
 	.vp{

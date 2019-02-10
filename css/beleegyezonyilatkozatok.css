@@ -9,6 +9,7 @@
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 30px;
+	text-shadow: 2px 2px 5px #888888;
 }
 
 .nyilatkozatok_left_article {
@@ -57,7 +58,6 @@ img.scaled {
 
 
 @media (max-width : 650px ){
-	
 	.nyilatkozatok_left_article {
 		width: 100%;
 		margin-bottom: 200px;
@@ -65,7 +65,7 @@ img.scaled {
 	
 	.nyilatkozatok_left_article h1{
 		font-size: 20px;
-		padding-top: 4%;
+		margin-top: 35px;
 	}
 	
 	.figure{

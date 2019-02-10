@@ -16,14 +16,16 @@
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 30px;
-	width: 100%
+	width: 100%;
+	text-shadow: 2px 2px 5px #888888;
 }
 
 .betegjog_left_article h2 {
 	margin-top: 40px;
 	font-weight: bold;
 	font-size: 22px;
-	padding-left: 5%;
+	padding-left: 1%;
+	color:#424242
 }
 
 .betegjog_left_article h3 {
@@ -33,12 +35,12 @@
 }
 
 .betegjog_left_article p {
-	padding-right: 5%;
+	padding-right: 1%;
 	text-align: justify;
 	line-height: 30px;
 	margin-top: 15px;
 	margin-bottom: 15px;
-	padding-left: 5%;
+	padding-left: 1%;
 	color: #717070;
 	font-size: 22px;
 }
@@ -60,3 +62,62 @@
 .betegjog_left_article a:hover{
 	color: green;
 }
+
+@media (min-width: 651px) and (max-width: 768px) {
+	.betegjog_left_article {
+		width: 100%;
+		margin-bottom: 100px;
+		height: auto;
+}
+
+
+	.betegjog_left_article h1 {
+		margin-top: 4%;
+		margin-bottom: 2%;
+		font-size: 25px;
+		width: 100%;
+		
+	}
+
+	.betegjog_left_article h2 {
+		margin-top: 40px;
+		font-weight: bold;
+		font-size: 22px;
+		padding-left: 2%;
+		color:#424242
+	}
+
+}
+
+@media (max-width : 650px ){
+	.betegjog_left_article {
+		width: 100%;
+		margin-bottom: 160px;
+		height: auto;
+	}
+
+	.betegjog_left_article h1 {
+		margin-top: 55px;
+		font-size: 18px;
+		width: 100%;
+	}
+
+	.betegjog_left_article h2 {
+		margin-top: 40px;
+		font-weight: bold;
+		font-size: 18px;
+		padding-left: 2%;
+		color:#424242
+	}
+	
+	.betegjog_left_article h3 {
+		font-size: 16px
+	}
+	
+	.betegjog_left_article p {
+		font-size: 16px;
+	}
+	
+
+}
+

@@ -103,7 +103,7 @@
   </header>
   <section>
 	<article class="betegjog_left_article">	
-	<h1 class="slideDown">Tájékoztató a betegek jogairól és kötelezettségeiről</h1>
+	<h1 class="slideDown">Betegek jogai és kötelezettségei</h1>
 	<h3 class="slideDown">(Az 1997. évi CLIV. törvény alapján)</h3> 
 	<div class="fade-in">
 	<h2>1. Az egészségügyi ellátáshoz való jog  </h2>
@@ -301,6 +301,8 @@ var win = $(window);
 var allMods = $(".betegjog_left_article p");
 var allMods3 = $(".betegjog_left_article h2");
 var allMods4 = $(".betegjog_left_article li");
+var allMods5 = $(".betegjog_left_article h3");
+var allMods6 = $(".betegjog_left_article .table");
 
 allMods.each(function(i, el) {
   var el = $(el);
@@ -309,12 +311,6 @@ allMods.each(function(i, el) {
   }
 });
 
-allMods2.each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible");
-  }
-});
 
 allMods3.each(function(i, el) {
   var el = $(el);
@@ -328,6 +324,15 @@ allMods4.each(function(i, el) {
   if (el.visible(true)) {
     el.addClass("already-visible");
   }
+	
+});
+	
+allMods5.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible");
+  }
+	
 });
 	
 win.scroll(function(event) {
@@ -336,23 +341,21 @@ win.scroll(function(event) {
     if (el.visible(true)) {
       el.addClass("come-in");
     }
-  });
-});
-
-win.scroll(function(event) {
-  allMods2.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in");
+	if($(window).width() < 768) {
+      el.classList.remove("come-in");
     }
   });
 });
+
 
 win.scroll(function(event) {
   allMods3.each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
       el.addClass("come-in");
+    }
+	if($(window).width() < 768) {
+      el.classList.remove("come-in");
     }
   });
 });
@@ -362,6 +365,33 @@ win.scroll(function(event) {
     var el = $(el);
     if (el.visible(true)) {
       el.addClass("come-in");
+    }
+	if($(window).width() < 768) {
+      el.classList.remove("come-in");
+    }
+  });
+});
+
+win.scroll(function(event) {
+  allMods5.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in");
+    }
+	if($(window).width() < 768) {
+      el.classList.remove("come-in");
+    }
+  });
+});
+
+win.scroll(function(event) {
+  allMods6.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in");
+    }
+	if($(window).width() < 768) {
+      el.classList.remove("come-in");
     }
   });
 });

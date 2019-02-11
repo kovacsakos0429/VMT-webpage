@@ -19,9 +19,10 @@
 }
 
 .betegfelvetel_right_article {
-	width: 49%;
+	width: 39%;
 	float: left;
-	margin-right: 1%
+	margin-right: 1%;
+	margin-left: 10%
 }
 
 .betegfelvetel_left_article {
@@ -33,7 +34,7 @@
 
 
 .betegfelvetel_left_article ul{
-	padding: 10px;
+	padding: 5px;
 	list-style-type: none;
 }
 
@@ -104,6 +105,39 @@
 
 }
 
+@media (min-width: 769px) and (max-width: 1366px) {
+	.betegfelvetel_left_article ul li{
+		padding-top: 1%;
+		color: #717070;
+		text-align: left;
+		font-size: 20px;
+		padding-left: 40px;
+		font-weight: bold;
+	}
+	.betegfelvetel_right_article {
+		width: 39%;
+		float: left;
+		margin-right: 1%;
+		margin-left: 10%;
+		margin-bottom: 15%
+	}
+	.betegfelvetel_left_article h3 {
+		padding-right: 2%;
+		text-align: justify;
+		line-height: 25px;
+		margin-top: 20px;
+		margin-bottom: 15px;
+		padding-left: 2%;
+		color: #178616;
+		font-size: 22px;
+	}
+	
+	.betegfelvetel h1 {
+		margin-top: 35px;
+	}
+	
+}
+
 
 
 @media (min-width: 651px) and (max-width: 768px) {
@@ -114,10 +148,10 @@
 	}
 	
 	.betegfelvetel_right_article {
-		width: 96%;
+		width: 80%;
 		height: auto;
-		padding-left: 2%;
-		padding-right: 2%;
+		padding-left: 0%;
+		padding-right: 0%;
 		
 	}
 	
@@ -128,12 +162,16 @@
 	
 	.betegfelvetel h1 {
 		font-size: 22px;
-		margin-top: 25px;
+		margin-top: 35px;
 	}
 	
 	.betegfelvetel ul li{
 		text-align: center;
 		padding-left: 1%;
 		font-size: 20px
+	}
+	
+	.slideshow-container{
+		padding-left: 0%
 	}
 }

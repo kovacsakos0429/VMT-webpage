@@ -70,7 +70,6 @@ th, td {
 	
 	.contact_left_article {
 		width: 100%;
-		padding-left: 1%;
 		height: auto;
 	}
 	
@@ -92,7 +91,7 @@ th, td {
 		width: 100%;
 		font-size: 20px;
 		margin-top: 1%;
-		padding-left: 0%;
+		padding-left: 1%;
 		overflow-wrap: break-word;;
 	}
 

@@ -87,6 +87,11 @@
 		padding-left: 2%;
 		color:#424242
 	}
+	
+	.hazirend_left_article p {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
 
 }
 

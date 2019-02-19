@@ -26,6 +26,9 @@
 	margin-top: 1%;
 	margin-bottom: 250px;
 	background: #F0F0E1;
+	width: 50%;
+	float: right;
+	text-align: center;
 }
 
 .tanusitvanyok_right_article h1 {
@@ -35,11 +38,6 @@
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 30px
-}
-.tanusitvanyok_right_article {
-	width: 50%;
-	float: right;
-	text-align: center;
 }
 
 .tanusitvanyok_left_article {
@@ -131,9 +129,6 @@
 		font-size: 18px;
 	
 	}
-	
-	
-	
 	
 	.cim {
 		font-size: 20px;

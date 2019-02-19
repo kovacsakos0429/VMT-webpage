@@ -81,6 +81,7 @@
 	font-size: 20px;
 	padding-bottom: 20px;
 	text-align: justify;
+	padding-left: 35px;
 }
 
 .row p{
@@ -110,22 +111,15 @@
 	
 }
 
-.alvas ul a{
-	color: #727272;
-}
-
-.alvas ul a:hover{
-	color: darkgreen;
-	font-weight: bold;
-}
 
 .row ul a{
 	color: #727272;
+	text-decoration: none;
 }
 
 .row ul a:hover{
 	color: darkgreen;
-	font-weight: bold;
+	text-decoration: underline;
 }
 
 
@@ -149,12 +143,18 @@
 	.alvas ul li{
 		text-align: center;
 		padding-left: 1%;
+		padding-right: 1%;
 		font-size: 20px
 	}
 	
 	.row h3{
 		text-align: center;
 		font-size: 22px
+	}
+	
+	.row li{
+		padding-left: 1%;
+		padding-right: 1%;
 	}
 }
 
@@ -183,6 +183,7 @@
 	.alvas ul li{
 		text-align: center;
 		padding-left: 1%;
+		padding-right: 1%;
 		font-size: 18px;
 	}
 	
@@ -193,5 +194,9 @@
 	.row h3{
 		text-align: center;
 		font-size: 20px
+	}
+	.row li{
+		padding-right: 1%;
+		padding-left: 1%;
 	}
 }

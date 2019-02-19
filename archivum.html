@@ -26,110 +26,120 @@
 		  <img src="./images/logo.png" class="mobile_img" alt=""/>
 		  <img src="./images/nev.png" class="default_img" alt=""/></h1>
     </div>
-    <nav class="secondary_header2" id="menu">
-      <div><em class="fa fa-bars"></em></div>
-      <ul>
-        <li><a href="#">INTÉZETÜNK<em class="fa fa-sort-desc"></em></a>
-          <ul>
+      <section class="navigation" id="menu">
+  	<div class="nav-container">
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">INTÉZETÜNK</a>
+			<ul class="nav-dropdown">
 				<li><a href="index">BEMUTATKOZÁS</a></li>
 				<li><a href="tortenet">A KÓRHÁZ TÖRTÉNETE</a></li>
 				<li><a href="menedzsment">MENEDZSMENT</a></li>
         		<li><a href="alapitvany">ALAPÍTVÁNYUNK</a></li>
-        		<li><a href="./images/terkep.jpg" data-lightbox="terkep">TÉRKÉP</a></li>
-        	</ul>
-		</li>
-		<li><a href="#">FEKVŐBETEG ELLÁTÁS<i class="fa fa-sort-desc"></i></a>
-			<ul>
-				<li><a href="#">I. PULMONOLÓGIA (AKTÍV)</a></li>
-				<li><a href="#">II. PULMONOLÓGIA (KRÓNIKUS)</a></li>
-				<li><a href="#">III. PULMONOLÓGIA (REHABILITÁCIÓ)</a></li>
-        	</ul>
-		</li>
-		<li><a href="#">JÁRÓBETEG ELLÁTÁS<i class="fa fa-sort-desc"></i></a>
-			<ul>
+        		<li><a href="images/terkep.jpg" data-lightbox="terkep">TÉRKÉP</a></li>
+          	</ul>
+        </li>
+        <li>
+          <a href="#!">FEKVŐBETEG ELLÁTÁS</a>
+			<ul class="nav-dropdown">
+					<li><a href="#">I. PULMONOLÓGIA (AKTÍV)</a></li>
+					<li><a href="#">II. PULMONOLÓGIA (KRÓNIKUS)</a></li>
+					<li><a href="#">III. PULMONOLÓGIA (REHABILITÁCIÓ)</a></li>
+          	</ul>
+        </li>
+        <li>
+          <a href="#!">JÁRÓBETEG ELLÁTÁS</a>
+			  <ul class="nav-dropdown">
 				<li><a href="#">ORVOSI DIAGNOSZTIKA</a></li>
 				<li><a href="alvasdiagnosztika">ALVÁSDIAGNOSZTIKA</a></li>
 				<li><a href="#">FIZIOTERÁPIA</a></li>
 				<li><a href="#">SZAKRENDELÉSEK</a></li>
 				<li><a href="#">VESZPRÉMI TÜDŐGONDOZÓ</a></li>
-        	</ul>
-		</li>
-        <li><a href="#">SZOLGÁLTATÁSOK<i class="fa fa-sort-desc"></i></a>
-			<ul>
-       		  	<li><a href="#">ROBERT KOCH PATIKA</a></li>
+			  </ul>
+        </li>
+        <li>
+          <a href="#!">SZOLGÁLTATÁSOK</a>
+			 <ul class="nav-dropdown">
+				<li><a href="#">ROBERT KOCH PATIKA</a></li>
         		<li><a href="#">VENDÉGHÁZ</a></li>
         		<li><a href="#">SZOLGÁLTATÓ HÁZ</a></li>
 				<li><a href="#">DJP PONT</a></li>
 				<li><a href="bufe">BÜFÉ</a></li>
 				<li><a href="documents/etlap.pdf" onclick="target='newwindow'">ÉLELMEZÉS - ÉTLAP</a></li>
 				<li><a href="#">EGYÉB TÉRÍTÉSI DÍJAK</a></li>
-        	</ul>
-		</li>
-        <li><a href="#">KÖZÉRDEKŰ ADATOK<i class="fa fa-sort-desc"></i></a>
-			<ul>
+			  </ul>
+        </li>
+        <li class="active">
+          <a href="#!">KÖZÉRDEKŰ ADATOK</a>
+			  <ul class="nav-dropdown">
 				<li><a href="alapdokumentumok">ALAPDOKUMENTUMOK</a></li>
-       		  	<li><a href="akl">ÁLTALÁNOS KÖZZÉTÉTELI LISTA</a></li>
+				<li><a href="akl">ÁLTALÁNOS KÖZZÉTÉTELI LISTA</a></li>
 				<li><a href="palyazatok">PÁLYÁZATOK</a></li>
-        		<li><a href="kozbeszerzesek">KÖZBESZERZÉSEK</a></li>
-        		<li><a href="koltsegvetes">KÖLTSÉGVETÉSI BESZÁMOLÓK</a></li>
+				<li><a href="kozbeszerzesek">KÖZBESZERZÉSEK</a></li>
+				<li><a href="koltsegvetes">KÖLTSÉGVETÉSI BESZÁMOLÓK</a></li>
 				<li><a href="tanusitvanyok">TANÚSÍTVÁNYOK</a></li>
-				<li class="active"><a href="archivum">ARCHÍVUM</a></li>
-        	</ul>
-		</li>
-        <li><a href="#">BETEGTÁJÉKOZTATÓ<i class="fa fa-sort-desc"></i></a>
-        	<ul>
+				<li><a href="archivum">ARCHÍVUM</a></li>
+			  </ul>
+        </li>
+		<li>
+          <a href="#!">BETEGTÁJÉKOZTATÓ</a>
+			  <ul class="nav-dropdown">
 				<li><a href="betegfelvetel">BETEGFELVÉTEL</a></li>
-       		  	<li><a href="mellekek">TELEFONKÖNYV</a></li>
+       		  	<li><a href="mellekek">MELLÉKEK</a></li>
         		<li><a href="hazirend">HÁZIREND</a></li>
 				<li><a href="betegjog">BETEGEK JOGAI ÉS KÖTELEZETTSÉGEI</a></li>
         		<li><a href="documents/betegjogi_kepviselo.pdf" onclick="target='newwindow'">BETEGJOGI KÉPVISELŐ</a></li>
 				<li><a href="beleegyezonyilatkozatok">BELEEGYEZŐ NYILATKOZATOK</a></li>
-        	</ul>
-		</li>
-        <li><a href="allasok">ÁLLÁSAJÁNLATOK</a></li>
-        <li><a href="elerhetosegek">ELÉRHETŐSÉGEK</a></li>
+			  </ul>
+        </li>
+         <li><a href="allasok">ÁLLÁSAJÁNLATOK</a></li>
+		 <li><a href="elerhetosegek">ELÉRHETŐSÉGEK</a></li>
       </ul>
     </nav>
+  </div>
+</section>
   </header>
   <section>
-  	<h1>Archívum</h1>
-	<article class="archive_left_article">
+  	<h1 class="cim slideDown">Archívum</h1>
+	<article class="archive_left_article fade-in one">
 		<h1>Általános közzétételi lista:</h1>
 		<ul>
-			<li class="zoom fade-in one">
-				<a href="documents/archivum/altalanos_kozzeteteli_lista/szervezeti_es_mukodesi_szabalyzat/3.0.pdf" onclick="target='newwindow'"><img src="images/pdf.png" alt="" width="40"> Szervezeti és működési szabályzat</a>
+			<li class="zoom">
+				<a href="documents/archivum/altalanos_kozzeteteli_lista/szervezeti_es_mukodesi_szabalyzat/3.0.pdf" onclick="target='newwindow'">Szervezeti és működési szabályzat</a>
 			</li>
-			<li class="zoom fade-in one">
-				<a href="documents/archivum/altalanos_kozzeteteli_lista/elektronikus_adatkezelesi_szabalyzat/2.0.pdf" onclick="target='newwindow'"><img src="images/pdf.png" alt="" width="40"> Elektronikus adatkezelési szabályzat</a>
+			<li class="zoom">
+				<a href="documents/archivum/altalanos_kozzeteteli_lista/elektronikus_adatkezelesi_szabalyzat/2.0.pdf" onclick="target='newwindow'">Elektronikus adatkezelési szabályzat</a>
 			</li>
-			<li class="zoom fade-in one">
-				<a href="documents/archivum/altalanos_kozzeteteli_lista/adatvedelmi_szabalyzat/2.0.pdf" onclick="target='newwindow'"><img src="images/pdf.png" alt="" width="40"> Adatvédelmi szabályzat</a>
+			<li class="zoom">
+				<a href="documents/archivum/altalanos_kozzeteteli_lista/adatvedelmi_szabalyzat/2.0.pdf" onclick="target='newwindow'">Adatvédelmi szabályzat</a>
 			</li>
-			<li class="zoom fade-in one">
-				<a href="documents/archivum/altalanos_kozzeteteli_lista/kozerdeku_adatok/2.0.pdf" onclick="target='newwindow'"><img src="images/pdf.png" alt="" width="40"> Közérdekű adatok közzététele, és megismerése</a>
+			<li class="zoom">
+				<a href="documents/archivum/altalanos_kozzeteteli_lista/kozerdeku_adatok/2.0.pdf" onclick="target='newwindow'">Közérdekű adatok közzététele, és megismerése</a>
 			</li>
-			<li class="zoom fade-in one"> 
-				<a href="documents/archivum/altalanos_kozzeteteli_lista/teritesi_dij_szabalyzat/4.0.pdf" onclick="target='newwindow'"><img src="images/pdf.png" alt="" width="40"> Egészségügyi szolgáltatások térítési díj szabályzata</a>
+			<li class="zoom"> 
+				<a href="documents/archivum/altalanos_kozzeteteli_lista/teritesi_dij_szabalyzat/4.0.pdf" onclick="target='newwindow'">Egészségügyi szolgáltatások térítési díj szabályzata</a>
 			</li>
-			<li class="zoom fade-in one">
-				<a href="documents/archivum/altalanos_kozzeteteli_lista/munkaugy/2016_evi_munkaugyi_adatok.pdf" onclick="target='newwindow'"><img src="images/pdf.png" alt="" width="40"> 2016. évi munkaügyi adatok</a>
+			<li class="zoom">
+				<a href="documents/archivum/altalanos_kozzeteteli_lista/munkaugy/2016_evi_munkaugyi_adatok.pdf" onclick="target='newwindow'">2016. évi munkaügyi adatok</a>
 			</li>
-			<li class="zoom fade-in one">
-				<a href="documents/archivum/altalanos_kozzeteteli_lista/kozerdeku_adatok/Éves_beruházásstatisztikai_jelentés_2017.pdf" onclick="target='newwindow'"><img src="images/pdf.png" alt="" width="40"> Közérdekű adatokkal kapcsolatos kötelező statisztikai adatszolgáltatás 2017-es évre</a>
+			<li class="zoom">
+				<a href="documents/archivum/altalanos_kozzeteteli_lista/kozerdeku_adatok/Éves_beruházásstatisztikai_jelentés_2017.pdf" onclick="target='newwindow'">Közérdekű adatokkal kapcsolatos kötelező statisztikai adatszolgáltatás 2017-es évre</a>
 			</li>
-			<li class="zoom fade-in one">
-				<a href="documents/archivum/altalanos_kozzeteteli_lista/kozerdeku_adatok/mosoda_ellenorzes.pdf" onclick="target='newwindow'"><img src="images/pdf.png" alt="" width="40"> Mosoda utóellenőrzése</a>
+			<li class="zoom">
+				<a href="documents/archivum/altalanos_kozzeteteli_lista/kozerdeku_adatok/mosoda_ellenorzes.pdf" onclick="target='newwindow'">Mosoda utóellenőrzése</a>
 			</li>
-			<li class="zoom fade-in one">
-				<a href="documents/archivum/altalanos_kozzeteteli_lista/kozerdeku_adatok/rehab_ellenorzes.pdf" onclick="target='newwindow'"><img src="images/pdf.png" alt="" width="40"> Pulmonológiai rehabilitációs osztály ellenőrzés</a>
+			<li class="zoom">
+				<a href="documents/archivum/altalanos_kozzeteteli_lista/kozerdeku_adatok/rehab_ellenorzes.pdf" onclick="target='newwindow'">Pulmonológiai rehabilitációs osztály ellenőrzés</a>
 			</li>
 		</ul>
 	</article>
     <aside class="archive_right_article">
-			<h1>Szolgáltatások:</h1>
+		<h1>Szolgáltatások:</h1>
 		<ul>
 			<li class="zoom fade-in two">
-				<a href="./documents/archivum/teritesi_dij/dijak.pdf" onclick="target='newwindow'"><img src="images/pdf.png" alt="" width="40"> Térítési díjak</a>
+				<a href="./documents/archivum/teritesi_dij/dijak.pdf" onclick="target='newwindow'">Térítési díjak</a>
 			</li>
 		</ul>
 	</aside>
@@ -142,13 +152,20 @@
 		<p><a href="irjonnekunk">Írjon nekünk</a></p>
 		<p><a href="linkek">Hasznos linkek</a></p>
   	</div>
-    <div class="copyright">&copy;2010 - 2018 <strong>Veszprém Megyei Tüdőgyógyintézet, Farkasgyepű - Minden jog fenntartva!</strong></div>
+    <div class="copyright">
+    	&copy;2010 -
+    	<script>
+			var currentTime = new Date();
+			var year = currentTime.getFullYear();
+			document.write(year);
+		</script>
+    	<strong>Veszprém Megyei Tüdőgyógyintézet, Farkasgyepű - Minden jog fenntartva!</strong>
+    </div>
   </footer>
 </div>
 	
 <script>
-	//navbar
-	
+		//navbar
 	window.onscroll = function() {
 		"use strict";
 		myFunction();
@@ -163,25 +180,38 @@
 			} else {
 				navbar.classList.remove("sticky");
 			}
+            if($(window).width() < 650) {
+                  navbar.classList.remove("sticky");
+            }
+			
 		}
 	
-	 $("nav div").click(function() {
-            $("ul").slideToggle();
-            $("ul ul").css("display", "none");
-      });
+		(function($) { // Begin jQuery
+			"use strict";
+		  $(function() { // DOM ready
+			// If a link has a dropdown, add sub menu toggle.
+			$('nav ul li a:not(:only-child)').click(function(e) {
+			  $(this).siblings('.nav-dropdown').toggle();
+			  // Close one dropdown when selecting another
+			  $('.nav-dropdown').not($(this).siblings()).hide();
+			  e.stopPropagation();
+			});
+			// Clicking away from dropdown will remove the dropdown class
+			$('html').click(function() {
+			  $('.nav-dropdown').hide();
+			});
+			// Toggle open and close nav styles on click
+			$('#nav-toggle').click(function() {
+			  $('nav ul').slideToggle();
+			});
+			// Hamburger to X toggle
+			$('#nav-toggle').on('click', function() {
+			  this.classList.toggle('active3');
+			});
+		  }); // end DOM ready
+})(jQuery); // end jQuery
 
-      $("ul li").click(function() {
-            $("ul ul").slideUp();
-            $(this).find('ul').slideToggle();
-      });
-
-      $(window).resize(function() {
-            if($(window).width() > 768) {
-                  $("ul").removeAttr('style');
-            }
-      });
-	
-	</script>
+</script>	
 <script>
 	//Slider
 	var slideIndex = 1;

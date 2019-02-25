@@ -6,11 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tüdőgyógyintézet</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
-<link href="css/joginyilatkozat.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
+<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/rehab.css" rel="stylesheet" type="text/css">
+<link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -27,7 +29,7 @@
 		  <img src="./images/nev.png" class="default_img" alt=""/></h1>
     </div>
     <section class="navigation" id="menu">
-  	<div class="nav-container">
+  <div class="nav-container">
     <nav>
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
       <ul class="nav-list">
@@ -83,7 +85,7 @@
 				<li><a href="archivum">ARCHÍVUM</a></li>
 			  </ul>
         </li>
-		<li>
+		<li class="active">
           <a href="#!">BETEGTÁJÉKOZTATÓ</a>
 			  <ul class="nav-dropdown">
 				<li><a href="betegfelvetel">BETEGFELVÉTEL</a></li>
@@ -101,16 +103,73 @@
   </div>
 </section>
   </header>
-  <section>
- 	<h1 class="slideDown">Jogi nyilatkozat</h1>
-	<article class="joginyilatkozat_left_article fade-in one">	
-		<p>
-			Köszönjük a weboldalunkon tett látogatását. A honlapon szereplő adatok a legnagyobb körültekintéssel kerültek kialakításra. Ennek ellenére előfordulhatnak hiányosságok, ezen hiányosságok felülvizsgálatához kérjük segítse munkánkat, küldje meg észrevételeit e-mailben „Írjon nekünk” rovat segítségével. A weboldalon, illetve a térítési szabályzatban  feltüntetett árak tájékoztató jellegűek. Kérjük, minden esetben keresse meg közvetlenül az érintett kezelő orvosát, osztályát.</p>
-			<p>Minden jog fenntartva. A weboldalakon található szövegek, képek, valamint ezek elrendezése szerzői jogvédelem és más vonatkozó törvények védelme alatt áll.</p>
+  <section class="rehab">
+  <h1 class="slideDown">III. Pulmonológia (Rehabilitáció)</h1>
+	<article class="rehab_left_article fade-in">
+ 		<p>
+ 			Intézetünk feladata a Nyugat-Dunántúli régióban a megye tüdő- és szívbetegeinek magas színvonalú aktív és légzés-rehabilitációs ellátása. Jelenleg 3 osztályon 214 ágyon folyik az ellátás, ebből 95 a rehabilitációs ágyak száma.</p>
+	 	<h3 class="fade-in two">Orvos kollégák:</h3>
+	 	<ul class="fade-in two">
+			<li>
+				dr. Medgyasszay Balázs (főigazgató)
+			</li>
+			<li>
+				dr. Mészégető Gabriella
+			</li>
+			<li>
+				dr. Csernák Balázs
+			</li>
+	  	</ul>
+      	<h3 class="fade-in three">Orvosírnokok:</h3>
+		<ul class="fade-in three">
+			  <li>Bene Zoltánné</li>
+			  <li>Szabó Ramóna</li>
+	  </ul>
+    <h3 class="fade-in four">Osztályos főnővér:</h3>
+    <ul class="fade-in four">
+     	<li>Nagyné Izsa Ildikó</li>
+    </ul>	
+	<h3 class="fade-in four" ><a href="mellekek#rehab">Mellékek</a></h3>
 	</article>
-    
+    <aside class="rehab_right_article fade-in one">
+    	<!-- Slider-->
+   	  <div class="slideshow-container">
+    		<div class="slides fade"><a href="./images/rehab/Kép1.jpg" data-lightbox="mygallery"><img src="./images/rehab/Kép1.jpg" alt=""/></a></div>
+    		<div class="slides fade"><a href="./images/rehab/Kép2.jpg" data-lightbox="mygallery"><img src="./images/rehab/Kép2.jpg" alt=""/></a></div>
+   		  	<div class="slides fade"><a href="./images/rehab/Kép3.jpg" data-lightbox="mygallery"><img src="./images/rehab/Kép3.jpg" alt=""/></a></div>
+		  	<div class="slides fade"><a href="./images/rehab/Kép4.jpg" data-lightbox="mygallery"><img src="./images/rehab/Kép4.jpg" alt=""/></a></div>
+
+    	 
+    		<a class="prev" onclick="plusIndex(-1)">&#10094;</a>
+    		<a class="next" onclick="plusIndex(+1)">&#10095;</a>
+   	  </div>
+    	<br />
+   	  <div style="text-align:center;">
+    		<span class="dots" onclick="currentSlide(1)"> </span>
+    		<span class="dots" onclick="currentSlide(2)"></span>
+    		<span class="dots" onclick="currentSlide(3)"></span>
+    		<span class="dots" onclick="currentSlide(4)"></span>
+
+   	  </div>
+    </aside>
   </section>
-  <footer> 
+   <div class="rehab_info fade-in five">
+ 	    <h3>Betegek kiválasztása</h3>
+  	    <p>A rehabilitáció első lépéseként a szakorvos feladata a komplex állapotfelmérés és a kezelési stratégia körvonalazása. Elsősorban a súlyos légzéskárosodottak domináns hányadát képező COPD-s betegek, de más betegségben szenvedő betegek ellátása is történik, úgymint:</p>
+  	    <ul>
+  	    	<li>asthma bronchiale,</li>
+  	    	<li>cisztás fibrózis,</li>
+  	    	<li>intersticiális tüdőbetegség,</li>
+  	    	<li>mellkasfali betegség,</li>
+  	    	<li>neuromuszkuláris betegségek válogatott esetei,</li>
+  	    	<li>perioperatív állapotok,</li>
+  	    	<li>Tüdő transzplantáció előtt és után,</li>
+  	    	<li>volumen redukciós műtét előtt és után,</li>
+  	    </ul>
+  	    <h3>A rehabilitáció fő szempontjai</h3>
+  	    <p>A légzéskárosodás tüneteinek és kórélettani komplikációinak javítása, és megtanítani a beteget saját mindennapi életének optimális kivitelezésére.</p> 
+ </div>
+ <footer> 
 	<div class="social">
 		<p><a href="impresszum">Impresszum</a></p>
 		<p><a href="joginyilatkozat">Jogi nyilatkozat</a></p>

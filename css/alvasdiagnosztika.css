@@ -109,7 +109,9 @@
 	padding-left: 40px;
 	
 }
-
+.alvas ul li a{
+	color: #727272;
+}
 
 .row ul a{
 	color: #727272;

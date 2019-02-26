@@ -104,7 +104,7 @@ table td.r, table th.r {
 }
 
 tbody tr:nth-child(even) {
-  background-color: #f5f5f5;
+  background-color: #E8E8E8;
 }
 
 tbody tr {
@@ -116,7 +116,7 @@ tbody tr {
 
 tbody tr:hover {
   color: #555555;
-  background-color: #f5f5f5;
+  background-color: #E8E8E8;
   cursor: pointer;
 }
 

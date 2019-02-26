@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-.betegfelvetel h1{
+.patika h1{
 	margin-top: 2%;
 	margin-bottom: 2%;
 	color: #178616;
@@ -11,8 +11,11 @@
 	font-size: 30px;
 	text-shadow: 2px 2px 5px #888888;
 }
+.patika{
+	margin-bottom: 100px;
+}
 
-.betegfelvetel_right_article{
+.patika_right_article{
 	margin-bottom: 120px;
 	background: #F0F0E1;
 	height: auto;
@@ -23,20 +26,31 @@
 }
 
 
-.betegfelvetel_left_article {
+.patika_left_article {
 	width: 50%;
 	float: left;
 	background: #F0F0E1;
 	height: auto;
 }
 
+.patika_left_article p {
+	padding-right: 2%;
+	text-align: justify;
+	line-height: 20px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding-left: 2%;
+	color: #717070;
+	font-size: 22px;
+	
+}
 
-.betegfelvetel_left_article ul{
+.patika_left_article ul{
 	padding: 5px;
 	list-style-type: none;
 }
 
-.betegfelvetel_left_article ul li{
+.patika_left_article ul li{
 	padding-top: 1%;
 	color: #717070;
 	text-align: left;
@@ -45,16 +59,9 @@
 	
 }
 
-.betegfelvetel_left_article ul a{
-	color: #727272;
-}
 
-.betegfelvetel_left_article ul a:hover{
-	color: darkgreen;
-	font-weight: bold;
-}
 
-.betegfelvetel_left_article h3 {
+.patika_left_article h3 {
 	padding-right: 2%;
 	text-align: justify;
 	line-height: 25px;
@@ -69,12 +76,12 @@
 
 @media (max-width : 650px ){
 	
-	.betegfelvetel_left_article {
+	.patika_left_article {
 		width: 100%;
 		height: auto;
 	}
 	
-	.betegfelvetel_right_article {
+	.patika_right_article {
 		width: 96%;
 		height: auto;
 		margin-left: 2%;
@@ -82,19 +89,24 @@
 	}
 	
 	
-	.betegfelvetel_left_article h3 {
+	.patika_left_article h3 {
 		text-align: center;
 		font-size: 18px;
 		
 	}
 	
-	.betegfelvetel h1 {
+	.patika h1 {
 		font-size: 20px;
 		margin-top: 35px;
 	}
 	
+	.patika_left_article p {
+		font-size: 18px;
+		text-align: center;
+	}
 	
-	.betegfelvetel_left_article ul li{
+	
+	.patika_left_article ul li{
 		text-align: center;
 		padding-left: 1%;
 		font-size: 18px;
@@ -103,21 +115,20 @@
 }
 
 @media (min-width: 769px) and (max-width: 1366px) {
-	.betegfelvetel_left_article ul li{
+	.patika_left_article ul li{
 		padding-top: 1%;
 		color: #717070;
 		text-align: left;
 		font-size: 20px;
 		padding-left: 40px;
 	}
-	.betegfelvetel_right_article {
+	.patika_right_article {
 		width: 39%;
 		float: left;
 		margin-right: 1%;
 		margin-left: 10%;
-		margin-bottom: 15%
 	}
-	.betegfelvetel_left_article h3 {
+	.patika_left_article h3 {
 		padding-right: 2%;
 		text-align: justify;
 		line-height: 25px;
@@ -128,7 +139,7 @@
 		font-size: 22px;
 	}
 	
-	.betegfelvetel h1 {
+	.patika h1 {
 		margin-top: 35px;
 	}
 	
@@ -138,12 +149,12 @@
 
 @media (min-width: 651px) and (max-width: 768px) {
 	
-	.betegfelvetel_left_article {
+	.patika_left_article {
 		width: 100%;
 		height: auto;
 	}
 	
-	.betegfelvetel_right_article {
+	.patika_right_article {
 		width: 80%;
 		height: auto;
 		padding-left: 0%;
@@ -151,17 +162,17 @@
 		
 	}
 	
-	.betegfelvetel_left_article h3 {
+	.patika_left_article h3 {
 		text-align: center;
 		
 	}
 	
-	.betegfelvetel h1 {
+	.patika h1 {
 		font-size: 22px;
 		margin-top: 35px;
 	}
 	
-	.betegfelvetel ul li{
+	.patika ul li{
 		text-align: center;
 		padding-left: 1%;
 		font-size: 20px

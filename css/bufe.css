@@ -8,10 +8,12 @@ section h1 {
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 30px;
-	text-shadow: 2px 2px 5px #888888;
+	font-size: 30px
 }
 
+.container section{
+	background: #F0F0E1;
+}
 
 .bufe_right_article{
 	margin-bottom: 120px;
@@ -54,12 +56,12 @@ section h1 {
 }
 
 
-.bufe_left_article ul{
+section ul{
 	padding: 10px;
 	list-style-type: none;
 }
 
-.bufe_left_article ul li{
+section ul li{
 	color: #717070;
 	font-weight: bold;
 	text-align: center;
@@ -68,12 +70,12 @@ section h1 {
 	
 }
 
-.bufe_left_article ul li a{
+section ul li a{
 	text-decoration: none;
 	color: #717070;
 }
 
-.bufe_left_article ul li a:hover{
+section ul li a:hover{
 	color: green;
 }
 

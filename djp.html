@@ -6,11 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tüdőgyógyintézet</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
-<link href="css/impresszum.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
+<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/djp.css" rel="stylesheet" type="text/css">
+<link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -27,7 +29,7 @@
 		  <img src="./images/nev.png" class="default_img" alt=""/></h1>
     </div>
     <section class="navigation" id="menu">
-  	<div class="nav-container">
+  <div class="nav-container">
     <nav>
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
       <ul class="nav-list">
@@ -59,7 +61,7 @@
 				<li><a href="#">VESZPRÉMI TÜDŐGONDOZÓ</a></li>
 			  </ul>
         </li>
-        <li>
+        <li class="active">
           <a href="#!">SZOLGÁLTATÁSOK</a>
 			 <ul class="nav-dropdown">
 				<li><a href="patika">ROBERT KOCH PATIKA</a></li>
@@ -90,7 +92,7 @@
        		  	<li><a href="mellekek">MELLÉKEK</a></li>
         		<li><a href="hazirend">HÁZIREND</a></li>
 				<li><a href="betegjog">BETEGEK JOGAI ÉS KÖTELEZETTSÉGEI</a></li>
-        		<li><a href="documents/betegjogi_kepviselo.pdf" target="new">BETEGJOGI KÉPVISELŐ</a></li>
+        		<li><a href="documents/betegjogi_kepviselo.pdf" onclick="target='newwindow'">BETEGJOGI KÉPVISELŐ</a></li>
 				<li><a href="beleegyezonyilatkozatok">BELEEGYEZŐ NYILATKOZATOK</a></li>
 			  </ul>
         </li>
@@ -98,31 +100,55 @@
 		 <li><a href="elerhetosegek">ELÉRHETŐSÉGEK</a></li>
       </ul>
     </nav>
-  	</div>
-	</section>
+  </div>
+</section>
   </header>
-  <section>
-  	<h1 class="slideDown">Impresszum</h1>
-	<article class="impresszum_left_article fade-in one">	
-		<ul>
+  <section class="djp">
+  <h1 class="slideDown">Digitális Jólét Program Pont</h1>
+	<article class="djp_left_article fade-in">
+ 		<p>
+ 			A Tüdőgyógyintézet II. Pulmonológia és III. Pulmonológia osztályán működik DJP Pont két számítógéppel. A DJP Ponton lehetőség van az elektronikus közszolgáltatások és az interneten közzétett tartalmak, kommunikációs szolgáltatások elérésére.</p>
+	 	<h3 class="fade-in two">emopID:</h3>
+	 	<ul class="fade-in two">
 			<li>
-				<span>Honlap tartalmáért felelős:</span> Veszprém Megyei Tüdőgyógyintézet
+				512
 			</li>
-			<li>
-				<span>A weboldalt készítette: </span> Kovács Ákos
-			</li>
-			<li>
-				<span>Ajánlott böngészők:</span> Microsoft Internet Explorer 9.0 vagy újabb, Firefox 10.0 vagy újabb, Google Chrome 20.0 vagy újabb
-			</li>
-			<li>
-				<span>Optimális képernyőfelbontás: </span> 1366 x 768 
-			</li>
-			<li> 
-				<span>Információ:</span> kovacsakos0429@gmail.com
-			</li>
-		</ul>
+	  	</ul>
+      	<h3 class="fade-in three">Eszközök:</h3>
+		<ul class="fade-in three">
+			  <li>2 db asztali számítógép</li>
+			  <li>3 db notebook</li>
+			  <li>2 db tablet</li>
+			  <li>2 db okostelefon</li>
+			  <li>1 db projektor</li>
+			  <li>1 db színes nyomtató</li>
+	  </ul>
+    <h3 class="fade-in five">Nyitva tartás:</h3>
+    <ul class="fade-in five">
+     	<li>Hétfő - Péntek: 06:30 - 14:30</li>
+    </ul>		
 	</article>
-    
+    <aside class="djp_right_article fade-in one">
+    	<!-- Slider-->
+   	  <div class="slideshow-container">
+    		<div class="slides fade"><a href="./images/djp/1.jpg" data-lightbox="mygallery"><img src="./images/djp/1.jpg" alt=""/></a></div>
+   			<div class="slides fade"><a href="./images/djp/2.jpg" data-lightbox="mygallery"><img src="./images/djp/2.jpg" alt=""/></a></div>
+			<div class="slides fade"><a href="./images/djp/3.jpg" data-lightbox="mygallery"><img src="./images/djp/3.jpg" alt=""/></a></div>
+    		<div class="slides fade"><a href="./images/djp/4.jpg" data-lightbox="mygallery"><img src="./images/djp/4.jpg" alt=""/></a></div>
+    		<div class="slides fade"><a href="./images/djp/5.jpg" data-lightbox="mygallery"><img src="./images/djp/5.jpg" alt=""/></a></div>
+
+    		<a class="prev" onclick="plusIndex(-1)">&#10094;</a>
+    		<a class="next" onclick="plusIndex(+1)">&#10095;</a>
+   	  </div>
+    	<br />
+   	  <div style="text-align:center;">
+    		<span class="dots" onclick="currentSlide(1)"></span>
+    		<span class="dots" onclick="currentSlide(2)"></span>
+    		<span class="dots" onclick="currentSlide(3)"></span>
+    		<span class="dots" onclick="currentSlide(4)"></span>
+    		<span class="dots" onclick="currentSlide(5)"></span>
+   	  </div>
+    </aside>
   </section>
  <footer> 
 	<div class="social">

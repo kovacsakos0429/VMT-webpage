@@ -6,11 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tüdőgyógyintézet</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
-<link href="css/impresszum.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
+<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/vendeghaz.css" rel="stylesheet" type="text/css">
+<link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -27,7 +29,7 @@
 		  <img src="./images/nev.png" class="default_img" alt=""/></h1>
     </div>
     <section class="navigation" id="menu">
-  	<div class="nav-container">
+  <div class="nav-container">
     <nav>
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
       <ul class="nav-list">
@@ -59,7 +61,7 @@
 				<li><a href="#">VESZPRÉMI TÜDŐGONDOZÓ</a></li>
 			  </ul>
         </li>
-        <li>
+        <li class="active">
           <a href="#!">SZOLGÁLTATÁSOK</a>
 			 <ul class="nav-dropdown">
 				<li><a href="patika">ROBERT KOCH PATIKA</a></li>
@@ -98,31 +100,63 @@
 		 <li><a href="elerhetosegek">ELÉRHETŐSÉGEK</a></li>
       </ul>
     </nav>
-  	</div>
-	</section>
+  </div>
+</section>
   </header>
-  <section>
-  	<h1 class="slideDown">Impresszum</h1>
-	<article class="impresszum_left_article fade-in one">	
-		<ul>
-			<li>
-				<span>Honlap tartalmáért felelős:</span> Veszprém Megyei Tüdőgyógyintézet
-			</li>
-			<li>
-				<span>A weboldalt készítette: </span> Kovács Ákos
-			</li>
-			<li>
-				<span>Ajánlott böngészők:</span> Microsoft Internet Explorer 9.0 vagy újabb, Firefox 10.0 vagy újabb, Google Chrome 20.0 vagy újabb
-			</li>
-			<li>
-				<span>Optimális képernyőfelbontás: </span> 1366 x 768 
-			</li>
-			<li> 
-				<span>Információ:</span> kovacsakos0429@gmail.com
-			</li>
-		</ul>
+  <section class="djp">
+  <h1 class="slideDown">Vendégház</h1>
+	<article class="djp_left_article fade-in">
+	 	<h3 class="fade-in two">Árak:</h3>
+     	 <table class="fade-in two">
+		  <tr>
+			<th>1 éjszaka:</th>
+			<td>5.430 Ft. / szoba</td>
+		  </tr>
+		  <tr>
+			<th>3 éjszaka:</th>
+			<td>13.570 Ft. / szoba</td>
+		  </tr>
+		  <tr>
+			<th>7 éjszaka:</th>
+			<td>27.140 Ft. / szoba</td>
+		  </tr>
+		  <tr>
+		  	<th>15 éjszaka:</th>
+			<td>54.280 Ft. / szoba</td>
+		  </tr>
+		  <tr>
+			<th>30 éjszaka:</th>
+			<td>81.420 Ft. / szoba</td>
+		  </tr>
+		</table>
+      	
+    <h3 class="fade-in four">Telefon:</h3>
+    <ul class="fade-in four">
+     	<li>+36 89 358 013</li>
+    </ul>
+   
 	</article>
-    
+    <aside class="djp_right_article fade-in one">
+    	<!-- Slider-->
+   	  <div class="slideshow-container">
+    		<div class="slides fade"><a href="./images/rehab/Kép1.jpg" data-lightbox="mygallery"><img src="./images/rehab/Kép1.jpg" alt=""/></a></div>
+    		<div class="slides fade"><a href="./images/rehab/Kép2.jpg" data-lightbox="mygallery"><img src="./images/rehab/Kép2.jpg" alt=""/></a></div>
+   		  	<div class="slides fade"><a href="./images/rehab/Kép3.jpg" data-lightbox="mygallery"><img src="./images/rehab/Kép3.jpg" alt=""/></a></div>
+		  	<div class="slides fade"><a href="./images/rehab/Kép4.jpg" data-lightbox="mygallery"><img src="./images/rehab/Kép4.jpg" alt=""/></a></div>
+
+    	 
+    		<a class="prev" onclick="plusIndex(-1)">&#10094;</a>
+    		<a class="next" onclick="plusIndex(+1)">&#10095;</a>
+   	  </div>
+    	<br />
+   	  <div style="text-align:center;">
+    		<span class="dots" onclick="currentSlide(1)"> </span>
+    		<span class="dots" onclick="currentSlide(2)"></span>
+    		<span class="dots" onclick="currentSlide(3)"></span>
+    		<span class="dots" onclick="currentSlide(4)"></span>
+
+   	  </div>
+    </aside>
   </section>
  <footer> 
 	<div class="social">

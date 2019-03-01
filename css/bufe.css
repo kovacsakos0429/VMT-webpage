@@ -8,18 +8,10 @@ section h1 {
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 30px
+	font-size: 30px;
+	text-shadow: 2px 2px 5px #888888;
 }
 
-.container section{
-	background: #F0F0E1;
-}
-
-.bufe_right_article{
-	margin-bottom: 120px;
-	background: #F0F0E1;
-	height: auto;
-}
 
 .bufe_left_article p{
 	padding-right: 5%;
@@ -31,10 +23,16 @@ section h1 {
 	color: #717070;
 	font-size: 22px;
 }
-.bufe_right_article {
-	width: 49%;
+
+
+.bufe_right_article{
+	margin-bottom: 120px;
+	background: #F0F0E1;
+	height: auto;
+	width: 39%;
 	float: left;
-	margin-right: 1%
+	margin-right: 1%;
+	margin-left: 10%
 }
 
 .bufe_left_article h3 {
@@ -56,26 +54,25 @@ section h1 {
 }
 
 
-section ul{
+.bufe_left_article ul{
 	padding: 10px;
 	list-style-type: none;
 }
 
-section ul li{
+.bufe_left_article ul li{
 	color: #717070;
-	font-weight: bold;
 	text-align: center;
 	font-size: 22px;
 	width: 80%;
 	
 }
 
-section ul li a{
+.bufe_left_article ul li a{
 	text-decoration: none;
 	color: #717070;
 }
 
-section ul li a:hover{
+.bufe_left_article ul li a:hover{
 	color: green;
 }
 
@@ -90,15 +87,37 @@ section ul li a:hover{
 	.bufe_right_article {
 		width: 96%;
 		height: auto;
-		margin-left: 2%
+		margin-left: 2%;
+		margin-bottom: 200px;
 	}
-
+	
+	section h1 {
+		font-size: 20px;
+		margin-top: 35px;
+	}
+	
+	.bufe_left_article h3 {
+		text-align: center;
+		font-size: 18px;
+		
+	}
+	
+	.bufe_left_article p {
+		font-size: 18px;
+		text-align: justify;
+	}
+	
+	
+	.bufe_left_article ul li{
+		text-align: center;
+		width: 100%;
+		font-size: 18px;
+	}
 }
 
 
 
 @media (min-width: 651px) and (max-width: 768px) {
-	
 	
 	.bufe_left_article {
 		width: 100%;
@@ -106,7 +125,63 @@ section ul li a:hover{
 	}
 	
 	.bufe_right_article {
-		width: 100%;
+		width: 80%;
 		height: auto;
+		padding-left: 0%;
+		padding-right: 0%;
+		
 	}
+	
+	.bufe_left_article p{
+		font-size: 20px;
+		padding-left: 2%;
+		text-align: justify;
+	}
+	
+	.bufe_left_article h3 {
+		text-align: center;
+		
+	}
+	
+	.bufe_left_article ul li{
+		text-align: center;
+		padding-left: 1%;
+		font-size: 20px
+	}
+	
+}
+
+@media (min-width: 769px) and (max-width: 1366px) {
+	.bufe_left_article ul li{
+		padding-top: 1%;
+		color: #717070;
+		text-align: left;
+		font-size: 20px;
+		padding-left: 40px;
+		
+	}
+	
+	.bufe_left_article p{
+		font-size: 20px;
+		padding-left: 2%;
+		text-align: justify;
+	}
+	
+	.bufe_right_article {
+		width: 39%;
+		float: left;
+		margin-right: 1%;
+		margin-left: 10%;
+	}
+	
+	.bufe_left_article h3 {
+		padding-right: 2%;
+		line-height: 25px;
+		margin-top: 20px;
+		margin-bottom: 15px;
+		padding-left: 2%;
+		color: #178616;
+		font-size: 22px;
+	}
+	
 }

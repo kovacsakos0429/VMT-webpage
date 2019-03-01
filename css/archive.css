@@ -24,7 +24,7 @@
 
 .archive_right_article{
 	margin-top: 1%;
-	margin-bottom: 250px;
+	margin-bottom: 500px;
 	background: #F0F0E1;
 	width: 50%;
 	float: right;
@@ -42,7 +42,7 @@
 
 .archive_left_article {
 	margin-top: 1%;
-	margin-bottom: 10%;
+	margin-bottom: 20%;
 	width: 50%;
 	float: left;
 	background: #F0F0E1

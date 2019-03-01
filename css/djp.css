@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-.patika h1{
+.djp h1{
 	margin-top: 2%;
 	margin-bottom: 2%;
 	color: #178616;
@@ -11,29 +11,27 @@
 	font-size: 30px;
 	text-shadow: 2px 2px 5px #888888;
 }
-.patika{
-	margin-bottom: 100px;
-}
 
-.patika_right_article{
-	margin-bottom: 120px;
+
+.djp_right_article{
 	background: #F0F0E1;
 	height: auto;
 	width: 39%;
 	float: left;
 	margin-right: 1%;
-	margin-left: 10%
+	margin-left: 10%;
+	margin-bottom: 15%;
 }
 
 
-.patika_left_article {
+.djp_left_article {
 	width: 50%;
 	float: left;
 	background: #F0F0E1;
 	height: auto;
 }
 
-.patika_left_article p {
+.djp_left_article p {
 	padding-right: 2%;
 	text-align: justify;
 	line-height: 20px;
@@ -45,12 +43,12 @@
 	
 }
 
-.patika_left_article ul{
+.djp_left_article ul{
 	padding: 5px;
 	list-style-type: none;
 }
 
-.patika_left_article ul li{
+.djp_left_article ul li{
 	padding-top: 1%;
 	color: #717070;
 	text-align: left;
@@ -59,7 +57,11 @@
 	
 }
 
-.patika_left_article h3 {
+.djp_left_article a{
+	color: #178616;
+}
+
+.djp_left_article h3 {
 	padding-right: 2%;
 	text-align: justify;
 	line-height: 25px;
@@ -70,41 +72,39 @@
 	font-size: 25px;
 }
 
-
-
 @media (max-width : 650px ){
 	
-	.patika_left_article {
+	.djp_left_article {
 		width: 100%;
 		height: auto;
 	}
 	
-	.patika_right_article {
+	.djp_right_article {
 		width: 96%;
 		height: auto;
 		margin-left: 2%;
-		margin-bottom: 200px;
+		margin-bottom: 200px;;
 	}
 	
 	
-	.patika_left_article h3 {
+	.djp_left_article h3 {
 		text-align: center;
 		font-size: 18px;
 		
 	}
 	
-	.patika h1 {
+	.djp h1 {
 		font-size: 20px;
-		margin-top: 35px;
+		margin-top: 55px;
 	}
 	
-	.patika_left_article p {
+	.djp_left_article p {
 		font-size: 18px;
-		text-align: center;
+		text-align: justify;
 	}
 	
 	
-	.patika_left_article ul li{
+	.djp_left_article ul li{
 		text-align: center;
 		padding-left: 1%;
 		font-size: 18px;
@@ -113,20 +113,23 @@
 }
 
 @media (min-width: 769px) and (max-width: 1366px) {
-	.patika_left_article ul li{
+	.djp_left_article ul li{
 		padding-top: 1%;
 		color: #717070;
 		text-align: left;
 		font-size: 20px;
 		padding-left: 40px;
+		
 	}
-	.patika_right_article {
+	
+	.djp_right_article {
 		width: 39%;
 		float: left;
 		margin-right: 1%;
 		margin-left: 10%;
 	}
-	.patika_left_article h3 {
+	
+	.djp_left_article h3 {
 		padding-right: 2%;
 		text-align: justify;
 		line-height: 25px;
@@ -137,13 +140,7 @@
 		font-size: 22px;
 	}
 	
-	.patika_left_article p{
-		font-size: 20px;
-		padding-left: 2%;
-		text-align: justify;
-	}
-	
-	.patika h1 {
+	.djp h1 {
 		margin-top: 35px;
 	}
 	
@@ -153,12 +150,12 @@
 
 @media (min-width: 651px) and (max-width: 768px) {
 	
-	.patika_left_article {
+	.djp_left_article {
 		width: 100%;
 		height: auto;
 	}
 	
-	.patika_right_article {
+	.djp_right_article {
 		width: 80%;
 		height: auto;
 		padding-left: 0%;
@@ -166,27 +163,23 @@
 		
 	}
 	
-	.patika_left_article h3 {
+	.djp_left_article h3 {
 		text-align: center;
 		
 	}
 	
-	.patika_left_article p{
-		font-size: 20px;
-		padding-left: 2%;
-		text-align: justify;
-	}
 	
-	.patika h1 {
+	.djp h1 {
 		font-size: 22px;
 		margin-top: 35px;
 	}
 	
-	.patika ul li{
+	.djp ul li{
 		text-align: center;
 		padding-left: 1%;
 		font-size: 20px
 	}
+
 	
 	.slideshow-container{
 		padding-left: 0%

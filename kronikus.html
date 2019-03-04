@@ -6,11 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tüdőgyógyintézet</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
-<link href="css/joginyilatkozat.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
+<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/kronikus.css" rel="stylesheet" type="text/css">
+<link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -27,7 +29,7 @@
 		  <img src="./images/nev.png" class="default_img" alt=""/></h1>
     </div>
     <section class="navigation" id="menu">
-  	<div class="nav-container">
+  <div class="nav-container">
     <nav>
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
       <ul class="nav-list">
@@ -41,7 +43,7 @@
         		<li><a href="images/terkep.jpg" data-lightbox="terkep">TÉRKÉP</a></li>
           	</ul>
         </li>
-        <li>
+        <li class="active">
           <a href="#!">FEKVŐBETEG ELLÁTÁS</a>
 			<ul class="nav-dropdown">
 					<li><a href="aktiv">I. PULMONOLÓGIA (AKTÍV)</a></li>
@@ -63,7 +65,7 @@
           <a href="#!">SZOLGÁLTATÁSOK</a>
 			 <ul class="nav-dropdown">
 				<li><a href="patika">ROBERT KOCH PATIKA</a></li>
-        		<li><a href="#">VENDÉGHÁZ</a></li>
+        		<li><a href="vendeghaz">VENDÉGHÁZ</a></li>
         		<li><a href="#">SZOLGÁLTATÓ HÁZ</a></li>
 				<li><a href="djp">DJP PONT</a></li>
 				<li><a href="bufe">BÜFÉ</a></li>
@@ -101,16 +103,47 @@
   </div>
 </section>
   </header>
-  <section>
- 	<h1 class="slideDown">Jogi nyilatkozat</h1>
-	<article class="joginyilatkozat_left_article fade-in one">	
-		<p>
-			Köszönjük a weboldalunkon tett látogatását. A honlapon szereplő adatok a legnagyobb körültekintéssel kerültek kialakításra. Ennek ellenére előfordulhatnak hiányosságok, ezen hiányosságok felülvizsgálatához kérjük segítse munkánkat, küldje meg észrevételeit e-mailben „Írjon nekünk” rovat segítségével. A weboldalon, illetve a térítési szabályzatban  feltüntetett árak tájékoztató jellegűek. Kérjük, minden esetben keresse meg közvetlenül az érintett kezelő orvosát, osztályát.</p>
-			<p>Minden jog fenntartva. A weboldalakon található szövegek, képek, valamint ezek elrendezése szerzői jogvédelem és más vonatkozó törvények védelme alatt áll.</p>
+  <section class="aktiv">
+  <h1 class="slideDown">II. Pulmonológia (Krónikus)</h1>
+	<article class="aktiv_left_article fade-in">
+	 	<h3 class="fade-in two">Orvos kollégák:</h3>
+	 	<ul class="fade-in two">
+			<li>
+				dr. Király Zsolt (Orvosigazgató)
+			</li>	
+	  	</ul>
+      	<h3 class="fade-in three">Orvosírnokok:</h3>
+		<ul class="fade-in three">
+			  <li>Kissné Nyulasi Andrea</li>
+			  <li>Csizmadia Csabáné</li>
+	  </ul>
+    <h3 class="fade-in four">Osztályos főnővér:</h3>
+    <ul class="fade-in four">
+     	<li>Vargáné Simon Gabriella</li>
+    </ul>	
+	<h3 class="fade-in four" ><a href="mellekek#kronikus">Mellékek</a></h3>
 	</article>
-    
+    <aside class="aktiv_right_article fade-in one">
+    	<!-- Slider-->
+   	  <div class="slideshow-container">
+    		<div class="slides fade"><a href="./images/rehab/Kép1.jpg" data-lightbox="mygallery"><img src="./images/rehab/Kép1.jpg" alt=""/></a></div>
+    		<div class="slides fade"><a href="./images/rehab/Kép2.jpg" data-lightbox="mygallery"><img src="./images/rehab/Kép2.jpg" alt=""/></a></div>
+   		  	<div class="slides fade"><a href="./images/rehab/Kép3.jpg" data-lightbox="mygallery"><img src="./images/rehab/Kép3.jpg" alt=""/></a></div>
+		  	<div class="slides fade"><a href="./images/rehab/Kép4.jpg" data-lightbox="mygallery"><img src="./images/rehab/Kép4.jpg" alt=""/></a></div>
+    		<a class="prev" onclick="plusIndex(-1)">&#10094;</a>
+    		<a class="next" onclick="plusIndex(+1)">&#10095;</a>
+   	  </div>
+    	<br />
+   	  <div style="text-align:center;">
+    		<span class="dots" onclick="currentSlide(1)"> </span>
+    		<span class="dots" onclick="currentSlide(2)"></span>
+    		<span class="dots" onclick="currentSlide(3)"></span>
+    		<span class="dots" onclick="currentSlide(4)"></span>
+
+   	  </div>
+    </aside>
   </section>
-  <footer> 
+ <footer> 
 	<div class="social">
 		<p><a href="impresszum">Impresszum</a></p>
 		<p><a href="joginyilatkozat">Jogi nyilatkozat</a></p>

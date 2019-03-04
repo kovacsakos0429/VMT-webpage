@@ -23,7 +23,7 @@ figure {
 	text-align: center;
 	font-style: italic;
 	text-indent: 0;
-	border: thin silver solid;
+	
 	padding: 2em;
 	color: #717070;
 	font-weight: bold;
@@ -54,6 +54,7 @@ img.scaled {
 .zoom:hover {
     transform: scale(1.5);
 	box-shadow: 5px 5px 10px #888888;
+	border: thin silver solid;
 }
 
 
@@ -78,7 +79,9 @@ img.scaled {
 		font-size: 20px;
 	}
 	
-	
+	.figure img{
+		width: 25px;
+	}
 }
 
 @media (min-width: 651px) and (max-width: 768px) {	
@@ -123,5 +126,9 @@ img.scaled {
 	
 	figure{
 		width: 50%;
+	}
+	
+	.figure img{
+		width: 35px;
 	}
 }

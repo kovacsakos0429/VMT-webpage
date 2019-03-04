@@ -1,0 +1,280 @@
+@charset "utf-8";
+/* CSS Document */
+
+.aktiv h1{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	color: #178616;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+	text-shadow: 2px 2px 5px #888888;
+}
+.aktiv{
+	margin-bottom: 10px;
+}
+
+.aktiv_right_article{
+	background: #F0F0E1;
+	height: auto;
+	width: 39%;
+	float: left;
+	margin-right: 1%;
+	margin-left: 10%
+}
+
+
+.aktiv_left_article {
+	width: 50%;
+	float: left;
+	background: #F0F0E1;
+	height: auto;
+}
+
+.aktiv_left_article p {
+	padding-right: 2%;
+	text-align: justify;
+	line-height: 20px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding-left: 2%;
+	color: #717070;
+	font-size: 22px;
+	
+}
+
+.aktiv_left_article ul{
+	padding: 5px;
+	list-style-type: none;
+}
+
+.aktiv_left_article ul li{
+	padding-top: 1%;
+	color: #717070;
+	text-align: left;
+	font-size: 22px;
+	padding-left: 40px;
+	
+}
+
+.aktiv_left_article a{
+	color: #178616;
+}
+
+.aktiv_left_article h3 {
+	padding-right: 2%;
+	text-align: justify;
+	line-height: 25px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding-left: 2%;
+	color: #178616;
+	font-size: 25px;
+}
+
+.aktiv_info{
+	float: left;
+	width: 100%;
+	background: #F0F0E1;
+	height: auto;
+	margin-bottom: 100px;
+}
+
+.aktiv_info p {
+	padding-right: 1%;
+	text-align: justify;
+	line-height: 20px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding-left: 1%;
+	color: #717070;
+	font-size: 22px;
+}
+
+.aktiv_info h3 {
+	padding-right: 2%;
+	text-align: justify;
+	line-height: 25px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding-left: 1%;
+	color: #178616;
+	font-size: 25px;
+}
+
+.aktiv_info ul{
+	padding: 5px;
+	list-style-type: none;
+}
+
+.aktiv_info ul li{
+	padding-top: 1%;
+	color: #717070;
+	text-align: left;
+	font-size: 22px;
+	padding-left: 40px;
+	
+}
+
+@media (max-width : 650px ){
+	
+	.aktiv_left_article {
+		width: 100%;
+		height: auto;
+	}
+	
+	.aktiv_right_article {
+		width: 96%;
+		height: auto;
+		margin-left: 2%;
+	}
+	
+	
+	.aktiv_left_article h3 {
+		text-align: center;
+		font-size: 18px;
+		
+	}
+	
+	.aktiv h1 {
+		font-size: 20px;
+		margin-top: 55px;
+	}
+	
+	.aktiv_left_article p {
+		font-size: 18px;
+		text-align: justify;
+	}
+	
+	
+	.aktiv_left_article ul li{
+		text-align: center;
+		padding-left: 1%;
+		font-size: 18px;
+	}
+	
+	.aktiv_info{
+		margin-bottom: 150px;
+	}
+	
+	.aktiv_info h3 {
+		text-align: center;
+		font-size: 18px;
+		
+	}
+	
+	.aktiv_info p {
+		font-size: 18px;
+		text-align: justify;
+	}
+	
+	.aktiv_info ul li{
+		text-align: center;
+		padding-left: 1%;
+		font-size: 18px;
+	}
+
+}
+
+@media (min-width: 769px) and (max-width: 1366px) {
+	.aktiv_left_article ul li{
+		padding-top: 1%;
+		color: #717070;
+		text-align: left;
+		font-size: 20px;
+		padding-left: 40px;
+		
+	}
+	
+	.aktiv_info ul li{
+		padding-top: 1%;
+		color: #717070;
+		text-align: left;
+		font-size: 20px;
+		padding-left: 40px;
+
+	}
+	
+	.aktiv_right_article {
+		width: 39%;
+		float: left;
+		margin-right: 1%;
+		margin-left: 10%;
+	}
+	.aktiv_left_article h3 {
+		padding-right: 2%;
+		text-align: justify;
+		line-height: 25px;
+		margin-top: 20px;
+		margin-bottom: 15px;
+		padding-left: 2%;
+		color: #178616;
+		font-size: 22px;
+	}
+	
+	.aktiv_info h3 {
+		padding-right: 2%;
+		text-align: justify;
+		line-height: 25px;
+		margin-top: 20px;
+		margin-bottom: 15px;
+		padding-left: 2%;
+		color: #178616;
+		font-size: 22px;
+	}
+	
+	.aktiv h1 {
+		margin-top: 35px;
+	}
+	
+}
+
+
+
+@media (min-width: 651px) and (max-width: 768px) {
+	
+	.aktiv_left_article {
+		width: 100%;
+		height: auto;
+	}
+	
+	.aktiv_right_article {
+		width: 80%;
+		height: auto;
+		padding-left: 0%;
+		padding-right: 0%;
+		
+	}
+	
+	.aktiv_left_article h3 {
+		text-align: center;
+		
+	}
+	
+	.aktiv_info h3 {
+		text-align: center;
+		
+	}
+	
+	.aktiv h1 {
+		font-size: 22px;
+		margin-top: 35px;
+	}
+	
+	.aktiv ul li{
+		text-align: center;
+		padding-left: 1%;
+		font-size: 20px
+	}
+	
+	.aktiv_info ul li{
+		text-align: center;
+		padding-left: 1%;
+		font-size: 20px
+	}
+	
+	.slideshow-container{
+		padding-left: 0%
+	}
+}

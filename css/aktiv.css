@@ -59,7 +59,8 @@
 }
 
 .aktiv_left_article a{
-	color: #178616;
+	color: #717070;
+	text-decoration: none;
 }
 
 .aktiv_left_article h3 {
@@ -116,6 +117,11 @@
 	padding-left: 40px;
 	
 }
+
+.aktiv_left_article a:hover{
+	color: green;
+}
+
 
 @media (max-width : 650px ){
 	

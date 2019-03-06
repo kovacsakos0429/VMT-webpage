@@ -59,7 +59,8 @@
 }
 
 .rehab_left_article a{
-	color: #178616;
+	color: #717070;
+	text-decoration: none;
 }
 
 .rehab_left_article h3 {
@@ -71,6 +72,10 @@
 	padding-left: 2%;
 	color: #178616;
 	font-size: 25px;
+}
+
+.rehab_left_article a:hover{
+	color: green;
 }
 
 .rehab_info{
@@ -93,8 +98,7 @@
 }
 
 .rehab_info h3 {
-	padding-right: 2%;
-	text-align: justify;
+	text-align: center;
 	line-height: 25px;
 	margin-top: 20px;
 	margin-bottom: 15px;
@@ -116,6 +120,8 @@
 	padding-left: 40px;
 	
 }
+
+
 
 @media (max-width : 650px ){
 	

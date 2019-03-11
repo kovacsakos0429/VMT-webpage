@@ -32,7 +32,9 @@ section h1 {
 	width: 39%;
 	float: left;
 	margin-right: 1%;
-	margin-left: 10%
+	margin-left: 10%;
+	box-shadow: 5px 5px 10px #888888;
+	border: thin silver solid;
 }
 
 .bufe_left_article h3 {
@@ -47,10 +49,12 @@ section h1 {
 }
 
 .bufe_left_article {
-	width: 50%;
+	width: 40%;
 	float: left;
 	background: #F0F0E1;
 	height: auto;
+	box-shadow: 5px 5px 10px #888888;
+	border: thin silver solid;
 }
 
 

@@ -11,11 +11,6 @@ section h1 {
 	text-shadow: 2px 2px 5px #888888;
 }
 
-.impresszum_left_article span {
-	font-weight: bold;
-}
-
-
 .impresszum_left_article {
 	width: 100%;
 	float: left;
@@ -36,6 +31,10 @@ section h1 {
 	font-size: 25px;
 	width: auto;
 	
+}
+
+.impresszum_left_article span {
+	font-weight: bold;
 }
 
 @media (min-width: 651px) and (max-width: 768px) {

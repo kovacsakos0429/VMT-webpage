@@ -347,7 +347,7 @@ nav ul li ul li a {
 
 .container .columns h4 {
 	text-align: center;
-	color: #01B2D1;
+	color: #39AEA9;
 	margin-top: -5px
 }
 
@@ -613,6 +613,7 @@ nav ul li ul li a {
 .row .columns p {
 	padding-left: 5%;
 	padding-right: 5%;
+	color: #717070;
 }
 
 .row .blockDisplay {

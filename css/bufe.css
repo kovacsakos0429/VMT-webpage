@@ -12,14 +12,13 @@ section h1 {
 	text-shadow: 2px 2px 5px #888888;
 }
 
-
-.bufe_left_article p{
-	text-align: justify;
-	line-height: 25px;
-	color: #717070;
-	font-size: 25px;
-	padding-right: 2%;
-	padding-left: 2%;
+.bufe_right_article{
+	margin-bottom: 120px;
+	margin-right: 5%;
+	background: #F0F0E1;
+	height: auto;
+	width: 40%;
+	float: left;
 }
 
 .bufe_left_article {
@@ -32,14 +31,16 @@ section h1 {
 	height: auto;
 }
 
-.bufe_right_article{
-	margin-bottom: 120px;
-	margin-right: 5%;
-	background: #F0F0E1;
-	height: auto;
-	width: 40%;
-	float: left;
+.bufe_left_article p{
+	text-align: justify;
+	line-height: 25px;
+	color: #717070;
+	font-size: 25px;
+	padding-right: 2%;
+	padding-left: 2%;
 }
+
+
 
 .bufe_left_article h3 {
 	text-align: center;
@@ -79,6 +80,13 @@ section h1 {
 		font-size: 25px;
 	}
 	
+	.bufe_right_article {
+		width: 40%;
+		float: left;
+		margin-right: 5%;
+		padding-top: 2%;
+	}
+	
 	.bufe_left_article {
 		width: 40%;
 		margin-top: 3%;
@@ -100,14 +108,7 @@ section h1 {
 		font-size: 20px;
 	}
 	
-	.bufe_right_article {
-		width: 40%;
-		float: left;
-		margin-right: 5%;
-		padding-top: 2%;
-	}
 }
-
 
 @media (min-width: 651px) and (max-width: 768px) {
 	section h1 {
@@ -166,7 +167,6 @@ section h1 {
 	.bufe_left_article h3 {
 		text-align: center;
 		font-size: 18px;
-		
 	}
 	
 	.bufe_left_article p {

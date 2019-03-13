@@ -3,11 +3,10 @@
 
 .jobs_left_article h1 {
 	margin-top: 2%;
-	color: #178616;
+	color: #717070;
 	font-weight: bold;
-	text-transform: uppercase;
 	text-align: center;
-	font-size: 30px
+	font-size: 25px
 }
 
 .cim{
@@ -30,11 +29,10 @@
 
 .jobs_right_article h1 {
 	margin-top: 2%;
-	color: #178616;
+	color: #717070;
 	font-weight: bold;
-	text-transform: uppercase;
 	text-align: center;
-	font-size: 30px
+	font-size: 25px
 }
 .jobs_right_article {
 	width: 50%;
@@ -58,7 +56,6 @@
 .jobs_left_article ul li{
 	padding-top: 2%;
 	color: #717070;
-	font-weight: bold;
 	text-align: center;
 	font-size: 22px;
 	width: 80%;

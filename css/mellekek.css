@@ -130,6 +130,14 @@ tbody tr:hover {
 	font-size: 20px
 }
 
+.social p{
+	padding-bottom: 20px;
+}
+
+.copyright{
+	padding-bottom: 10px;
+}
+
 @media (min-width: 651px) and (max-width: 768px) {
 	.wrap-table100 {
 	  	width: 98%;
@@ -174,7 +182,4 @@ tbody tr:hover {
 		margin-bottom: 150px;
 	}
 	
-	.social p{
-		padding-bottom: 20px;
-	}
 }

@@ -17,6 +17,7 @@
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 30px;
+	text-shadow: 2px 2px 5px #888888;
 }
 
 .tortenet_left_article h2 {

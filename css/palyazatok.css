@@ -1,15 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-.palyazatok_left_article h1 {
-	margin-top: 2%;
-	color: #178616;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 30px
-}
-
 .cim{
 	margin-top: 2%;
 	color: #178616;
@@ -20,34 +11,28 @@
 	text-shadow: 2px 2px 5px #888888;
 }
 
-.palyazatok_left_article {
-	width: 100%;
+.palyazatok_right_article{
+	margin-bottom: 200px;
+	margin-right: 5%;
+	margin-top: 4%;
+	background: #F0F0E1;
+	width: 40%;
+	height: 100%;
 	float: left;
-	background: #F0F0E1
+	border: 1px solid #ddd;
 }
 
 
-.palyazatok_left_article ul{
-	padding: 10px;
-	list-style-type: none;
-}
-
-.palyazatok_left_article ul li{
-	padding-top: 2%;
-	color: #717070;
-	font-weight: bold;
-	text-align: center;
-	font-size: 22px;
-	width: 80%;
-	
-}
-.palyazatok_left_article ul li a{
-	text-decoration: none;
-	color: #717070;
-}
-
-.palyazatok_left_article ul li a:hover{
-	color: green;
+.palyazatok_left_article {
+	width: 40%;
+	margin-top: 4%;
+	margin-left: 6%;
+	margin-right: 8%;
+	margin-bottom: 200px;
+	float: left;
+	background: #F0F0E1;
+	height: auto;
+	border: 1px solid #ddd;
 }
 
 .zoom {
@@ -56,6 +41,59 @@
 
 .zoom:hover {
     transform: scale(1.5);
+}
+
+* {
+	box-sizing: border-box
+}
+
+/* Style the tab */
+.tab {
+	float: left;
+	height: 300px;
+	margin-left: 16%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	display: block;
+	background-color: inherit;
+	padding: 22px 16px;
+	width: 100%;
+	border: none;
+	outline: none;
+	text-align: left;
+	cursor: pointer;
+	transition: 0.2s;
+	font-size: 20px;
+	color: #717070;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	background-color: #eee;
+	color: black;
+	border-radius: 35px;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+	color: white;
+	font: 500 25px;
+	border-radius: 35px;
+}
+
+/* Style the tab content */
+.tabcontent {
+	float: left;
+	padding: 0px 12px;
+}
+
+.tabcontent p{
+	text-align: justify;
+	line-height: 25px;
+	color: #717070;
+	font-size: 25px;
 }
 
 
@@ -74,8 +112,6 @@
 		margin-top: 2%;
 	}
 	
-	.palyazatok_left_article ul li{
-		font-size: 18px;
 	
 	}
 	
@@ -94,10 +130,6 @@
 		margin-top: 2%;
 	}
 	
-	.palyazatok_left_article ul li{
-		font-size: 20px;
-	
-	}
 	
 	.palyazatok_left_article {
 		width: 100%;

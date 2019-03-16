@@ -65,14 +65,6 @@ section h1 {
 	
 }
 
-.bufe_left_article ul li a{
-	text-decoration: none;
-	color: #717070;
-}
-
-.bufe_left_article ul li a:hover{
-	color: green;
-}
 
 @media (min-width: 769px) and (max-width: 1366px) {
 	section h1 {
@@ -135,7 +127,6 @@ section h1 {
 	
 	.bufe_left_article h3 {
 		text-align: center;
-		
 	}
 	
 	.bufe_left_article ul li{
@@ -146,9 +137,9 @@ section h1 {
 }
 
 @media (max-width : 650px ){
-	
-	.bufe_left_article {
-		width: 90%;
+	section h1 {
+		font-size: 20px;
+		margin-top: 35px;
 	}
 	
 	.bufe_right_article {
@@ -159,11 +150,10 @@ section h1 {
 		margin-bottom: 200px;
 	}
 	
-	section h1 {
-		font-size: 20px;
-		margin-top: 35px;
+	.bufe_left_article {
+		width: 90%;
 	}
-	
+		
 	.bufe_left_article h3 {
 		text-align: center;
 		font-size: 18px;

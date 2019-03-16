@@ -209,14 +209,7 @@ nav ul li a, nav ul li a:visited {
   	text-decoration: none;
 }
 nav ul li a:hover, nav ul li a:visited:hover {
-  	background: rgba(65,150,90,1);
-background: -moz-linear-gradient(45deg, rgba(65,150,90,1) 0%, rgba(41,87,55,1) 50%, rgba(16,23,19,1) 100%);
-background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(65,150,90,1)), color-stop(50%, rgba(41,87,55,1)), color-stop(100%, rgba(16,23,19,1)));
-background: -webkit-linear-gradient(45deg, rgba(65,150,90,1) 0%, rgba(41,87,55,1) 50%, rgba(16,23,19,1) 100%);
-background: -o-linear-gradient(45deg, rgba(65,150,90,1) 0%, rgba(41,87,55,1) 50%, rgba(16,23,19,1) 100%);
-background: -ms-linear-gradient(45deg, rgba(65,150,90,1) 0%, rgba(41,87,55,1) 50%, rgba(16,23,19,1) 100%);
-background: linear-gradient(45deg, rgba(65,150,90,1) 0%, rgba(41,87,55,1) 50%, rgba(16,23,19,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41965a', endColorstr='#101713', GradientType=1 );
+  	background:rgba(44,103,61,1.00);
   	color: #ffffff;
 }
 nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {

@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-section h1{
+.cim{
 	margin-top: 2%;
 	color: #178616;
 	font-weight: bold;
@@ -13,42 +13,26 @@ section h1{
 
 .palyazatok_right_article{
 	margin-bottom: 200px;
-	margin-right: 6%;
+	margin-right: 5%;
 	margin-top: 4%;
 	background: #F0F0E1;
-	width: 50%;
+	width: 40%;
 	height: 100%;
 	float: left;
-
+	border: 1px solid #ddd;
 }
 
-.palyazatok_right_article h3 {
-	text-align: center;
-	line-height: 25px;
-	color: #717070;
-	font-size: 25px;
-	font-weight: bold;
-	margin-bottom: 5%;
-}
-
-.palyazatok_right_article a{
-	text-decoration: none;
-	color: #717070;
-}
-
-.palyazatok_right_article a:hover{
-	color: green;
-}
 
 .palyazatok_left_article {
-	width: 30%;
+	width: 40%;
 	margin-top: 4%;
-	margin-left: 4%;
+	margin-left: 6%;
 	margin-right: 8%;
-	padding-bottom: 20%;
+	margin-bottom: 200px;
 	float: left;
 	background: #F0F0E1;
-
+	height: auto;
+	border: 1px solid #ddd;
 }
 
 .zoom {
@@ -109,89 +93,61 @@ section h1{
 	text-align: justify;
 	line-height: 25px;
 	color: #717070;
-	font-size: 23px;
-	margin-bottom: 5%;
+	font-size: 25px;
+}
+
+
+@media (max-width : 650px ){
+	
+	.palyazatok_left_article {
+		width: 100%;
+		height: auto;
+		margin-bottom: 150px;
+	
+	}
+	
+	
+	.palyazatok_left_article h1{
+		font-size: 18px;
+		margin-top: 2%;
+	}
+	
+	
+	}
+	
+	.cim {
+		font-size: 20px;
+		margin-top: 35px;
+	}
+}
+
+
+
+@media (min-width: 651px) and (max-width: 768px) {
+	
+	.palyazatok_left_article h1{
+		font-size: 20px;
+		margin-top: 2%;
+	}
+	
+	
+	.palyazatok_left_article {
+		width: 100%;
+		height: auto;
+		margin-bottom: 100px;
+	}
+	
+	
+	.cim {
+		font-size: 22px;
+		margin-top: 25px;
+	}
 }
 
 @media (min-width: 769px) and (max-width: 1366px) {
-	section h1 {
-		margin-top: 35px;
-		font-size: 25px;
-	}
-	
-	.tab button {
-		font-size: 18px;
-	}
-	
-	.tabcontent p{
-		font-size: 20px;
-		text-align: justify;
-	}
-	
-	.palyazatok_right_article h3 {
-		font-size: 20px;
-	}
-	
-}
-
-@media (min-width: 651px) and (max-width: 768px) {
-	section h1 {
-		margin-top: 35px;
-		font-size: 22px;
-	}
-	
-	.tab button {
-		font-size: 16px;
-		padding: 16px 16px;
-	}
-	
-	
-	.tabcontent p{
-		font-size: 18px;
-		text-align: justify;
-	}
-	
-	.palyazatok_right_article h3 {
-		font-size: 20px;
-	}
-	
-}
-
-@media (max-width : 650px ){
-	section h1 {
-		font-size: 20px;
-		margin-top: 35px;
-	}
-	
-	.tab button {
-		font-size: 15px;
-		padding: 16px 16px;
-	}
-	
-	.tabcontent p{
-		font-size: 18px;
-		text-align: justify;
-	}
-	
-	.palyazatok_right_article{
-		margin-right: 1%;
-	}
-	
 	.palyazatok_left_article {
-		margin-bottom: 110%;
-		margin-left: 1%;
+		width: 100%;
+		height: auto;
+		margin-bottom: 100px;
 	}
-	
-		
-	.palyazatok_right_article h3 {
-		font-size: 18px;
-	}
-	
-	.tabcontent p{
-		font-size: 14px;
-		text-align: justify;
-	}
-	
 }
-
-

@@ -12,39 +12,20 @@
 	text-shadow: 2px 2px 5px #888888;
 }
 
+.jobs_left_article {
+	margin-top: 1%;
+	width: 50%;
+	float: left;
+	background: #F0F0E1
+}
+
+
 .jobs_left_article h1 {
 	margin-top: 2%;
 	color: #717070;
 	font-weight: bold;
 	text-align: center;
 	font-size: 25px
-}
-
-
-.jobs_right_article{
-	margin-top: 1%;
-	margin-bottom: 250px;
-	background: #F0F0E1;
-}
-
-.jobs_right_article h1 {
-	margin-top: 2%;
-	color: #717070;
-	font-weight: bold;
-	text-align: center;
-	font-size: 25px
-}
-.jobs_right_article {
-	width: 50%;
-	float: right;
-	text-align: center;
-}
-
-.jobs_left_article {
-	margin-top: 1%;
-	width: 50%;
-	float: left;
-	background: #F0F0E1
 }
 
 
@@ -57,7 +38,7 @@
 	padding-top: 2%;
 	color: #717070;
 	text-align: center;
-	font-size: 25px;
+	font-size: 22px;
 	width: 80%;
 	
 }
@@ -71,14 +52,38 @@
 	color: green;
 }
 
+.jobs_right_article {
+	width: 50%;
+	float: right;
+	text-align: center;
+	margin-top: 1%;
+	margin-bottom: 250px;
+	background: #F0F0E1;
+}
+
+
+.jobs_right_article h1 {
+	margin-top: 2%;
+	color: #717070;
+	font-weight: bold;
+	text-align: center;
+	font-size: 25px
+}
+
+.jobs_right_article .zoom:hover{
+	box-shadow: 5px 5px 10px #888888;
+	border: thin silver solid;
+}
+
 figure {
 	text-align: center;
 	font-style: italic;
 	text-indent: 0;
-	padding: 1em;
+	
+	padding: 2em;
 	color: #717070;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 22px;
 }
 
 .figure{
@@ -114,11 +119,6 @@ img.scaled {
 	
 }
 
-.jobs_right_article .zoom:hover{
-	box-shadow: 5px 5px 10px #888888;
-	border: thin silver solid;
-}
-
 @media (min-width: 769px) and (max-width: 1366px) {
 	.cim {
 		margin-top: 35px;
@@ -128,13 +128,10 @@ img.scaled {
 	.jobs_right_article .figure{
 		width: 60%;
 	}
+	
 }
 
 @media (min-width: 651px) and (max-width: 768px) {
-	.cim {
-		font-size: 22px;
-		margin-top: 35px;
-	}
 	
 	.jobs_left_article h1{
 		font-size: 20px;
@@ -163,11 +160,10 @@ img.scaled {
 		width: 60%;
 	}
 	
-	figure {
-		font-size: 20px;
-		
+	.cim {
+		font-size: 22px;
+		margin-top: 35px;
 	}
-	
 }
 
 @media (max-width : 650px ){
@@ -184,7 +180,7 @@ img.scaled {
 	
 	.jobs_left_article h1{
 		font-size: 18px;
-		margin-top: 5%;
+		margin-top: 2%;
 	}
 	.jobs_right_article h1{
 		font-size: 18px;
@@ -207,4 +203,8 @@ img.scaled {
 		margin-top: 35px;
 	}
 }
+
+
+
+
 

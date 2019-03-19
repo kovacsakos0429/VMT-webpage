@@ -14,9 +14,9 @@ footer {
 	 position: absolute;
 	 bottom: 0;
 	 width: 100%;
-	 height: 86px;	
+	 height: 90px;	
 	 box-shadow: 0 -2px 25px 4px black;
-	background: rgba(65,150,90,1);
+	 background: rgba(65,150,90,1);
 background: -moz-linear-gradient(top, rgba(65,150,90,1) 0%, rgba(41,87,55,1) 50%, rgba(16,23,19,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(65,150,90,1)), color-stop(50%, rgba(41,87,55,1)), color-stop(100%, rgba(16,23,19,1)));
 background: -webkit-linear-gradient(top, rgba(65,150,90,1) 0%, rgba(41,87,55,1) 50%, rgba(16,23,19,1) 100%);
@@ -617,7 +617,7 @@ nav ul li ul li a {
 	color: #717070;
 }
 
-.row .blockDisplay {
+.wrap {
 	display: block;
 }
 
@@ -844,12 +844,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41965a', end
 		padding-bottom: 0PX;
 		padding-left: 0px;
 	}
-	
+	.wrap {
+		margin-bottom: 200px;
+	} 
 	.news {
 		width: 100%;
 		margin-top: 15px;
 		margin-right: 0px;
-		margin-bottom: 15px;
+		margin-bottom: 25px;
 		margin-left: 0px;
 		padding-top: 0PX;
 		padding-right: 0PX;
@@ -900,18 +902,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41965a', end
 		width: 50%;
 		text-align: center;
 		line-height: 0;
-		padding-top: 7px;
+		padding-top: 5px;
+		font-size: 15px
 	}
 	
 	footer {
 		 position: absolute;
 		 bottom: 0;
 		 width: 100%;
-		 height: 140px;	
+		 height: 175px;	
 		 box-shadow: 0 -2px 25px 4px black;
 	}
 	.copyright{
-		font-size: 14px;
+		font-size: 12px;
 		padding-left: 1%;
 		padding-right: 1%;
 	}
@@ -984,6 +987,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41965a', end
 		padding-bottom: 0px;
 		padding-left: 0px;
 	}
+	.wrap {
+		margin-bottom: 100px;
+	} 
 	
 	.news {
 		width: 100%;
@@ -1120,6 +1126,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41965a', end
 		border-radius: 0 3px 3px 0;
 		cursor: pointer;
 	}	
+	
+	.wrap {
+		margin-bottom: 150px;
+	} 
 }
 
 @media (min-width: 1366px) {
@@ -1127,6 +1137,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41965a', end
 		display: none;
 	}
 	
+	.wrap {
+		margin-bottom: 120px;
+	} 
 	
 	.secondary_header2 .fa-sort-desc{
 	display: none;

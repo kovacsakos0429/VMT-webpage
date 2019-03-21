@@ -66,10 +66,7 @@
 }
 
 table{
-
 	font-size: 25px;
-	
-	
 }
 
 table, th, td {
@@ -85,7 +82,7 @@ th, td {
  table.center {
     margin-left:auto; 
     margin-right:auto;
-  }
+ }
 
 
 @media (min-width: 769px) and (max-width: 1366px) {

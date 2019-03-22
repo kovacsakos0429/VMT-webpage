@@ -55,6 +55,9 @@
 	float: left;
 }
 
+.row{
+	margin-bottom: 10%
+}
 
 .row h4{
 	font-size: 22px;
@@ -196,7 +199,7 @@
 	}
 	
 	.row{
-		margin-bottom: 100px;
+		margin-bottom: 200px;
 		width: 90%;
 		padding-left: 5%;
 	}

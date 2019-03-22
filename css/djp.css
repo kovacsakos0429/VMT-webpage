@@ -171,6 +171,10 @@
 		padding-right: 10%;
 		margin-bottom: 200px;
 	}
+	
+	.row ul li{
+		margin-left: 25%;
+	}
 
 }
 
@@ -208,6 +212,7 @@
 	.djp_left_article ul li{
 		text-align: center;
 		font-size: 18px;
+		
 	}
 	
 	.row{
@@ -216,6 +221,9 @@
 		padding-left: 8%;
 		padding-right: 8%;
 		margin-bottom: 200px;
+	}
+	.row ul li{
+		margin-left: 15%;
 	}
 	
 

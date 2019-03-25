@@ -57,6 +57,59 @@ img.scaled {
 	border: thin silver solid;
 }
 
+@media (min-width: 769px) and (max-width: 1366px) {
+	.nyilatkozatok_left_article h1{
+		font-size: 25px;
+		margin-top: 35px;
+	}
+	
+	.nyilatkozatok_left_article {
+		width: 100%;
+		height: auto;
+		
+	}
+	.figure{
+		width: 35%;
+		display: inline-block;
+		margin: 1em;
+	}
+	
+	.egyedi{
+		padding-top: 1.9em;
+	}
+	
+	figure{
+		width: 50%;
+	}
+	
+	.figure img{
+		width: 35px;
+	}
+}
+
+@media (min-width: 651px) and (max-width: 768px) {	
+	.nyilatkozatok_left_article {
+		width: 100%;
+		height: auto;
+		margin-bottom: 200px;
+	}
+	
+	.nyilatkozatok_left_article h1{
+		font-size: 22px;
+		margin-top: 35px;
+	}
+	
+	.figure{
+		width: 96%;
+		display: block;
+		margin: 1em;
+	}
+	
+	figure{
+		width: 40%;
+		font-size: 22px;
+	}
+}
 
 @media (max-width : 650px ){
 	.nyilatkozatok_left_article {
@@ -84,51 +137,5 @@ img.scaled {
 	}
 }
 
-@media (min-width: 651px) and (max-width: 768px) {	
-	.nyilatkozatok_left_article {
-		width: 100%;
-		height: auto;
-		margin-bottom: 200px;
-	}
-	
-	.nyilatkozatok_left_article h1{
-		font-size: 22px;
-		padding-top: 2%;
-	}
-	
-	.figure{
-		width: 96%;
-		display: block;
-		margin: 1em;
-	}
-	
-	figure{
-		width: 40%;
-		font-size: 22px;
-	}
-}
 
-@media (min-width: 769px) and (max-width: 1366px) {	
-	.nyilatkozatok_left_article {
-		width: 100%;
-		height: auto;
-		
-	}
-	.figure{
-		width: 35%;
-		display: inline-block;
-		margin: 1em;
-	}
-	
-	.egyedi{
-		padding-top: 1.9em;
-	}
-	
-	figure{
-		width: 50%;
-	}
-	
-	.figure img{
-		width: 35px;
-	}
-}
+

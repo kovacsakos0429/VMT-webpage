@@ -80,6 +80,7 @@
 		float: left;
 		margin-right: 5%;
 		padding-top: 2%;
+		
 	}
 	
 	.aktiv_left_article {
@@ -87,6 +88,7 @@
 		margin-top: 3%;
 		margin-left: 6%;
 		margin-right: 8%;
+		margin-bottom: 10%;
 	}
 	
 	.aktiv_left_article ul li{

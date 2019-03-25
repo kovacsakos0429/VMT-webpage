@@ -132,6 +132,9 @@ section h1{
 		font-size: 20px;
 	}
 	
+	.palyazatok_left_article{
+		margin-bottom: 5%;
+	}
 }
 
 @media (min-width: 651px) and (max-width: 768px) {

@@ -57,7 +57,7 @@
 	float: right;
 	text-align: center;
 	margin-top: 1%;
-	margin-bottom: 200px;
+	margin-bottom: 10%;
 	background: #F0F0E1;
 }
 
@@ -79,7 +79,6 @@ figure {
 	text-align: center;
 	font-style: italic;
 	text-indent: 0;
-	
 	padding: 2em;
 	color: #717070;
 	font-weight: bold;
@@ -129,6 +128,18 @@ img.scaled {
 		width: 60%;
 	}
 	
+	figure {
+		padding: 1em;
+	}
+	
+	figcaption{
+		padding-top: 0.5em;
+		text-align: center;
+	}
+	.jobs_right_article {
+		margin-bottom: 15%;
+	}
+
 }
 
 @media (min-width: 651px) and (max-width: 768px) {
@@ -180,6 +191,7 @@ img.scaled {
 	.jobs_right_article {
 		width: 100%;
 		height: auto;
+		margin-bottom: 95%;
 	}
 	
 	.jobs_left_article h1{
@@ -188,6 +200,7 @@ img.scaled {
 	}
 	.jobs_right_article h1{
 		font-size: 18px;
+		margin-bottom: 2%
 	}
 	
 	.jobs_left_article ul li{
@@ -205,6 +218,15 @@ img.scaled {
 	.cim {
 		font-size: 20px;
 		margin-top: 35px;
+	}
+	
+	figure {
+		padding: 0.5em;
+	}
+	
+	figcaption{
+		padding-top: 0.5em;
+		text-align: center;
 	}
 }
 

@@ -12,7 +12,6 @@ section h1{
 }
 
 .palyazatok_right_article{
-	margin-bottom: 200px;
 	margin-right: 6%;
 	margin-top: 4%;
 	background: #F0F0E1;
@@ -181,7 +180,7 @@ section h1{
 	}
 	
 	.palyazatok_left_article {
-		margin-bottom: 110%;
+		margin-bottom: 200%;
 		margin-left: 1%;
 	}
 	

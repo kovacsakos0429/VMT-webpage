@@ -134,11 +134,6 @@
 		height: auto;
 	}
 	
-	.gondozo_left_article h3 {
-		text-align: center;
-		
-	}
-	
 	.gondozo_left_article p{
 		font-size: 20px;
 		text-align: justify;
@@ -153,6 +148,9 @@
 		width: 90%;
 		margin-left: 5%;
 		padding-top: 5%
+	}
+	.row h4{
+		font-size: 20px;
 	}
 	
 	.row h3{
@@ -192,9 +190,9 @@
 		font-size: 18px;
 	}
 	
-	.gondozo p {
+	.gondozo_left_article p {
 		font-size: 18px;
-		margin-right: 1%;
+		margin-right: 2%;
 		text-align: justify;
 	}
 	
@@ -206,6 +204,10 @@
 	
 	.row p{
 		font-size: 18px;
+	}
+	
+	.row h4{
+		font-size: 20px
 	}
 	
 	.row h3{

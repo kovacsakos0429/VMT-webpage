@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+
+.szakambulancia h1{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	color: #178616;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+	text-shadow: 2px 2px 5px #888888;
+}
+
+
+.szakambulancia_right_article{
+	margin-bottom: 150px;
+	margin-right: 5%;
+	background: #F0F0E1;
+	height: auto;
+	width: 40%;
+	float: left;
+}
+
+
+.szakambulancia_left_article {
+	width: 40%;
+	margin-left: 6%;
+	margin-right: 8%;
+	
+	float: left;
+	background: #F0F0E1;
+	height: auto;
+}
+
+.szakambulancia_left_article p {
+	text-align: justify;
+	line-height: 25px;
+	color: #717070;
+	font-size: 25px;
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
+.szakambulancia_left_article ul{
+	padding: 10px;
+	list-style-type: none;
+}
+
+.szakambulancia_left_article ul li{
+	color: #717070;
+	text-align: center;
+	font-size: 25px;
+	width: 100%;
+	padding-bottom: 1%
+}
+
+
+.szakambulancia_left_article h3 {
+	text-align: center;
+	line-height: 25px;
+	color: #717070;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 2%
+}
+
+table{
+	font-size: 25px;
+}
+
+table, th, td {
+	color: #717070;
+	
+}
+th, td {
+  	padding: 5px;
+  	text-align: left;
+	font-weight: normal;
+}
+
+ table.center {
+    margin-left:auto; 
+    margin-right:auto;
+ }
+
+
+@media (min-width: 769px) and (max-width: 1366px) {
+	.szakambulancia h1 {
+		margin-top: 35px;
+		font-size: 25px;
+	}
+	
+	.szakambulancia_right_article {
+		width: 40%;
+		float: left;
+		margin-right: 5%;
+		padding-top: 2%;
+	}
+	
+	.szakambulancia_left_article {
+		width: 40%;
+		margin-top: 1%;
+		margin-left: 6%;
+		margin-right: 8%;
+	}
+	
+	.szakambulancia_left_article ul li{
+		text-align: center;
+		font-size: 20px;
+	}
+	
+	.szakambulancia_left_article h3 {
+		font-size: 20px;
+	}
+	
+	table{
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 651px) and (max-width: 768px) {
+	.szakambulancia h1 {
+		margin-top: 35px;
+		font-size: 22px;
+	}
+	
+	.szakambulancia_left_article {
+		width: 90%;
+		height: auto;
+	}
+	
+	.szakambulancia_right_article {
+		width: 80%;
+		height: auto;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	
+	.szakambulancia_left_article h3 {
+		text-align: center;
+	}
+	
+	.szakambulancia ul li{
+		text-align: center;
+		font-size: 20px
+	}
+	
+	table{
+		font-size: 20px;
+	}
+}
+
+@media (max-width : 650px ){
+	.szakambulancia h1 {
+		font-size: 20px;
+		margin-top: 35px;
+	}
+	
+	.szakambulancia_left_article {
+		width: 90%;
+	}
+	
+	.szakambulancia_right_article {
+		width: 84%;
+		height: auto;
+		padding-left: 8%;
+		padding-right: 8%;
+		margin-bottom: 220px;
+	}
+	
+	
+	.szakambulancia_left_article h3 {
+		text-align: center;
+		font-size: 18px;
+	}
+	
+	.szakambulancia_left_article ul li{
+		text-align: center;
+		font-size: 18px;
+	}
+	
+	table{
+		font-size: 18px;
+	}
+}

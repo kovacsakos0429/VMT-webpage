@@ -15,7 +15,7 @@ section h1 {
 .impresszum_left_article {
 	width: 100%;
 	float: left;
-	padding-bottom: 150px;
+	padding-bottom: 15%;
 	height: auto;
 }
 
@@ -74,7 +74,7 @@ section h1 {
 	}
 	
 	.impresszum_left_article {
-		margin-bottom: 110px;
+		margin-bottom: 50%;
 	
 	}
 

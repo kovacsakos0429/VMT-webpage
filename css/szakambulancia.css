@@ -14,7 +14,7 @@
 
 
 .szakambulancia_right_article{
-	margin-bottom: 15%;
+	margin-bottom: 10%;
 	margin-right: 5%;
 	background: #F0F0E1;
 	height: auto;
@@ -89,6 +89,7 @@ th, td {
 	.szakambulancia h1 {
 		margin-top: 35px;
 		font-size: 25px;
+		
 	}
 	
 	.szakambulancia_right_article {
@@ -96,6 +97,7 @@ th, td {
 		float: left;
 		margin-right: 5%;
 		padding-top: 2%;
+		margin-bottom: 15%;
 	}
 	
 	.szakambulancia_left_article {

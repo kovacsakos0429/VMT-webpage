@@ -14,7 +14,7 @@
 
 
 .vendeghaz_right_article{
-	margin-bottom: 15%;
+	margin-bottom: 10%;
 	margin-right: 5%;
 	background: #F0F0E1;
 	height: auto;
@@ -74,6 +74,7 @@
 		float: left;
 		margin-right: 5%;
 		padding-top: 2%;
+		margin-bottom: 15%;
 	}
 	
 	.vendeghaz_left_article {

@@ -243,14 +243,16 @@ nav ul li ul li a {
   	right: 0;
   	background: #262626;
   	height: 50px;
+	margin-left:auto; 
+    margin-right:auto;
 }
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1279px) {
   .nav-mobile {
 	  display: block;
-	  width: 30%;
+	  width: 70px;
   }
 
   nav {
@@ -276,7 +278,7 @@ nav ul li ul li a {
     position: static;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1279px) {
   .nav-list {
     display: block !important;
   }

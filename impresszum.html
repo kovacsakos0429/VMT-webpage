@@ -164,18 +164,7 @@
 	
 		var navbar = document.getElementById("menu");
 		var sticky = navbar.offsetTop;
-		function myFunction() {
-			"use strict";
-			if (window.pageYOffset >= sticky) {
-				navbar.classList.add("sticky");
-			} else {
-				navbar.classList.remove("sticky");
-			}
-            if($(window).width() < 650) {
-                  navbar.classList.remove("sticky");
-            }
-			
-		}
+		
 	
 		(function($) { // Begin jQuery
 			"use strict";
@@ -202,7 +191,7 @@
 		  }); // end DOM ready
 })(jQuery); // end jQuery
 
-</script>	
+</script>		
 <script>
 	//Slider
 	var slideIndex = 1;

@@ -297,8 +297,7 @@
   </footer>
  </div>
 <script>
-	//navbar
-	
+		//navbar
 	window.onscroll = function() {
 		"use strict";
 		myFunction();
@@ -313,13 +312,14 @@
 			} else {
 				navbar.classList.remove("sticky");
 			}
-            if($(window).width() < 650) {
+            if($(window).width() < 1280) {
                   navbar.classList.remove("sticky");
             }
 			
 		}
 	
 		(function($) { // Begin jQuery
+			"use strict";
 		  $(function() { // DOM ready
 			// If a link has a dropdown, add sub menu toggle.
 			$('nav ul li a:not(:only-child)').click(function(e) {
@@ -342,8 +342,8 @@
 			});
 		  }); // end DOM ready
 })(jQuery); // end jQuery
-	
-</script>
+
+</script>	
 <script>
 	//Slider
 	var slideIndex = 1;

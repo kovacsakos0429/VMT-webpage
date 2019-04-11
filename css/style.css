@@ -126,7 +126,9 @@ ul.tabs li a{
 	margin-top: 15px;
 	margin-bottom: 0px;
 	color: #5E5D5E;
-	font-size: 25px;
+	font-size: 20px;
+	font-weight: normal;
+	
 }
 
 .sections ul{
@@ -618,6 +620,7 @@ nav ul li ul li a {
 
 .wrap {
 	display: block;
+	padding-bottom: 2%;
 }
 
 
@@ -852,7 +855,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41965a', end
 		padding-left: 0px;
 	}
 	.wrap {
-		margin-bottom: 200px;
+		margin-bottom: 50%;
 	} 
 	.news {
 		width: 100%;
@@ -917,7 +920,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41965a', end
 		 position: absolute;
 		 bottom: 0;
 		 width: 100%;
-		 height: 160px;	
+		 height: 130px;	
 		 box-shadow: 0 -2px 25px 4px black;
 	}
 	.copyright{
@@ -995,7 +998,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41965a', end
 		padding-left: 0px;
 	}
 	.wrap {
-		margin-bottom: 100px;
+		padding-bottom: 20%;
 	} 
 	
 	.news {
@@ -1135,7 +1138,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41965a', end
 	}	
 	
 	.wrap {
-		margin-bottom: 150px;
+		margin-bottom: 20%;
 	} 
 }
 

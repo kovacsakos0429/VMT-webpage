@@ -56,7 +56,7 @@ section h1 {
 @media (min-width: 651px) and (max-width: 768px) {
 	.impresszum_left_article {
 		width: 100%;
-		margin-bottom: 5%;
+		margin-bottom: 15%;
 		height: auto;
 	}
 

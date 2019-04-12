@@ -167,8 +167,10 @@ th, td {
 	
 	table{
 		font-size: 20px;
-		width: 90%;
+		width: 50%;
 	}
+	
+	
 	
 	.contact h1 {
 		font-size: 22px
@@ -199,6 +201,7 @@ th, td {
 	
 	table{
 		font-size: 18px;
+		width: 50%;
 	}
 	
 	.vp{

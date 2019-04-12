@@ -22,9 +22,7 @@ section h1 {
 .joginyilatkozat_left_article p {
 	padding-right: 10%;
 	text-align: justify;
-	line-height: 30px;
 	margin-top: 40px;
-	margin-bottom: 15px;
 	padding-left: 10%;
 	color: #717070;
 	font-size: 25px;
@@ -43,14 +41,14 @@ section h1 {
 	.joginyilatkozat_left_article {
 		width: 100%;
 		float: left;
-		padding-bottom: 250px;
+		margin-bottom: 15%;
 	}
 }
 
 @media (min-width: 651px) and (max-width: 768px) {
 	.joginyilatkozat_left_article {
 		width: 100%;
-		margin-bottom: 50px;
+		margin-bottom: 20%;
 		height: auto;
 	}
 
@@ -77,13 +75,13 @@ section h1 {
 	
 	.joginyilatkozat_left_article p {
 		font-size: 18px;
-		padding-left: 10%;
-		padding-right: 10%;
+		padding-left: 3%;
+		padding-right: 3%;
 	}
 	.joginyilatkozat_left_article {
 		width: 100%;
 		float: left;
-		padding-bottom: 190px;
+		padding-bottom: 150px;
 	}
 }
 

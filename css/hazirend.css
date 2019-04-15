@@ -120,25 +120,25 @@
 		margin-top: 40px;
 		font-weight: bold;
 		font-size: 17px;
-		padding-left: 2%;
+		padding-left: 4%;
 		color:#424242
 	}
 	
 	.hazirend_left_article h3 {
 		font-size: 16px;
-		padding-left: 2%;
+		padding-left: 4%;
 	}
 	
 	.hazirend_left_article p {
 		font-size: 16px;
-		padding-left: 2%;
-		padding-right: 2%;
+		padding-left: 4%;
+		padding-right: 4%;
 	}
 	
 	.hazirend_left_article table{
 		font-size: 16px;
-		padding-left: 2%;
-		padding-right: 2%;
+		padding-left: 4%;
+		padding-right: 4%;
 	}
 
 }

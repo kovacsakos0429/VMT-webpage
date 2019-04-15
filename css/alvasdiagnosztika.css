@@ -197,15 +197,17 @@
 	}
 	
 	.alvasdiagnosztika_right_article {
-		width: 84%;
+		width: 92%;
 		height: auto;
-		padding-left: 8%;
-		padding-right: 8%;
+		padding-left: 4%;
+		padding-right: 4%;
 		margin-bottom: 5%;
 	}
 	
 	.alvasdiagnosztika_left_article {
-		width: 90%;
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
 	}
 	
 	.alvasdiagnosztika_left_article h3 {
@@ -216,14 +218,14 @@
 	
 	.alvasdiagnosztika_left_article p {
 		font-size: 18px;
-		margin-right: 2%;
 		text-align: justify;
 	}
 	
 	
 	.row{
-		width: 90%;
-		padding-left: 5%;
+		width: 94%;
+		padding-left: 3%;
+		padding-right: 3%;
 	}
 	
 	.row2{
@@ -243,8 +245,8 @@
 		font-size: 19px
 	}
 	.row li{
-		padding-right: 1%;
-		padding-left: 1%;
+		padding-right: 4%;
+		padding-left: 4%;
 		font-size: 18px;
 	}
 }

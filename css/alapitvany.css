@@ -78,13 +78,12 @@ section h1 {
 
 	.alapitvany_left_article p {
 		font-size: 18px;
-		padding-left: 3%;
-		padding-right: 3%;
+		padding-left: 4%;
+		padding-right: 4%;
 	}
 	
 	.alapitvany_left_article{
 		width: 100%;
-		float: left;
 		padding-bottom: 150px;
 	}
 

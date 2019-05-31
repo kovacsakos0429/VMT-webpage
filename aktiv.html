@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="aktív, aktiv, aktiv fekvőbeteg ellátás, aktiv fekvobeteg ellatas" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/aktiv.css" rel="stylesheet" type="text/css">
 <link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
@@ -58,7 +58,7 @@
 				<li><a href="szakambulancia">SZAKAMBULANCIA</a></li>
 				<li><a href="#">ULTRAHANG</a></li>
 				<li><a href="#">EKG</a></li>
-				<li><a href="#">CITOLÓGIA</a></li>
+				<li><a href="citologia">CITOLÓGIA</a></li>
 				<li><a href="#">LÉGZÉSPATOLÓGIA</a></li>
 				<li><a href="#">RADIOLÓGIA</a></li>
 				<li><a href="#">BRONCHOLÓGIA</a></li>
@@ -100,6 +100,7 @@
 				<li><a href="betegjog">BETEGEK JOGAI ÉS KÖTELEZETTSÉGEI</a></li>
         		<li><a href="documents/betegjogi_kepviselo.pdf" target="new">BETEGJOGI KÉPVISELŐ</a></li>
 				<li><a href="beleegyezonyilatkozatok">BELEEGYEZŐ NYILATKOZATOK</a></li>
+				<li><a href="eletmodvaltovideok.html">ÉLETMÓDVÁLTÓ VIDEÓK</a></li>
 			  </ul>
         </li>
          <li><a href="allasok">ÁLLÁSAJÁNLATOK</a></li>
@@ -111,25 +112,25 @@
   </header>
   <section class="aktiv">
   <h1 class="slideDown">I. Pulmonológia (Aktív)</h1>
-	<article class="aktiv_left_article fade-in">
-	 	<h3 class="fade-in two">Orvos kollégák:</h3>
-	 	<ul class="fade-in two">
+	<article  data-aos="fade-right" data-aos-duration="1000" class="aktiv_left_article">
+	 	<h3>Orvos kollégák:</h3>
+	 	<ul>
 			<li>
 				dr. Vitus Ernő
 			</li>	
 	  	</ul>
-      	<h3 class="fade-in three">Orvosírnokok:</h3>
-		<ul class="fade-in three">
+      	<h3>Orvosírnokok:</h3>
+		<ul>
 			  <li>Vargáné Kovács Lívia</li>
 			  <li>Németh Evelin</li>
 	  </ul>
-    <h3 class="fade-in four">Osztályos főnővér:</h3>
-    <ul class="fade-in four">
+    <h3>Osztályos főnővér:</h3>
+    <ul>
      	<li>Gazsóné Palkovics Erika</li>
     </ul>	
-	<h3 class="fade-in four"><a href="mellekek">Mellékek</a></h3>
+	<h3><a href="mellekek">Mellékek</a></h3>
 	</article>
-    <aside class="aktiv_right_article fade-in one">
+    <aside  data-aos="fade-left" data-aos-duration="1000" class="aktiv_right_article">
     	<!-- Slider-->
    	  <div class="slideshow-container">
     		<div class="slides fade"><a href="./images/aktiv/1.jpg" data-lightbox="mygallery"><img src="./images/aktiv/1.jpg" alt=""/></a></div>
@@ -257,9 +258,9 @@
 		setTimeout(carousel, 5000); // Change image every 2 seconds
 	}
 	
-	
-	
-	
+</script>
+<script>
+  AOS.init();
 </script>
 </body>
 </html>

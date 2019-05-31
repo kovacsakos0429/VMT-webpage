@@ -6,14 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="állásajánlatok, allasajanlatok, állások, allasok, veszprém megyei tüdőgyógyintézet állásajánlatok" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="css/jobs.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
-<link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
-<script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
+
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -58,7 +57,7 @@
 				<li><a href="szakambulancia">SZAKAMBULANCIA</a></li>
 				<li><a href="#">ULTRAHANG</a></li>
 				<li><a href="#">EKG</a></li>
-				<li><a href="#">CITOLÓGIA</a></li>
+				<li><a href="citologia">CITOLÓGIA</a></li>
 				<li><a href="#">LÉGZÉSPATOLÓGIA</a></li>
 				<li><a href="#">RADIOLÓGIA</a></li>
 				<li><a href="#">BRONCHOLÓGIA</a></li>
@@ -100,6 +99,7 @@
 				<li><a href="betegjog">BETEGEK JOGAI ÉS KÖTELEZETTSÉGEI</a></li>
         		<li><a href="documents/betegjogi_kepviselo.pdf" target="new">BETEGJOGI KÉPVISELŐ</a></li>
 				<li><a href="beleegyezonyilatkozatok">BELEEGYEZŐ NYILATKOZATOK</a></li>
+				<li><a href="eletmodvaltovideok.html">ÉLETMÓDVÁLTÓ VIDEÓK</a></li>
 			  </ul>
         </li>
          <li class="active"><a href="allasok">ÁLLÁSAJÁNLATOK</a></li>
@@ -111,34 +111,34 @@
   </header>
 	<section class="allasok">
   		<h1 class="slideDown cim">ÁLLÁSAJÁNLATOK</h1>
-	<article class="jobs_left_article">
-		<h1 class="fade-in one">Jelenleg nyitott pozícióink:</h1>
+	<article  data-aos="fade-right" data-aos-duration="1000"  class="jobs_left_article">
+		<h1>Jelenleg nyitott pozícióink:</h1>
 		<ul>
-			<li class="zoom fade-in one">
+			<li class="zoom">
 				<a href="https://kozigallas.gov.hu/pages/jobviewer.aspx?ID=zfca2p1ca1" target="new">Anyaggazdálkodási és logisztikai osztályvezető</a>
 			</li>
-			<li class="zoom fade-in two">
+			<li class="zoom">
 				<a href="https://kozigallas.gov.hu/pages/jobviewer.aspx?ID=zfxi3i15j3" target="new">Szakács</a>
 			</li>
-			<li class="zoom fade-in three"> 
+			<li class="zoom"> 
 				<a href="https://kozigallas.gov.hu/pages/jobviewer.aspx?ID=zfyj9eavd7" target="new">Általános orvos</a>
 			</li>
-			<li class="zoom fade-in four">
+			<li class="zoom">
 				<a href="https://kozigallas.gov.hu/pages/jobviewer.aspx?ID=zfyj1rfnb1" target="new">Tüdőgyógyász szakorvos</a>
 			</li>
-			<li class="zoom fade-in five">
+			<li class="zoom">
 				<a href="https://kozigallas.gov.hu/pages/jobviewer.aspx?ID=zfnb9z1ni5" target="new">Könyvelő</a>
 			</li>
-			<li class="zoom fade-in six">
+			<li class="zoom">
 				<a href="https://kozigallas.gov.hu/pages/jobviewer.aspx?ID=zfnb2eg5b1" target="new">Konyhai kisegítő</a>
 			</li>
 		</ul>
 	</article>
-    <aside class="jobs_right_article">
-			<h1 class="fade-in one">Szükséges dokumentumok:</h1>
+    <aside  data-aos="fade-left" data-aos-duration="1000"  class="jobs_right_article">
+			<h1>Szükséges dokumentumok:</h1>
 			<div class="figure">
 				<a href="./documents/allasok/nyilatkozat.pdf" target="new">
-					<figure class="zoom fade-in one">
+					<figure class="zoom">
 							<img src="images/pdf.png" width="40" alt="">
 							<figcaption>
 								Nyilatkozat álláspályázathoz
@@ -204,117 +204,8 @@
 })(jQuery); // end jQuery
 
 </script>	
-
 <script>
-	//Slider
-	var slideIndex = 1;
-	showImage(slideIndex);
-	carousel();
-	function plusIndex(n){
-		"use strict";
-		showImage(slideIndex += n);
-	}
-	
-	function currentSlide(n){
-		"use strict";
-		showImage(slideIndex = n);
-	}
-			
-	function showImage(n){
-		"use strict";
-		var slide = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		if(n>slide.length){
-			slideIndex = 1;
-		}
-		if(n<1){
-			slideIndex = slide.length;
-		}
-		for(var i = 0; i < slide.length; i++){
-			slide[i].style.display = "none";
-		}
-		slide[slideIndex-1].style.display = "block";
-		for(i=0; i < dots.length; i++){
-			dots[i].className = dots[i].className.replace(" active","");
-			}
-		dots[slideIndex-1].className += " active";
-	}
-	
-	function carousel() {
-		"use strict";
-		var i;
-		var x = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-			dots[i].className = dots[i].className.replace(" active","");
-		}
-		dots[slideIndex-1].className += " active";
-		slideIndex++;
-		if (slideIndex > x.length) {
-			slideIndex = 1;
-		}    
-		x[slideIndex-1].style.display = "block";  
-		setTimeout(carousel, 5000); // Change image every 2 seconds
-	}
-	
-</script>
-<script>
-	//Slider
-	var slideIndex = 1;
-	showImage(slideIndex);
-	carousel();
-	function plusIndex(n){
-		"use strict";
-		showImage(slideIndex += n);
-	}
-	
-	function currentSlide(n){
-		"use strict";
-		showImage(slideIndex = n);
-	}
-			
-	function showImage(n){
-		"use strict";
-		var slide = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		if(n>slide.length){
-			slideIndex = 1;
-		}
-		if(n<1){
-			slideIndex = slide.length;
-		}
-		for(var i = 0; i < slide.length; i++){
-			slide[i].style.display = "none";
-		}
-		slide[slideIndex-1].style.display = "block";
-		for(i=0; i < dots.length; i++){
-			dots[i].className = dots[i].className.replace(" active","");
-			}
-		dots[slideIndex-1].className += " active";
-	}
-	
-	function carousel() {
-		"use strict";
-		var i;
-		var x = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-			dots[i].className = dots[i].className.replace(" active","");
-		}
-		dots[slideIndex-1].className += " active";
-		slideIndex++;
-		if (slideIndex > x.length) {
-			slideIndex = 1;
-		}    
-		x[slideIndex-1].style.display = "block";  
-		setTimeout(carousel, 5000); // Change image every 2 seconds
-	}
-	
-	
-	
-	
+  AOS.init();
 </script>
 </body>
 </html>

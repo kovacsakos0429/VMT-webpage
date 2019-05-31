@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+
+.citologia h1{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	color: #178616;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+	text-shadow: 2px 2px 5px #888888;
+}
+
+.citologia_right_article{
+	margin-bottom: 7%;
+	margin-right: 5%;
+	background: #F0F0E1;
+	height: auto;
+	width: 40%;
+	float: left;
+}
+
+.citologia_left_article {
+	width: 40%;
+	margin-top: 2%;
+	margin-left: 6%;
+	margin-right: 8%;
+	margin-bottom: 10%;
+	float: left;
+	background: #F0F0E1;
+	height: auto;
+}
+
+
+.citologia_left_article ul{
+	padding: 1px;
+	list-style-type: none;
+}
+
+.citologia_left_article ul li{
+	color: #717070;
+	text-align: center;
+	font-size: 25px;
+	width: 100%;
+}
+
+.citologia_left_article ul a{
+	text-decoration: none;
+	color: #717070;
+}
+
+.citologia_left_article ul a:hover{
+	color: green;
+}
+
+.citologia_left_article h3 {
+	text-align: center;
+	line-height: 25px;
+	color: #717070;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+@media (min-width: 769px) and (max-width: 1366px) {
+	.citologia h1 {
+		margin-top: 35px;
+		font-size: 25px;
+	}
+	
+	.citologia_right_article {
+		width: 40%;
+		float: left;
+		margin-right: 5%;
+		padding-top: 2%;
+	}
+	
+	.citologia_left_article {
+		width: 40%;
+		margin-top: 3%;
+		margin-left: 6%;
+		margin-right: 8%;
+		margin-bottom: 15%;
+	}
+	
+	.citologia_left_article ul li{
+		text-align: center;
+		font-size: 20px;
+	}
+	
+	
+	.citologia_left_article h3 {
+		font-size: 20px;
+	}
+	
+}
+
+@media (min-width: 651px) and (max-width: 768px) {
+	.citologia h1 {
+		font-size: 22px;
+		margin-top: 35px;
+	}
+	
+	.citologia_right_article {
+		width: 80%;
+		height: auto;
+		padding-left: 10%;
+		padding-right: 10%;
+		margin-bottom: 20%;
+		
+	}
+	
+	.citologia_left_article {
+		width: 90%;
+		height: auto;
+	}
+	
+	.citologia_left_article h3 {
+		text-align: center;
+		
+	}
+	
+	.citologia_left_article ul li{
+		text-align: center;
+		font-size: 20px
+	}
+	
+}
+
+@media (max-width : 650px ){
+	.citologia h1 {
+		font-size: 20px;
+		margin-top: 35px;
+	}
+	
+	.citologia_right_article {
+		width: 92%;
+		height: auto;
+		padding-left: 4%;
+		padding-right: 4%;
+		margin-bottom: 200px;
+	}
+	
+	.citologia_left_article {
+		width: 90%;
+	}
+	
+	.citologia_left_article h3 {
+		text-align: center;
+		font-size: 18px;
+	}
+	
+	
+	.citologia_left_article ul li{
+		text-align: center;
+		font-size: 18px;
+	}
+
+}
+
+

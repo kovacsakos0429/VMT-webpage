@@ -6,15 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="elérhetőségek, telefonszám, e-mail cím, email cím, fax" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon"/>
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/contact.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
-<link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
-<script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -59,7 +56,7 @@
 				<li><a href="szakambulancia">SZAKAMBULANCIA</a></li>
 				<li><a href="#">ULTRAHANG</a></li>
 				<li><a href="#">EKG</a></li>
-				<li><a href="#">CITOLÓGIA</a></li>
+				<li><a href="citologia">CITOLÓGIA</a></li>
 				<li><a href="#">LÉGZÉSPATOLÓGIA</a></li>
 				<li><a href="#">RADIOLÓGIA</a></li>
 				<li><a href="#">BRONCHOLÓGIA</a></li>
@@ -101,6 +98,7 @@
 				<li><a href="betegjog">BETEGEK JOGAI ÉS KÖTELEZETTSÉGEI</a></li>
         		<li><a href="documents/betegjogi_kepviselo.pdf" target="new">BETEGJOGI KÉPVISELŐ</a></li>
 				<li><a href="beleegyezonyilatkozatok">BELEEGYEZŐ NYILATKOZATOK</a></li>
+				<li><a href="eletmodvaltovideok.html">ÉLETMÓDVÁLTÓ VIDEÓK</a></li>
 			  </ul>
         </li>
          <li><a href="allasok">ÁLLÁSAJÁNLATOK</a></li>
@@ -112,7 +110,7 @@
   </header>
 <section class="contact">
   <h1 class="slideDown cim">Elérhetőségek</h1>
-	<article class="contact_left_article fade-in one">
+	<article class="contact_left_article fade-in">
       <h1>Tüdőgyógyintézet:</h1>
  	  <table class="center" >
 		  <tr>
@@ -137,18 +135,18 @@
 		  </tr>
 		</table>
     </article>
-    <aside class="contact_right_article fade-in two">
+    <aside class="contact_right_article fade-in">
     	<!-- Slider-->
    	  <div class="contact_slideshow-container">
     		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10840.73229897376!2d17.61152553235312!3d47.21300003422895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47697a5cb502ecbd%3A0xfda0faf548c9c064!2zRmFya2FzZ3llcMWxLCBUw7xkxZFnecOzZ3lpbnTDqXpldCwgODU4Mg!5e0!3m2!1shu!2shu!4v1543600636310" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
    	  </div>
     </aside>
-	<article class="contact_left_article fade-in one">
+	<article class="contact_left_article fade-in">
      <h1 id="gondozo">Tüdőgondozó:</h1>
 		 <table class="center">
 		  <tr>
 			<th>Cím:</th>
-			<td><span>8582 Veszprém, Óvoda utca 2.</span></td>
+			<td><span>8200 Veszprém, Óvoda utca 2.</span></td>
 		  </tr>
 		  <tr>
 			<th>E-mail:</th>
@@ -172,7 +170,7 @@
 		  </tr>
 		</table>	
     </article>
-    <aside class="contact_right_article fade-in two vp">
+    <aside class="contact_right_article vp fade-in">
     	<!-- Slider-->
    	  <div class="contact_slideshow-container">
     			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2716.3804969585362!2d17.89934991516887!3d47.09161097915385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47699a4287d06249%3A0x653b6b95b129ff99!2zVMO8ZMWRZ29uZG96w7MgVmVzenByw6lt!5e0!3m2!1shu!2shu!4v1543778587048" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -247,62 +245,9 @@
 })(jQuery); // end jQuery
 
 </script>	
+
 <script>
-	//Slider
-	var slideIndex = 1;
-	showImage(slideIndex);
-	carousel();
-	function plusIndex(n){
-		"use strict";
-		showImage(slideIndex += n);
-	}
-	
-	function currentSlide(n){
-		"use strict";
-		showImage(slideIndex = n);
-	}
-			
-	function showImage(n){
-		"use strict";
-		var slide = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		if(n>slide.length){
-			slideIndex = 1;
-		}
-		if(n<1){
-			slideIndex = slide.length;
-		}
-		for(var i = 0; i < slide.length; i++){
-			slide[i].style.display = "none";
-		}
-		slide[slideIndex-1].style.display = "block";
-		for(i=0; i < dots.length; i++){
-			dots[i].className = dots[i].className.replace(" active","");
-			}
-		dots[slideIndex-1].className += " active";
-	}
-	
-	function carousel() {
-		"use strict";
-		var i;
-		var x = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-			dots[i].className = dots[i].className.replace(" active","");
-		}
-		dots[slideIndex-1].className += " active";
-		slideIndex++;
-		if (slideIndex > x.length) {
-			slideIndex = 1;
-		}    
-		x[slideIndex-1].style.display = "block";  
-		setTimeout(carousel, 5000); // Change image every 2 seconds
-	}
-	
-	
-	
-	
+  AOS.init();
 </script>
 </body>
 </html>

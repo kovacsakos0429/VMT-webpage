@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="betegfelvétel, betegfelvetel, nyitvatartás" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">	
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/betegfelvetel.css" rel="stylesheet" type="text/css">
 <link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
@@ -58,7 +58,7 @@
 				<li><a href="szakambulancia">SZAKAMBULANCIA</a></li>
 				<li><a href="#">ULTRAHANG</a></li>
 				<li><a href="#">EKG</a></li>
-				<li><a href="#">CITOLÓGIA</a></li>
+				<li><a href="citologia">CITOLÓGIA</a></li>
 				<li><a href="#">LÉGZÉSPATOLÓGIA</a></li>
 				<li><a href="#">RADIOLÓGIA</a></li>
 				<li><a href="#">BRONCHOLÓGIA</a></li>
@@ -100,6 +100,7 @@
 				<li><a href="betegjog">BETEGEK JOGAI ÉS KÖTELEZETTSÉGEI</a></li>
         		<li><a href="documents/betegjogi_kepviselo.pdf" target="new">BETEGJOGI KÉPVISELŐ</a></li>
 				<li><a href="beleegyezonyilatkozatok">BELEEGYEZŐ NYILATKOZATOK</a></li>
+				<li><a href="eletmodvaltovideok.html">ÉLETMÓDVÁLTÓ VIDEÓK</a></li>
 			  </ul>
         </li>
          <li><a href="allasok">ÁLLÁSAJÁNLATOK</a></li>
@@ -111,26 +112,25 @@
   </header>
   <section class="betegfelvetel">
   <h1 class="slideDown">Betegfelvétel</h1>
-	<article class="betegfelvetel_left_article fade-in">
-	 <h3 class="fade-in two">Nyitvatartás:</h3>
-	  <ul class="fade-in two">
+	<article  data-aos="fade-right" data-aos-duration="1000"  class="betegfelvetel_left_article">
+	 <h3>Nyitvatartás:</h3>
+	  <ul>
 		 <li>
 				<span>Hétfő - Péntek:</span> 07:30 - 14:15
 			</li>
 	  </ul>
-      <h3 class="fade-in three">Mellék:</h3>
-	  <ul class="fade-in three">
+      <h3>Mellék:</h3>
+	  <ul>
 		  <li>129</li>
 	  </ul>
-     <h3 class="fade-in four">Adminisztrátorok:</h3>
-     <ul class="fade-in four">
+     <h3>Adminisztrátorok:</h3>
+     <ul>
      	 <li>Bozsóné B. Andrea</li>
          <li>Schliszné Jánosi Judit</li>
      </ul>
 		
-	
 	</article>
-     <aside class="betegfelvetel_right_article fade-in">
+     <aside data-aos="fade-left" data-aos-duration="1000"  class="betegfelvetel_right_article">
     	<!-- Slider-->
    	  <div class="slideshow-container">
     		<div class="slides fade"><a href="./images/betegfelvetel/1.jpg" data-lightbox="mygallery"><img src="./images/betegfelvetel/1.jpg" alt=""/></a></div>
@@ -261,6 +261,9 @@
 	
 	
 	
+</script>
+<script>
+  AOS.init();
 </script>
 </body>
 </html>

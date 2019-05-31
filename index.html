@@ -15,7 +15,9 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136831218-1"></script>
 <script>
@@ -72,7 +74,7 @@
 				<li><a href="szakambulancia">SZAKAMBULANCIA</a></li>
 				<li><a href="#">ULTRAHANG</a></li>
 				<li><a href="#">EKG</a></li>
-				<li><a href="#">CITOLÓGIA</a></li>
+				<li><a href="citologia">CITOLÓGIA</a></li>
 				<li><a href="#">LÉGZÉSPATOLÓGIA</a></li>
 				<li><a href="#">RADIOLÓGIA</a></li>
 				<li><a href="#">BRONCHOLÓGIA</a></li>
@@ -114,6 +116,7 @@
 				<li><a href="betegjog">BETEGEK JOGAI ÉS KÖTELEZETTSÉGEI</a></li>
         		<li><a href="documents/betegjogi_kepviselo.pdf" target="new">BETEGJOGI KÉPVISELŐ</a></li>
 				<li><a href="beleegyezonyilatkozatok">BELEEGYEZŐ NYILATKOZATOK</a></li>
+				<li><a href="eletmodvaltovideok.html">ÉLETMÓDVÁLTÓ VIDEÓK</a></li>
 			  </ul>
         </li>
         <li><a href="allasok">ÁLLÁSAJÁNLATOK</a></li>
@@ -125,7 +128,7 @@
 </section>
   </header>
   <section>
-	<article class="left_article fade-in one">
+	<article class="left_article">
       <h3>Tisztelt Betegek, Látogatók, Olvasók!</h3>
       <h3>Üdvözöljük!</h3>
       <p> A Veszprém Megyei Tüdőgyógyintézet valamennyi munkatársa nevében köszöntjük Intézményünk honlapján, melyen tájékozódhat az általunk nyújtott szolgáltatásokról, betekintést nyerhet történelmünkbe. Bemutatjuk, hogyan közelítheti meg az intézményt, s hogyan tájékozódhat legkönyebben intézményünk területén.<br />
@@ -139,7 +142,7 @@
     </article>
     <aside class="right_article">
     	<!-- Slider-->
-   	  <div class="slideshow-container fade-in one">
+   	  <div class="slideshow-container">
     		<div class="slides fade"><a href="./images/slider/1.jpg" data-lightbox="mygallery"><img src="./images/slider/1.jpg" alt=""/></a></div>
     		<div class="slides fade"><a href="./images/slider/2.jpg" data-lightbox="mygallery"><img src="./images/slider/2.jpg" alt=""/></a></div>
    		  	<div class="slides fade"><a href="./images/slider/3.jpg" data-lightbox="mygallery"><img src="./images/slider/3.jpg" alt=""/></a></div>
@@ -153,7 +156,7 @@
     		<a class="next" onclick="plusIndex(+1)">&#10095;</a>
    	  </div>
     	<br />
-   	  <div style="text-align:center;" class="fade-in one">
+   	  <div style="text-align:center">
     		<span class="dots" onclick="currentSlide(1)"> </span>
     		<span class="dots" onclick="currentSlide(2)"></span>
     		<span class="dots" onclick="currentSlide(3)"></span>
@@ -388,7 +391,9 @@
 	});
 
 </script>
-
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>

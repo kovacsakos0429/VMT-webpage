@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="tüdőgondozó, veszprémi tüdőgondozó, szűrőbusz, tüdőszűrés" />
+<meta name="keywords" content="tüdőgondozó, tüdőgondozó veszprém, veszprémi tüdőgondozó, szűrőbusz, tüdőszűrés" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">		
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/gondozo.css" rel="stylesheet" type="text/css">
 <link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
@@ -112,13 +112,13 @@
   </header>
   <div class="gondozo">
  	<h1 class="slideDown">Veszprémi Tüdőgondozó</h1>
-	<article class="gondozo_left_article fade-in one">
+	<article data-aos="fade-right" data-aos-duration="1000" class="gondozo_left_article">
       <p>2011. Február 1-től leváltunk a Veszprém Megyei Csolnoky Ferenc Kórháztól, azóta a Veszprém Megyei Tüdőgyógyintézethez tartozunk. A gondozóban jelenleg tüdőszűrés és szakrendelés folyik.</p>
       <p>A lakossági szűrés stabil és mozgó digitális szűrőgépekkel történik.</p>
 	  <p>2016-tól új szűrőbusszal dolgozunk, amelyet uniós pályázaton nyert a Tüdőgyógyintézet.</p>
 	  <h3 class="zoom"><a href="elerhetosegek#gondozo">Elérhetőségek</a></h3>
     </article>
-    <aside class="gondozo_right_article fade-in one">
+    <aside data-aos="fade-left" data-aos-duration="1000"  class="gondozo_right_article">
     	<!-- Slider-->
    	  <div class="slideshow-container">
     		<div class="slides fade"><a href="./images/gondozo/1.jpg" data-lightbox="mygallery"><img src="./images/gondozo/1.jpg" alt=""/></a></div>
@@ -135,13 +135,14 @@
    	  </div>
     </aside>
   </div>
-  <div class="row fade-in two">
-  	  <div class="columns">
+  <div class="row">
+ 	  <h3 class="fade-in" >Információ</h3>
+  	  <div data-aos="fade-up" data-aos-duration="1000" class="columns">
   	    <h4>Szakrendelés:</h4>
   	    <p>A szakrendelés beutalóköteles előjegyzés alapján történik.</p>
 		<p>Az előjegyzés hétfőn és csütörtökön 13.30-tól 16.30-ig, a 88/593-072-es telefonszámon érhető el.</p>
       </div>
-  	  <div class="columns">
+  	  <div data-aos="fade-up" data-aos-duration="1000" class="columns">
   	    <h4>Tüdőszűrés:</h4> 
 		<p>Jelenleg nem kötelező az évente egyszeri megjelenés, de 40 éven felülieknek javasolt, melyet az OEP finanszíroz. A 40 éven aluliak vizsgálata, valamint a munkaalkalmassági szűrés díja 1.700 Ft.</p>
 		<p>Telefon: 88 593 077</p>
@@ -151,12 +152,12 @@
 			<li>Hétfő és Csütörtök: 14:00 - 17:00</li>
 		  </ul>
       </div>
-  	  <div class="columns">
+  	  <div data-aos="fade-up" data-aos-duration="1000" class="columns">
   	    <h4>Mozgó tüdőszűrés:</h4>
   	    <p>Veszprém megye településein az önkormányzatok által meghirdetett időpontokban.</p>
   	    <p>A foglalkozás-egészségügyi célból végzett tüdőszűrés, életkortól függetlenül térítés- és üzemorvosi beutaló köteles (1.700 Ft).</p>
       </div>
-  	  <div class="columns">
+  	  <div data-aos="fade-up" data-aos-duration="1000" class="columns">
   	    <h4>Fizioterápia:</h4>
 		<p>A kezeléseket fizioterápiás szakasszisztens végzi az alábbi időpontokon: hétfőn, szerdán és csütörtökön 15:00 - 17:00-ig.</p>
       </div>
@@ -273,24 +274,8 @@
 	
 </script>
 <script>
-	//tabs
-	$(document).ready(function(){
-		$('.wrap ul.tabs li a:first').addClass('active');
-		$('.wrap .sections article').hide();
-		$('.wrap .sections article:first').show();
-
-		$('.wrap ul.tabs li a').click(function(){
-			$('.wrap ul.tabs li a').removeClass('active');
-			$(this).addClass('active');
-			$('.wrap .sections article').hide();
-
-			var activeTab = $(this).attr('href');
-			$(activeTab).show();
-			return false;
-		});
-	});
+  AOS.init();
 </script>
-
 
 
 </body>

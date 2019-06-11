@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="djp, digitális jólét program pont, digitalis jolet program, wifi" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">	
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/djp.css" rel="stylesheet" type="text/css">
 <link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
@@ -112,21 +112,21 @@
   </header>
   <section class="djp">
   <h1 class="slideDown">Digitális Jólét Program Pont</h1>
-	<article class="djp_left_article fade-in">
+	<article data-aos="fade-right" data-aos-duration="1000"  class="djp_left_article">
  		<p>
  			A Tüdőgyógyintézet II. Pulmonológia és III. Pulmonológia osztályán működik DJP Pont két számítógéppel. A DJP Ponton lehetőség van az elektronikus közszolgáltatások és az interneten közzétett tartalmak, kommunikációs szolgáltatások elérésére.</p>
-	 	<h3 class="fade-in two">Nyitva tartás:</h3>
-	 	<ul class="fade-in two">
+	 	<h3>Nyitva tartás:</h3>
+	 	<ul>
 			<li>
 				Hétfő - Péntek: 06:30 - 14:30
 			</li>
 	  	</ul>
-	  	<h3 class="fade-in two">További információk a hivatalos oldalon:</h3>
-	 	<ul class="fade-in two">
+	  	<h3>További információk a hivatalos oldalon:</h3>
+	 	<ul>
 			<li  class="zoom"><a href="https://digitalisjoletprogram.hu/" target="new">Digitális Jólét Program</a></li>
 	  	</ul>
 	</article>
-    <aside class="djp_right_article fade-in one">
+    <aside data-aos="fade-left" data-aos-duration="1000"  class="djp_right_article">
     	<!-- Slider-->
    	  <div class="slideshow-container">
     		<div class="slides fade"><a href="./images/djp/1.jpg" data-lightbox="mygallery"><img src="./images/djp/1.jpg" alt=""/></a></div>
@@ -148,20 +148,21 @@
    	  </div>
     </aside>
   </section>
-  <div class="row fade-in two">
-  	  <div class="columns">
+  <div class="row">
+ 	  <h3 class="fade-in" >Információ</h3>
+  	  <div data-aos="fade-up" data-aos-duration="1000"  class="columns">
   	    <h4>Szolgáltatások:</h4>
   	    <p class="justify">Internethasználat, számítógép-használat (szövegszerkesztés, táblázatkezelés, prezentáció-készítés), mentés külső adathordozóra, CD-DVD írás, nyomtatás, szkennelés, fénymásolás, faxolás.</p>
   	    <p class="justify">Számítógép- és internethasználati tanfolyam (külön meghirdetés esetén).</p>
   	    
       </div>
-      <div class="columns">
+      <div data-aos="fade-up" data-aos-duration="1000"  class="columns">
   	    <h4>WiFi:</h4>
   	    <p class="justify">A DJP pontokon lehetőség van vezetéknélküli internet használatára.</p>
   	    <p class="justify">A II. Pulmonológia osztályon az egész folyosón elérhető a "DJP_WIFI" és a "DJP_GUEST" nevű WiFi hálózat. Ezek jelszóval védettek, amik ki vannak plakátolva a folyosón.</p>
   	  	<p class="justify">A III. Pulmonologia osztály ebédlőjében a "III. Pulmonologia" nevű WiFi-re lehet jelszó nélkül csatlakozni.</p>
       </div>
-  	  <div class="columns">
+  	  <div data-aos="fade-up" data-aos-duration="1000"  class="columns">
   	    <h4>Eszközök:</h4>
 		<ul>
 			<li>2 db asztali számítógép,</li>
@@ -172,7 +173,7 @@
 			<li>1 db színes nyomtató,</li>
 		</ul>
       </div>
-       <div class="columns">
+       <div data-aos="fade-up" data-aos-duration="1000"  class="columns">
   	    <h4>Mentor:</h4> 
 		<p>Kovács Ákos (informatikus)</p>
     	<p> eTanácsadó szám: 2097</p>
@@ -288,10 +289,9 @@
 		x[slideIndex-1].style.display = "block";  
 		setTimeout(carousel, 5000); // Change image every 2 seconds
 	}
-	
-	
-	
-	
 </script>
+<script>
+  AOS.init();
+	</script>
 </body>
 </html>

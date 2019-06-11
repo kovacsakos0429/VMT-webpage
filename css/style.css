@@ -348,7 +348,7 @@ nav ul li ul li a {
 .container .left_article h3 {
 	padding-left: 5%;
 	padding-right: 5%;
-	margin-top: 3%;
+	margin-top: 1%;
 	color: #717070;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -360,7 +360,7 @@ nav ul li ul li a {
 .container .left_article p {
 	padding-right: 2%;
 	text-align: justify;
-	line-height: 27px;
+	line-height: 25px;
 	margin-top: 20px;
 	margin-bottom: 15px;
 	padding-left: 2%;
@@ -507,11 +507,9 @@ nav ul li ul li a {
 
 
 .left_article {
-	background-color: #F0F0E1;
 	width: 59%;
 	float: left;
 	font-family: "Source Sans Pro";
-	color: #343434;
 	padding-bottom: 15px;
 	margin-top: 10px
 }
@@ -697,7 +695,7 @@ hr {
     overflow: visible;
     text-align: center;
 	background-color: white;
-    height: 0.5px;
+   
 }
 
 .container .social p:hover {

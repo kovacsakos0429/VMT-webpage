@@ -6,9 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="impresszum, utolsó módosítás, ajánlott böngésző, készítő" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="css/impresszum.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
@@ -112,7 +112,7 @@
   </header>
   <section>
   	<h1 class="slideDown">Impresszum</h1>
-	<article class="impresszum_left_article fade-in one">	
+	<article data-aos="fade-up" data-aos-duration="1000" class="impresszum_left_article">	
 		<ul>
 			<li>
 				<span>Honlap tartalmáért felelős:</span> Veszprém Megyei Tüdőgyógyintézet
@@ -130,7 +130,7 @@
 				<span>Információ:</span> kovacsakos0429@gmail.com
 			</li>
 			<li> 
-				<span>Utolsó módosítás:</span> 2019. 05. 30.
+				<span>Utolsó módosítás:</span> 2019. 06. 11.
 			</li>
 		</ul>
 	</article>
@@ -194,61 +194,7 @@
 
 </script>		
 <script>
-	//Slider
-	var slideIndex = 1;
-	showImage(slideIndex);
-	carousel();
-	function plusIndex(n){
-		"use strict";
-		showImage(slideIndex += n);
-	}
-	
-	function currentSlide(n){
-		"use strict";
-		showImage(slideIndex = n);
-	}
-			
-	function showImage(n){
-		"use strict";
-		var slide = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		if(n>slide.length){
-			slideIndex = 1;
-		}
-		if(n<1){
-			slideIndex = slide.length;
-		}
-		for(var i = 0; i < slide.length; i++){
-			slide[i].style.display = "none";
-		}
-		slide[slideIndex-1].style.display = "block";
-		for(i=0; i < dots.length; i++){
-			dots[i].className = dots[i].className.replace(" active","");
-			}
-		dots[slideIndex-1].className += " active";
-	}
-	
-	function carousel() {
-		"use strict";
-		var i;
-		var x = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-			dots[i].className = dots[i].className.replace(" active","");
-		}
-		dots[slideIndex-1].className += " active";
-		slideIndex++;
-		if (slideIndex > x.length) {
-			slideIndex = 1;
-		}    
-		x[slideIndex-1].style.display = "block";  
-		setTimeout(carousel, 5000); // Change image every 2 seconds
-	}
-	
-	
-	
-	
+  AOS.init();
 </script>
 </body>
 </html>

@@ -59,6 +59,16 @@
 	margin-bottom: 10%
 }
 
+.row h3{
+	margin-top: 20px;
+	margin-bottom: 15px;
+	text-align: center;
+	line-height: 25px;
+	color: #717070;
+	font-size: 25px;
+	font-weight: bold;
+}
+
 .row h4{
 	font-size: 22px;
 	font-weight: normal;
@@ -174,15 +184,17 @@
 	}
 	
 	.gondozo_right_article {
-		width: 84%;
+		width: 92%;
 		height: auto;
-		padding-left: 8%;
-		padding-right: 8%;
+		padding-left: 4%;
+		padding-right: 4%;
 		margin-bottom: 5%;
 	}
 	
 	.gondozo_left_article {
-		width: 90%;
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
 	}
 	
 	.gondozo_left_article h3 {
@@ -197,9 +209,10 @@
 	}
 	
 	.row{
-		margin-bottom: 200px;
-		width: 90%;
-		padding-left: 5%;
+		width: 94%;
+		padding-left: 3%;
+		padding-right: 3%;
+		padding-bottom: 25%;
 	}
 	
 	.row p{

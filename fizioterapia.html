@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="fizioterápia, fizioterapia, fiziko, fizikoterápia, gyógytorna" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">	
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/fizio.css" rel="stylesheet" type="text/css">
 <link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
@@ -112,20 +112,18 @@
   </header>
   <div class="gondozo">
  	<h1 class="slideDown">Fizioterápia</h1>
-	<article class="gondozo_left_article fade-in one">
+	<article  data-aos="fade-right" data-aos-duration="1000"  class="gondozo_left_article">
       <p>A pulmonológiai fizioterápia a légzés rehabilitáció szerves részeként fontos szerepet tölt be a betegek légzőszervi tüneteinek csökkentésében, a napi tevékenységhez szükséges aktivitás megőrzésében, a terhelhetőség növelésében, a jobb életminőség elérésében, a kórházban töltött napok csökkentésében, s alkalmanként az élet prolongációjában.</p>
 	  <h3>Mellék:</h3>
 	  <p style="text-align: center">117</p>
 	  <h3>Gyógytornászok:</h3>
 	  <p  style="text-align: center">Bolla Tamásné, Csurgay Dorottya, Gozsovics Károlyné, Kléri Ágnes, Lautner Judit, Czobor Noémi</p>
     </article>
-    <aside class="gondozo_right_article fade-in one">
+    <aside  data-aos="fade-left" data-aos-duration="1000"  class="gondozo_right_article">
     	<!-- Slider-->
    	  <div class="slideshow-container">
     		<div class="slides fade"><a href="./images/fizioterapia/1.jpg" data-lightbox="mygallery"><img src="./images/fizioterapia/1.jpg" alt=""/></a></div>
 		  
-    		
-    		
    	  </div>
     	<br />
    	  <div style="text-align:center;">
@@ -134,29 +132,30 @@
    	  </div>
     </aside>
   </div>
-  <div class="row fade-in two">
-	   <div class="columns">
+  <div class="row">
+   	<h3 class="fade-in" >Információ</h3>
+	   <div data-aos="fade-up" data-aos-duration="1000"   class="columns">
   	    <h4>Eszközök, készülékek:</h4>
 		<p>Tornatermi eszközök: bordásfalak, labdák, gimnasztikai labdák, gumiszalagok, botok, korongok, súlyzók.</p>
 		  <p>3 db Kettler típusú tréningkerékpár.</p>
 		  <p>3 db só párologtató készülék.</p>
 		  <p>Elektroterápiás készülékek: Interstim (középfrekvencia), Sonother combi (UH, kisfrekvencia), 2 db Elektrother combi (kisfrekvencia), Sonopuls+Vacotron S (UH, kis- és középfrekvencia+vákuum), 2 db hordozható TENS, vibrax, infravörös masszírozó készülék.</p>
       </div>
-  	  <div class="columns">
+  	  <div data-aos="fade-up" data-aos-duration="1000"   class="columns">
   	    <h4>Légzési fizioterápia:</h4> 
 		<p>A foglalkozások/kezelések a betegágy mellett, az osztályok közösségi helyiségeiben, a fizioterápia pavilon tornatermében, elektroterápiás helyiségében illetve szabadtéren zajlanak.</p>
 		<p>Rendszeres légzőtorna, speciális tornák, relaxáció mellett tréningkerékpárok és egyéb segédeszközök, fizioterápiás eljárások (elektromos kezelések, masszázs), valamint sószoba állnak betegeink rendelkezésére.</p>
 		<p>Inhalációs készülékekkel történő kezeléseink az osztályon történnek.</p>
 		<p>Valamennyi kezelésről (pontos időbeosztással) minden betegünk Kezelő füzetet kap.</p>
       </div>
-  	  <div class="columns">
+  	  <div data-aos="fade-up" data-aos-duration="1000"   class="columns">
   	    <h4>Fizioterápia szakrendelés:</h4>
   	    <p>A fekvőbeteg ellátás mellett járóbeteg ellátást is biztosítunk.</p>
   	    <p>A szakorvosi beutalóval, főként mozgásszervi panaszokkal érkező betegek ellátása a fizioterápia pavilon tornatermében, illetve elektroterápiás helyiségében zajlik.</p>
 		<p>Fizioterápia szakrendelés ideje:</p>
 		<p><b>hétfő-csütörtök: 10.00-10.30</b></p>
       </div>
-  	  <div class="columns">
+  	  <div data-aos="fade-up" data-aos-duration="1000"   class="columns">
   	    <h4>Kezelések:</h4>
 		<p>
 			PD, ütögetés, vibráció, manuális légzéstámogatás, aktív expectoráló technikák, inhalációs (aerosol) terápia légzőgyakorlatok, mellkasmobilizálás, elektroterápiás  kezelések (fájdalomcsillapítás, stimulálás), vegetatív tónusegyensúlyt biztosító módszerek (kötőszöveti masszázs, relaxáció), állóképességi tréning
@@ -295,8 +294,8 @@
 		});
 	});
 </script>
-
-
-
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

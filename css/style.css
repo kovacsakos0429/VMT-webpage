@@ -211,7 +211,7 @@ nav ul li ul li a {
 
 .nav-dropdown {
   	position: absolute;
-	background: rgba(0, 0, 0, 0.95);
+	background: rgba(0, 0, 0, 1);
   	display: none;
   	z-index: 1;
   	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.65);

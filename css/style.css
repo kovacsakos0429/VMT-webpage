@@ -394,21 +394,94 @@ nav ul li ul li a {
 
 .news{
 	display: inline-block;
-	width: 20%;
-	transition: transform .2s;
+	width: 23%;
 	text-align: center;
-	padding-right: 1%
-	/*margin-top: -31px; */
+	padding-left: 1.4%;
+
 }
 
-.news:hover {
-    transform: scale(1.1);
+.hovereffect {
+  	width: 100%;
+  	height: 100%;
+  	float: left;
+  	overflow: hidden;
+  	position: relative;
+  	text-align: center;
+  	cursor: default;
+	box-shadow: 5px 5px 10px #888888;
+}
+
+.hovereffect .overlay {
+  	width: 100%;
+  	height: 100%;
+  	position: absolute;
+  	overflow: hidden;
+  	top: 0;
+  	left: 0;
 	
 }
 
-.news img:hover{
-	box-shadow: 5px 5px 10px #888888;
+.hovereffect img {
+  	display: block;
+  	position: relative;
+  	-webkit-transition: all 0.4s ease-in;
+  	transition: all 0.4s ease-in;
+	width: 100%;
 }
+
+.hovereffect:hover img {
+	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolationfilters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter</svg>#filter');
+	filter: grayscale(1) blur(3px);
+	-webkit-filter: grayscale(1) blur(3px);
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect a.info, .hovereffect h2 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hovereffect:hover a.info, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+
 
 /* make keyframes that tell the start state and the end state of our object */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -834,20 +907,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41965a', end
 	.wrap {
 		margin-bottom: 50%;
 	} 
+	
 	.news {
-		width: 100%;
+		width: 94%;
 		margin-top: 15px;
-		margin-right: 0px;
 		margin-bottom: 25px;
-		margin-left: 0px;
-		padding-top: 0PX;
-		padding-right: 0PX;
-		padding-bottom: 0PX;
-		padding-left: 0PX;
+		padding-left: 3%;
 		text-align: center;
 	}
 	
-	
+	.hovereffect h2 {
+	  	font-size: 17px;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+
+	.hovereffect a.info {
+		 font-size: 18px;
+		margin-top: 15%;
+	}
+
 	
 	.column_half.left_half {
 		width: 100%;
@@ -979,17 +1058,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41965a', end
 	} 
 	
 	.news {
-		width: 100%;
-		margin-top: 20px;
-		margin-right: 0px;
-		margin-bottom: 20px;
-		margin-left: 0px;
-		padding-top: 0px;
-		padding-right: 0px;
-		padding-bottom: 0px;
-		padding-left: 0px;
+		width: 94%;
+		margin-top: 15px;
+		margin-bottom: 25px;
+		padding-left: 3%;
 		text-align: center;
 	}
+	
+	.hovereffect h2 {
+	  	font-size: 20px;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+
+	.hovereffect a.info {
+		 font-size: 20px;
+		margin-top: 15%;
+	}
+
 	
 	.columns p {
 		padding-left: 14px;
@@ -1040,6 +1126,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41965a', end
 	.news{
 		display: inline-block;
 		width: 25%;
+	}
+	
+	.hovereffect h2 {
+	  	font-size: 12px;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+
+	.hovereffect a.info {
+		margin-top: 10%;
+		 font-size: 12px;
 	}
 	
 	.right_article {

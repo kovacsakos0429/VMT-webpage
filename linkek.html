@@ -6,9 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="linkek, hasznos linkek" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+
 <link href="css/linkek.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
@@ -348,62 +347,6 @@
 })(jQuery); // end jQuery
 
 </script>	
-<script>
-	//Slider
-	var slideIndex = 1;
-	showImage(slideIndex);
-	carousel();
-	function plusIndex(n){
-		"use strict";
-		showImage(slideIndex += n);
-	}
-	
-	function currentSlide(n){
-		"use strict";
-		showImage(slideIndex = n);
-	}
-			
-	function showImage(n){
-		"use strict";
-		var slide = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		if(n>slide.length){
-			slideIndex = 1;
-		}
-		if(n<1){
-			slideIndex = slide.length;
-		}
-		for(var i = 0; i < slide.length; i++){
-			slide[i].style.display = "none";
-		}
-		slide[slideIndex-1].style.display = "block";
-		for(i=0; i < dots.length; i++){
-			dots[i].className = dots[i].className.replace(" active","");
-			}
-		dots[slideIndex-1].className += " active";
-	}
-	
-	function carousel() {
-		"use strict";
-		var i;
-		var x = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-			dots[i].className = dots[i].className.replace(" active","");
-		}
-		dots[slideIndex-1].className += " active";
-		slideIndex++;
-		if (slideIndex > x.length) {
-			slideIndex = 1;
-		}    
-		x[slideIndex-1].style.display = "block";  
-		setTimeout(carousel, 5000); // Change image every 2 seconds
-	}
-	
-	
-	
-	
-</script>
+
 </body>
 </html>

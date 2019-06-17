@@ -24,6 +24,16 @@ section h1 {
 	list-style-type: none;
 }
 
+.impresszum_left_article a{
+	text-decoration: none;
+	color: #717070;
+}
+
+.impresszum_left_article a:hover{
+	color: #178616;
+	font-weight: bold;
+}
+
 .impresszum_left_article ul li{
 	padding-bottom: 2%;
 	color: #717070;

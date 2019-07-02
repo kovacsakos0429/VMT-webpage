@@ -7,7 +7,8 @@
 <meta name="keywords" content="linkek, hasznos linkek" />
 <title>Tüdőgyógyintézet</title>
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="css/linkek.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
@@ -111,7 +112,7 @@
   </header>
   <section>
   	<h1 class="cim slideDown">Hasznos linkek</h1>
-	<article class="linkek_left_article fade-in one">
+	<article data-aos="fade-right" data-aos-duration="1000" class="linkek_left_article">
 		<h1>Egészségügy:</h1>
 		<ul>
 			<li class="zoom">
@@ -215,7 +216,7 @@
 			</li>
 		</ul>
 	</article>
-    <aside class="linkek_right_article fade-in one">
+    <aside data-aos="fade-left" data-aos-duration="1000" class="linkek_right_article">
 		<h1>Gazdaság, munkaügy, pénzügy, informatika:</h1>
 		<ul>
 			<li class="zoom">
@@ -347,6 +348,8 @@
 })(jQuery); // end jQuery
 
 </script>	
-
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

@@ -8,6 +8,8 @@
 <title>Tüdőgyógyintézet</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
 <link href="css/palyazatok.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -112,7 +114,7 @@
   </header>
 	<section>
   		<h1 class="slideDown">PÁLYÁZATOK</h1>
-		<article class="palyazatok_left_article fade-in one">
+		<article data-aos="fade-right" data-aos-duration="1000" class="palyazatok_left_article">
 			<div class="tab">
 				<button class="tablinks" onclick="openPalyazat(event, 'EFOP')" id="defaultOpen">EFOP-1.10.3-17-2017-00038</button>
 				<button class="tablinks" onclick="openPalyazat(event, 'KEHOP-5.2.11')" >KEHOP-5.2.11-16-2016-00093</button>
@@ -123,7 +125,7 @@
 				<button class="tablinks" onclick="openPalyazat(event, 'TIOP-2.2.5')">TIOP-2.2.5-09/1-2010-0006</button>
 			</div>
 		</article>
-	<div class="palyazatok_right_article fade-in two">
+	<div data-aos="fade-left" data-aos-duration="1000" class="palyazatok_right_article">
 		<div id="EFOP" class="tabcontent fade-in">
 			<h3>Képzési programok a Veszprém Megyei Tüdőgyógyintézetben</h3>
 			<p>A támogatásban részesített projekt alapvető célja, hogy az egészségügyben biztosított megfelelő mennyiségű és minőségű humánerőforrás következtében javuljon az egészségügyi ellátás színvonala, ezáltal javuljon az egyén egészségi állapota valamint munkaerőpiacon történő foglalkoztatási esélyei, így hozzájárulva a foglalkoztatás dinamikus bővítése cél megvalósításához.</p>
@@ -242,5 +244,8 @@
 		// Get the element with id="defaultOpen" and click on it
 		document.getElementById("defaultOpen").click();
 	</script>
+	<script>
+  AOS.init();
+</script>
 </body>
 </html>

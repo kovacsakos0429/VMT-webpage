@@ -65,14 +65,23 @@ ul.kozbeszerzesek_tabs li a{
 }
 
 .kozbeszerzesek_sections h2{
-	margin-top: 15px;
+	margin-top: 30px;
 	margin-bottom: 0px;
 	color: #5E5D5E;
 	font-size: 25px;
+	text-align: center;
+}
+
+.kozbeszerzesek_sections i{
+	margin-top: 35px;
+	color: #5E5D5E;
+	font-size: 40px;
+	text-align: center;
 }
 
 .kozbeszerzesek_sections ul{
 	list-style-type: none;
+	text-align: center;
 }
 
 .kozbeszerzesek_sections ul li{

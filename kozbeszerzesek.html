@@ -1,6 +1,5 @@
 <!doctype html>
-<html>
-<head>
+<html><head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +7,8 @@
 <title>Tüdőgyógyintézet</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="css/kozbeszerzesek.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
@@ -47,9 +47,9 @@
         <li>
           <a href="#!">FEKVŐBETEG ELLÁTÁS</a>
 			<ul class="nav-dropdown">
-					<li><a href="aktiv">I. PULMONOLÓGIA (AKTÍV)</a></li>
-					<li><a href="kronikus">II. PULMONOLÓGIA (KRÓNIKUS)</a></li>
-					<li><a href="rehab">III. PULMONOLÓGIA (REHABILITÁCIÓ)</a></li>
+					<li><a href="aktiv">I. PULMONOLÓGIA</a></li>
+					<li><a href="kronikus">II. PULMONOLÓGIA</a></li>
+					<li><a href="rehab">III. PULMONOLÓGIA</a></li>
           	</ul>
         </li>
         <li>
@@ -112,7 +112,7 @@
   </header>
 	<article class="kozbeszerzesek_left_article">
 	  <h1 class="slideDown">Közbeszerzések</h1>
-		<div class="wrap fade-in one">
+		<div data-aos="fade-up" data-aos-duration="1000" class="wrap">
 			<ul class="kozbeszerzesek_tabs">
 				<li><a href="#tab1" class="active"><span class="tab-text">Folyamatban</span></a></li>
 				<li><a href="#tab2"><span class="tab-text">2018</span></a></li>
@@ -130,134 +130,149 @@
 				<article id="tab1">
 					<ul class="fade-in">
 						<h2>Eszközállomány fejlesztés és korszerűsítés Farkasgyepűn</h2>
-						<ul>
-							<li class="zoom2"><a href="./documents/kozbeszerzesek/folyamatban/1054FGYajanlatidokjav0819.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Ajánlati dokumentáció </a></li>
-							<li class="zoom2"><a href="./documents/kozbeszerzesek/folyamatban/1054FGYartáblazatkitoltjav0819.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Felolvasólap és elbírálási szempontok</a></li>
-							<li class="zoom2"><a href="./documents/kozbeszerzesek/folyamatban/K1054FGYartablazatkitoltjav0818.xls" target="new"><img src="images/xls.png" width="40" alt=""> Felolvasólap és elbírálási szempontok, ártáblázat</a></li>
-							<li class="zoom2"><a href="./documents/kozbeszerzesek/folyamatban/K1054FGYiratmintakkitoltesre.docx" target="new"><img src="images/doc.png" width="40" alt=""> Iratminták</a></li>
-							<li class="zoom2"><a href="./documents/kozbeszerzesek/folyamatban/K1054FGYorvosszakmaispeckitoltesre.docx" target="new"><img src="images/doc.png" width="40" alt=""> Orvosszakmai Elvárások</a></li>
-							<li class="zoom2"><a href="./documents/kozbeszerzesek/folyamatban/K1054FGYREGADATLAPkitoltesre.docx" target="new"><img src="images/doc.png" width="40" alt=""> Regisztrációs Adatlap</a></li>
-							<li class="zoom2"><a href="./documents/kozbeszerzesek/folyamatban/Levelregisztraciosadatlaphoz.docx" target="new"><img src="images/doc.png" width="40" alt=""> Levél ajánlattevők részére</a></li>
-							<li class="zoom2"><a href="./documents/kozbeszerzesek/folyamatban/kiegeszito_tajekoztatas.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Kiegészítő tájékoztatás</a></li>
-						</ul>
+							<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+							<li class="zoom2"><a href="./documents/kozbeszerzesek/folyamatban/1054FGYajanlatidokjav0819.pdf" target="new">Ajánlati dokumentáció </a></li>
+							<li class="zoom2"><a href="./documents/kozbeszerzesek/folyamatban/1054FGYartáblazatkitoltjav0819.pdf" target="new">Felolvasólap és elbírálási szempontok</a></li>
+							<i class="fa fa-file-excel-o" aria-hidden="true"></i>
+							<li class="zoom2"><a href="./documents/kozbeszerzesek/folyamatban/K1054FGYartablazatkitoltjav0818.xls" target="new">Felolvasólap és elbírálási szempontok, ártáblázat</a></li>
+							<li class="zoom2"><a href="./documents/kozbeszerzesek/folyamatban/kiegeszito_tajekoztatas.pdf" target="new">Kiegészítő tájékoztatás</a></li>
+							<i class="fa fa-file-word-o" aria-hidden="true"></i>
+							<li class="zoom2"><a href="./documents/kozbeszerzesek/folyamatban/K1054FGYiratmintakkitoltesre.docx" target="new">Iratminták</a></li>
+							<li class="zoom2"><a href="./documents/kozbeszerzesek/folyamatban/K1054FGYorvosszakmaispeckitoltesre.docx" target="new">Orvosszakmai Elvárások</a></li>
+							<li class="zoom2"><a href="./documents/kozbeszerzesek/folyamatban/K1054FGYREGADATLAPkitoltesre.docx" target="new">Regisztrációs Adatlap</a></li>
+							<li class="zoom2"><a href="./documents/kozbeszerzesek/folyamatban/Levelregisztraciosadatlaphoz.docx" target="new">Levél ajánlattevők részére</a></li>
 					</ul>
 				</article>
 				<article id="tab2">
 					<ul class="fade-in">
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2018/kozbeszerzes_2018.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Közbeszerzési terv</a></li>
-						<li class="zoom2"><a href="./documents/kozbeszerzesek/2018/faapritek_2018.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Faapríték szállítási szerződés</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2018/kozbeszerzes_2018.pdf" target="new">Közbeszerzési terv</a></li>
+						<li class="zoom2"><a href="./documents/kozbeszerzesek/2018/faapritek_2018.pdf" target="new">Faapríték szállítási szerződés</a></li>
 					</ul>
 				</article>
 				<article id="tab3">
 					<ul class="fade-in">
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2017/kozbeszerzes_2017.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Közbeszerzési terv</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2017/kozbeszerzes_2017.pdf" target="new">Közbeszerzési terv</a></li>
 					</ul>
 				</article>
 				<article id="tab4">
 					<ul class="fade-in">
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2016/kozbeszerzes_2016.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Közbeszerzési terv</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2016/kozbeszerzes_2016.pdf" target="new">Közbeszerzési terv</a></li>
 					</ul>
 				</article>
 				<article id="tab5">
 					<ul class="fade-in">
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2015/kozbeszerzes_2015.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Közbeszerzési terv</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2015/kozbeszerzes_2015.pdf" target="new">Közbeszerzési terv</a></li>
 					</ul>
 				</article>
 				<article id="tab6">
 					<ul class="fade-in">
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2014/kozbeszerzes_2014.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Közbeszerzési terv</a></li>
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2014/faapritek2014/megbizasi_szerzodes.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Faapríték - megbízási szerződés</a></li>
-						<h2>Betegklub</h2>
-						<ul>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/betegklub2014/megbizasi_szerzodes.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Megbízási szerződés</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/betegklub2014/felhivas.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Felhívás</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/betegklub2014/jelenleti_bontasrol.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Jelenléti ív ajánlatok bontásáról</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/betegklub2014/jkv_bontasrol.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Jegyzőkönyv ajánlatok bontásáról</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/betegklub2014/jkv_biralo_biz_eljarasrol.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Jegyzőkönyv a bíráló bizottság eljárásáról</a></li>	
-						</ul>
-						<h2>Kommunikáció</h2>
-						<ul>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/kommunikacio2014/megbizasi_szerzodes.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Megbízási szerződés (PDF)</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/kommunikacio2014/jelenleti_bontas_komm.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Jelenléti ív ajánlatok bontásáról</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/kommunikacio2014/jkv_bontas_komm.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Jegyzőkönyv ajánlatok bontásáról</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/kommunikacio2014/jkv_biralo_biz_elj_komm.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Jegyzőkönyv a bíráló bizottság eljárásáról</a></li>
-							
-						</ul>
-						<h2>Egészségfejlesztési Iroda (EFI)</h2>
-						<ul>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/efi2014/megbizasi_szerzodes.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Megbízási szerződés</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/efi2014/felhivas_efi.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Felhívás</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/efi2014/jelenleti_bontas_efi.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Jelenléti ív ajánlatok bontásáról</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/efi2014/jkv_bontas_efi.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Jegyzőkönyv ajánlatok bontásáról</a></li>	
-						</ul>
-						<h2>Szűrések</h2>
-						<ul>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/szuresek2014/megbizasi_szerzodes.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Megbízási szerződés</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/szuresek2014/jelenleti_iv_ajánlat_bontas.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Jelenléti ív ajánlatok bontásáról</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/szuresek2014/jkv_ajanlatok_bontas.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Jegyzőkönyv ajánlatok bontásáról</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/szuresek2014/jkv_biralo_bizottsagi_eljaras.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Jegyzőkönyv a bíráló bizottság eljárásáról</a></li>
-							
-						</ul>
-						<h2>Gyógyszer Tender</h2>
-						<ul>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/gyogyszer2014/Gyógyszertender_EGIS.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> EGIS szerződés</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/gyogyszer2014/Gyógyszertender_TEVA.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> TEVA szerződés</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/gyogyszer2014/Gyógyszertender_Hungaropharma.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Hungaropharma szerződés(PDF)</a></li>
-						</ul>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2014/kozbeszerzes_2014.pdf" target="new">Közbeszerzési terv</a></li>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2014/faapritek2014/megbizasi_szerzodes.pdf" target="new">Faapríték - megbízási szerződés</a></li>
 					</ul>
+					<ul class="fade-in">
+							<h2>Betegklub</h2>
+							<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/betegklub2014/megbizasi_szerzodes.pdf" target="new">Megbízási szerződés</a></li>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/betegklub2014/felhivas.pdf" target="new">Felhívás</a></li>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/betegklub2014/jelenleti_bontasrol.pdf" target="new">Jelenléti ív ajánlatok bontásáról</a></li>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/betegklub2014/jkv_bontasrol.pdf" target="new">Jegyzőkönyv ajánlatok bontásáról</a></li>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/betegklub2014/jkv_biralo_biz_eljarasrol.pdf" target="new">Jegyzőkönyv a bíráló bizottság eljárásáról</a></li>	
+					</ul>
+						
+					<ul class="fade-in">
+							<h2>Kommunikáció</h2>
+							<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/kommunikacio2014/megbizasi_szerzodes.pdf" target="new">Megbízási szerződés (PDF)</a></li>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/kommunikacio2014/jelenleti_bontas_komm.pdf" target="new">Jelenléti ív ajánlatok bontásáról</a></li>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/kommunikacio2014/jkv_bontas_komm.pdf" target="new">Jegyzőkönyv ajánlatok bontásáról</a></li>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/kommunikacio2014/jkv_biralo_biz_elj_komm.pdf" target="new">Jegyzőkönyv a bíráló bizottság eljárásáról</a></li>
+							
+					</ul>
+					<ul class="fade-in">
+							<h2>Egészségfejlesztési Iroda (EFI)</h2>
+							<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/efi2014/megbizasi_szerzodes.pdf" target="new">Megbízási szerződés</a></li>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/efi2014/felhivas_efi.pdf" target="new">Felhívás</a></li>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/efi2014/jelenleti_bontas_efi.pdf" target="new">Jelenléti ív ajánlatok bontásáról</a></li>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/efi2014/jkv_bontas_efi.pdf" target="new">Jegyzőkönyv ajánlatok bontásáról</a></li>	
+					</ul>
+						
+					<ul class="fade-in">
+							<h2>Szűrések</h2>
+							<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/szuresek2014/megbizasi_szerzodes.pdf" target="new">Megbízási szerződés</a></li>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/szuresek2014/jelenleti_iv_ajánlat_bontas.pdf" target="new">Jelenléti ív ajánlatok bontásáról</a></li>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/szuresek2014/jkv_ajanlatok_bontas.pdf" target="new">Jegyzőkönyv ajánlatok bontásáról</a></li>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/szuresek2014/jkv_biralo_bizottsagi_eljaras.pdf" target="new">Jegyzőkönyv a bíráló bizottság eljárásáról</a></li>
+							
+						</ul>
+						<ul class="fade-in">
+							<h2>Gyógyszer Tender</h2>
+							<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/gyogyszer2014/Gyógyszertender_EGIS.pdf" target="new">EGIS szerződés</a></li>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/gyogyszer2014/Gyógyszertender_TEVA.pdf" target="new">TEVA szerződés</a></li>
+							<li class="zoom2"><a href="documents/kozbeszerzesek/2014/gyogyszer2014/Gyógyszertender_Hungaropharma.pdf" target="new">Hungaropharma szerződés(PDF)</a></li>
+						</ul>
+				
 				</article>
 				<article id="tab7">
 					<ul class="fade-in one">
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2013/kozbeszerzes_2013.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Közbeszerzési terv</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2013/kozbeszerzes_2013.pdf" target="new">Közbeszerzési terv</a></li>
 					</ul>
 				</article>
 				<article id="tab8">
 					<ul class="fade-in one">
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2012/kozbeszerzes_2012.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Közbeszerzési terv</a></li>
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2012/elelmezes_2012.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Élelmiszer szállítási szerződés</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2012/kozbeszerzes_2012.pdf" target="new">Közbeszerzési terv</a></li>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2012/elelmezes_2012.pdf" target="new">Élelmiszer szállítási szerződés</a></li>
 						<h2>Faapríték</h2>
-						<ul>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2012/faapritek_2012.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Felhívás</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2012/jakofa2012.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Megbízási szerződés</a></li>
-						</ul>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2012/faapritek_2012.pdf" target="new">Felhívás</a></li>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2012/jakofa2012.pdf" target="new">Megbízási szerződés</a></li>
 					</ul>
 				</article>
 				<article id="tab9">
 					<ul class="fade-in one">
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2011/elelmiszer_2011.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Élelmiszer szállítási szerződés</a></li>
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2011/faapritek_2011.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Faapríték szállítási szerződés</a></li>
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2011/gyogyszer_2011.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Gyógyszer szállítási szerződés</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2011/elelmiszer_2011.pdf" target="new">Élelmiszer szállítási szerződés</a></li>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2011/faapritek_2011.pdf" target="new">Faapríték szállítási szerződés</a></li>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2011/gyogyszer_2011.pdf" target="new">Gyógyszer szállítási szerződés</a></li>
 					</ul>
 				</article>
 				<article id="tab10">
 					<ul class="fade-in one">
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2010/eves_terv_a_kozbeszerzesekrol_2010.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Közbeszerzési terv</a></li>
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2010/eves_statisztika.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves statisztikai összegzés</a></li>
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2010/jakofa_2010.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Faapríték szállítási szerződés</a></li>
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2010/KE_hirdetmenyek_Hirdetmeny.portal_1860_2010.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Szállítási szerződés 1</a></li>
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2010/KE_hirdetmenyek_Hirdetmeny.portal_4516_2010.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Szállítási szerződés 2</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2010/eves_terv_a_kozbeszerzesekrol_2010.pdf" target="new">Közbeszerzési terv</a></li>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2010/eves_statisztika.pdf" target="new">Éves statisztikai összegzés</a></li>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2010/jakofa_2010.pdf" target="new">Faapríték szállítási szerződés</a></li>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2010/KE_hirdetmenyek_Hirdetmeny.portal_1860_2010.pdf" target="new">Szállítási szerződés 1</a></li>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2010/KE_hirdetmenyek_Hirdetmeny.portal_4516_2010.pdf" target="new">Szállítási szerződés 2</a></li>
 						<h2>Élelmiszer</h2>
-						<ul>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2010/elelmiszer_2010.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Megbízási szerződés - AG Foods Kft.</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2010/elelmiszer2_2010.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Megbízási szerződés - Illker-Food Kft.</a></li>
-						</ul>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2010/elelmiszer_2010.pdf" target="new">Megbízási szerződés - AG Foods Kft.</a></li>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2010/elelmiszer2_2010.pdf" target="new">Megbízási szerződés - Illker-Food Kft.</a></li>
 					</ul>
 				</article>
 				<article id="tab11">
 					<ul class="fade-in one">
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2009/Kozbeszerzes2009.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Közbeszerzési terv</a></li>
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2009/szerzodes2009.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Szerződések</a></li>
-						<li class="zoom2"><a href="documents/kozbeszerzesek/2009/Faapritek.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Faapríték szállítási szerződés</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2009/Kozbeszerzes2009.pdf" target="new">Közbeszerzési terv</a></li>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2009/szerzodes2009.pdf" target="new">Szerződések</a></li>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2009/Faapritek.pdf" target="new">Faapríték szállítási szerződés</a></li>
 						<h2>Gyógyszer Tender</h2>
-						<ul>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2009/KE_hirdetmenyek_Hirdetmeny.portal_9275_2009.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Szerződés 1</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2009/KE_hirdetmenyek_Hirdetmeny.portal_12534_2009.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Szerződés 2</a></li>
-						</ul>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2009/KE_hirdetmenyek_Hirdetmeny.portal_9275_2009.pdf" target="new">Szerződés 1</a></li>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2009/KE_hirdetmenyek_Hirdetmeny.portal_12534_2009.pdf" target="new">Szerződés 2</a></li>
 						<h2>Laboratóriumi szolgáltatás</h2>
-						<ul>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2009/KE_hirdetmenyek_Hirdetmeny.portal_11989_2009.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Megbízási szerződés 1</a></li>
-							<li class="zoom2"><a href="documents/kozbeszerzesek/2009/Corden.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Megbízási szerződés 2</a></li>
-						</ul>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2009/KE_hirdetmenyek_Hirdetmeny.portal_11989_2009.pdf" target="new">Megbízási szerződés 1</a></li>
+						<li class="zoom2"><a href="documents/kozbeszerzesek/2009/Corden.pdf" target="new">Megbízási szerződés 2</a></li>
 					</ul>
 				</article>
 			</div>
@@ -321,59 +336,6 @@
 
 </script>	
 <script>
-	//Slider
-	var slideIndex = 1;
-	showImage(slideIndex);
-	carousel();
-	function plusIndex(n){
-		"use strict";
-		showImage(slideIndex += n);
-	}
-	
-	function currentSlide(n){
-		"use strict";
-		showImage(slideIndex = n);
-	}
-			
-	function showImage(n){
-		"use strict";
-		var slide = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		if(n>slide.length){
-			slideIndex = 1;
-		}
-		if(n<1){
-			slideIndex = slide.length;
-		}
-		for(var i = 0; i < slide.length; i++){
-			slide[i].style.display = "none";
-		}
-		slide[slideIndex-1].style.display = "block";
-		for(i=0; i < dots.length; i++){
-			dots[i].className = dots[i].className.replace(" active","");
-			}
-		dots[slideIndex-1].className += " active";
-	}
-	
-	function carousel() {
-		"use strict";
-		var i;
-		var x = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-			dots[i].className = dots[i].className.replace(" active","");
-		}
-		dots[slideIndex-1].className += " active";
-		slideIndex++;
-		if (slideIndex > x.length) {
-			slideIndex = 1;
-		}    
-		x[slideIndex-1].style.display = "block";  
-		setTimeout(carousel, 5000); // Change image every 2 seconds
-	}
-</script>
-<script>
 	//tabs
 	$(document).ready(function(){
 		$('.wrap ul.kozbeszerzesek_tabs li a:first').addClass('active');
@@ -390,6 +352,9 @@
 			return false;
 		});
 	});
+</script>
+<script>
+  AOS.init();
 </script>
 </body>
 </html>

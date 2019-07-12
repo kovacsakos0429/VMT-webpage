@@ -14,6 +14,7 @@
 
 .jobs_left_article {
 	margin-top: 1%;
+	margin-bottom: 10%;
 	width: 50%;
 	float: left;
 	background: #F0F0E1
@@ -57,7 +58,6 @@
 	float: right;
 	text-align: center;
 	margin-top: 1%;
-	margin-bottom: 10%;
 	background: #F0F0E1;
 }
 
@@ -161,11 +161,13 @@ img.scaled {
 	.jobs_left_article {
 		width: 100%;
 		height: auto;
+		margin-bottom: 5%;
 	}
 	
 	.jobs_right_article {
 		width: 100%;
 		height: auto;
+		margin-bottom: 20%;
 	}
 	.jobs_right_article .figure{
 		width: 60%;
@@ -191,7 +193,7 @@ img.scaled {
 	.jobs_right_article {
 		width: 100%;
 		height: auto;
-		margin-bottom: 95%;
+		margin-bottom: 60%;
 	}
 	
 	.jobs_left_article h1{

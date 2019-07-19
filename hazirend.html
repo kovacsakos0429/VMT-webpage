@@ -6,9 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="házirend, hazirend" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">	
 <link href="css/hazirend.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
@@ -112,8 +112,8 @@
   </header>
   <section>
 	<article class="hazirend_left_article">
-		<h1 class="slideDown">Házirend</h1>
-		<div class="fade-in">
+		<h1 data-aos="zoom-in" data-aos-duration="1000">Házirend</h1>
+		<div data-aos="fade-up" data-aos-duration="1000">
 		<h2>Tisztelt Betegünk!</h2>
 		<p>Intézetünkben való tartózkodása alatt kiemelt feladatunknak tekintjük, hogy olyan feltételeket teremtsünk a rendelkezésre álló lehetőségek határain belül, amely elősegíti betegségük felismerését, gyógykezelését, rehabilitációját.</p>
 		<p>A zavartalan gyógyulás, pihenés érdekében kérjük, intézményünk házirendjét betartani szíveskedjék.</p>
@@ -224,7 +224,6 @@
 		<p>A beteg saját elhatározásából az osztályt az intézeten belüli szolgáltatások igénybevétele céljából, vagy más okból csak az osztályvezető ápoló, vagy osztályos ápoló előzetes tájékoztatását követően hagyhatja el.</p>
 		<h3>Az intézmény elhagyásának joga:</h3>
 		<p>A betegnek -saját felelősségére- jogában áll a kórházat elhagyni. Ezen szándékát azonban köteles kezelőorvosának bejelenteni, és aláírásával igazolni, hogy megfelelő szóbeli felvilágosítás ellenére cselekszik.</p>
-		
 	</div>
 	</article>
   </section>
@@ -297,190 +296,8 @@
 
 </script>	
 <script>
-	//Slider
-	var slideIndex = 1;
-	showImage(slideIndex);
-	carousel();
-	function plusIndex(n){
-		"use strict";
-		showImage(slideIndex += n);
-	}
-	
-	function currentSlide(n){
-		"use strict";
-		showImage(slideIndex = n);
-	}
-			
-	function showImage(n){
-		"use strict";
-		var slide = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		if(n>slide.length){
-			slideIndex = 1;
-		}
-		if(n<1){
-			slideIndex = slide.length;
-		}
-		for(var i = 0; i < slide.length; i++){
-			slide[i].style.display = "none";
-		}
-		slide[slideIndex-1].style.display = "block";
-		for(i=0; i < dots.length; i++){
-			dots[i].className = dots[i].className.replace(" active","");
-			}
-		dots[slideIndex-1].className += " active";
-	}
-	
-	function carousel() {
-		"use strict";
-		var i;
-		var x = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-			dots[i].className = dots[i].className.replace(" active","");
-		}
-		dots[slideIndex-1].className += " active";
-		slideIndex++;
-		if (slideIndex > x.length) {
-			slideIndex = 1;
-		}    
-		x[slideIndex-1].style.display = "block";  
-		setTimeout(carousel, 5000); // Change image every 2 seconds
-	}
-	
-	
+  AOS.init();
 </script>
-<script>
-	(function($) {
 
-  /**
-   * Copyright 2012, Digital Fusion
-   * Licensed under the MIT license.
-   * http://teamdf.com/jquery-plugins/license/
-   *
-   * @author Sam Sehnert
-   * @desc A small plugin that checks whether elements are within
-   *     the user visible viewport of a web browser.
-   *     only accounts for vertical position, not horizontal.
-   */
-
-  $.fn.visible = function(partial) {
-
-    var $t = $(this),
-      $w = $(window),
-      viewTop = $w.scrollTop(),
-      viewBottom = viewTop + $w.height(),
-      _top = $t.offset().top,
-      _bottom = _top + $t.height(),
-      compareTop = partial === true ? _bottom : _top,
-      compareBottom = partial === true ? _top : _bottom;
-
-    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-
-  };
-
-})(jQuery);
-
-var win = $(window);
-var allMods = $(".hazirend_left_article p");
-var allMods3 = $(".hazirend_left_article h2");
-var allMods4 = $(".hazirend_left_article li");
-var allMods5 = $(".hazirend_left_article h3");
-var allMods6 = $(".hazirend_left_article .table");
-
-allMods.each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible");
-  }
-});
-
-
-allMods3.each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible");
-  }
-});
-	
-allMods4.each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible");
-  }
-	
-});
-	
-allMods5.each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible");
-  }
-	
-});
-	
-win.scroll(function(event) {
-  allMods.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in");
-    }
-	if($(window).width() < 768) {
-      el.classList.remove("come-in");
-    }
-  });
-});
-
-
-win.scroll(function(event) {
-  allMods3.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in");
-    }
-	if($(window).width() < 768) {
-      el.classList.remove("come-in");
-    }
-  });
-});
-
-win.scroll(function(event) {
-  allMods4.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in");
-    }
-	if($(window).width() < 768) {
-      el.classList.remove("come-in");
-    }
-  });
-});
-
-win.scroll(function(event) {
-  allMods5.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in");
-    }
-	if($(window).width() < 768) {
-      el.classList.remove("come-in");
-    }
-  });
-});
-
-win.scroll(function(event) {
-  allMods6.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in");
-    }
-	if($(window).width() < 768) {
-      el.classList.remove("come-in");
-    }
-  });
-});
-
-</script>
 </body>
 </html>

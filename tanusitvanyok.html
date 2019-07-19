@@ -6,9 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="iso, mees, tanúsítványok, certificates" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">	
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
 <link href="css/tanusitvanyok.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
@@ -111,43 +111,43 @@
 </section>
   </header>
 	<section>
-  		<h1 class="slideDown cim">TANÚSÍTVÁNYOK</h1>
-	<article class="tanusitvanyok_left_article">
-		<div class="iso_img fade-in one">
+  		<h1 data-aos="zoom-in" data-aos-duration="1000" class="cim">TANÚSÍTVÁNYOK</h1>
+	<article data-aos="fade-right" data-aos-duration="1000" class="tanusitvanyok_left_article">
+		<div class="iso_img">
 			<img src="images/iso.png" height="90" alt="">
 		</div>
 		<ul>
-			<li class="zoom fade-in one">
+			<li class="zoom">
 				<a href="./documents/tanusitvanyok/iso_t.pdf" target="new">ISO 9001 Tanúsítvány</a>
 			</li>
-			<li class="zoom fade-in two">
+			<li class="zoom">
 				<a href="./documents/tanusitvanyok/iso_t_m.pdf" target="new">ISO 9001 Tanúsítvány melléklet</a>
 			</li>
-			<li class="zoom fade-in three">
+			<li class="zoom">
 				<a href="./documents/tanusitvanyok/iso_t_en.pdf" target="new">ISO 9001 Certificate</a>
 			</li>
-			<li class="zoom fade-in four">
+			<li class="zoom">
 				<a href="./documents/tanusitvanyok/iso_t_m_en.pdf" target="new">ISO 9001 Appendix of certificate</a>
 			</li>
 		
 		</ul>
 	</article>
-    <aside class="tanusitvanyok_right_article">
+    <aside data-aos="fade-left" data-aos-duration="1000"  class="tanusitvanyok_right_article">
 		
-		<div class="iso_img fade-in one">
+		<div class="iso_img">
 			<img src="images/mees.png" height="90" alt="">
 		</div>
 			<ul>
-				<li class="zoom fade-in one"> 
+				<li class="zoom"> 
 					<a href="./documents/tanusitvanyok/mees_t.pdf" target="new">MEES Tanúsítvány </a>
 				</li>
-				<li class="zoom fade-in two"> 
+				<li class="zoom"> 
 					<a href="./documents/tanusitvanyok/mees_t_m.pdf" target="new">MEES Tanúsítvány melléklet</a>
 				</li>
-				<li class="zoom fade-in three"> 
+				<li class="zoom"> 
 					<a href="./documents/tanusitvanyok/mees_t_en.pdf" target="new">MEES Certificate</a>
 				</li>
-				<li class="zoom fade-in four"> 
+				<li class="zoom"> 
 					<a href="./documents/tanusitvanyok/mees_t_m_en.pdf" target="new">MEES Appendix of certificate</a>
 				</li>
 			</ul>
@@ -265,61 +265,7 @@
 	
 </script>
 <script>
-	//Slider
-	var slideIndex = 1;
-	showImage(slideIndex);
-	carousel();
-	function plusIndex(n){
-		"use strict";
-		showImage(slideIndex += n);
-	}
-	
-	function currentSlide(n){
-		"use strict";
-		showImage(slideIndex = n);
-	}
-			
-	function showImage(n){
-		"use strict";
-		var slide = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		if(n>slide.length){
-			slideIndex = 1;
-		}
-		if(n<1){
-			slideIndex = slide.length;
-		}
-		for(var i = 0; i < slide.length; i++){
-			slide[i].style.display = "none";
-		}
-		slide[slideIndex-1].style.display = "block";
-		for(i=0; i < dots.length; i++){
-			dots[i].className = dots[i].className.replace(" active","");
-			}
-		dots[slideIndex-1].className += " active";
-	}
-	
-	function carousel() {
-		"use strict";
-		var i;
-		var x = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-			dots[i].className = dots[i].className.replace(" active","");
-		}
-		dots[slideIndex-1].className += " active";
-		slideIndex++;
-		if (slideIndex > x.length) {
-			slideIndex = 1;
-		}    
-		x[slideIndex-1].style.display = "block";  
-		setTimeout(carousel, 5000); // Change image every 2 seconds
-	}
-	
-	
-	
-	
+  AOS.init();
 </script>
 </body>
 </html>

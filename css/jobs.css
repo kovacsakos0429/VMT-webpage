@@ -70,10 +70,6 @@
 	font-size: 25px
 }
 
-.jobs_right_article .zoom:hover{
-	box-shadow: 5px 5px 10px #888888;
-	border: thin silver solid;
-}
 
 figure {
 	text-align: center;
@@ -94,6 +90,12 @@ figure {
 
 .figure a{
 	text-decoration: none;
+}
+
+.figure i{
+	color: #5E5D5E;
+	font-size: 50px;
+	text-align: center;
 }
 
 

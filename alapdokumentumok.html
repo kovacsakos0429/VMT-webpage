@@ -11,6 +11,9 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
 <link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -111,44 +114,31 @@
   
   <section>
 	<article class="alapdokumentumok_left_article">
-	
-		<h1 class="slideDown">Alapdokumentumok</h1>
-			<div class="figure">
-				<a href="./documents/alapdokumentumok/Alapito_okirat.pdf" target="new">
-					<figure class="zoom fade-in one">
-							<img src="images/pdf.png" width="40" alt="">
-							<figcaption>
-								Alapító Okirat
-							</figcaption>
-					</figure>
-				</a>
-			</div>
-			<div class="figure">
-				<a href="./documents/alapdokumentumok/Szervezeti_es_mukodesi_szabalyzat.pdf" target="new">
-					<figure class="zoom fade-in two">
-						<img src="images/pdf.png" width="40" alt="">
-							<figcaption>
-								Szervezeti és Működési Szabályzat
-							</figcaption>
-					</figure>
-				</a>
-			</div>
-			<div class="figure">	
-				<a href="./documents/alapdokumentumok/Kuldetesi_nyilatkozat.pdf" target="new">
-					<figure class="zoom fade-in three">
-							<img src="images/pdf.png" width="40" alt="">
-								<figcaption>Küldetési nyilatkozat</figcaption>
-						</figure>
-				</a>
-			</div>
-			<div class="figure">
-					<a href="./documents/alapdokumentumok/Minosegpolitika.pdf" target="new">
-						<figure class="zoom fade-in four">
-							<img src="images/pdf.png" width="40" alt="">
-							<figcaption>Minőség politika</figcaption>
-						</figure>
-					</a>
-			</div>
+		<h1 data-aos="zoom-in" data-aos-duration="1000">Alapdokumentumok</h1>
+	<div class="row">
+     <div data-aos="fade-up" data-aos-duration="1000" class="columns">
+      <p class="thumbnail_align">  <a href="./documents/alapdokumentumok/Alapito_okirat.pdf" target="new"> <i class="fa fa-file-pdf-o zoom" aria-hidden="true"></i> </a> </p>
+      <h4>Alapító okirat</h4>
+      <p>Az alapító okirat kötött jogi fogalom, célja, hogy egységes szerkezetben, jogi nyelven, de közérthetően közölje létrehozója különböző adatait és célkitűzéseit. Az alapító okiratok felépítése függ attól milyen célból alkalmazzák őket. Az alapító okirat egy írásbeli, egyoldalú nyilatkozat, amelyben az alapító létrehozza az alapítás tárgyát.</p>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000" class="columns">
+      <p class="thumbnail_align"> <a href="./documents/alapdokumentumok/Szervezeti_es_mukodesi_szabalyzat.pdf" target="new"> <i class="fa fa-file-pdf-o zoom" aria-hidden="true"></i></a></p>
+      <h4>Szervezeti és működési szabályzat</h4>
+      <p> Jellemzően a nagyobb szervezetek készítenek ilyen szabályzatot, ahol a döntési jogkörök, a szervezet felépítése vagy összetett tevékenysége ezt megkívánja. Ennek a szabályzatnak az elkészítése nem kötelező, de ha a szervezet közhasznú minősítést kér és létesítő okiratában erre a szabályzatra hivatkozik, akkor elkészítése kötelező és a minősítés kérésekor a bírósághoz is be kell nyújtani</p>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000" class="columns">
+      <p class="thumbnail_align"> <a href="./documents/alapdokumentumok/Kuldetesi_nyilatkozat.pdf" target="new"> <i class="fa fa-file-pdf-o zoom" aria-hidden="true"></i></a></p>
+      <h4>Küldetési nyilatkozat</h4>
+      <p>A küldetési nyilatkozat vagy misszió annak a küldetésnek a meghatározása, melyet az intézmény a jövőben be akar tölteni. Megfogalmazza, hogy mi az intézmény létezésének célja, milyen elvek és értékek alapján működik, elkötelezettséget teremt az intézmény tagjai számára. </p>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000" class="columns">
+      <p class="thumbnail_align"> <a href="./documents/alapdokumentumok/Minosegpolitika.pdf" target="new"><i class="fa fa-file-pdf-o zoom" aria-hidden="true"></i></a></p>
+      <h4>Minőségpolitika</h4>
+      <p>A minőségpolitika (angolul quality policy) az intézmény saját minőségi működéséről és annak fejlesztéséről alkotott koncepciója, a minőségre vonatkozóan a felső vezetőség által hivatalosan kinyilvánított általános szándékai és irányvonala.</p>
+    </div>
+  
+	</div>
+			
 	</article>
   </section>
   <footer> 
@@ -209,61 +199,7 @@
 
 </script>	
 <script>
-	//Slider
-	var slideIndex = 1;
-	showImage(slideIndex);
-	carousel();
-	function plusIndex(n){
-		"use strict";
-		showImage(slideIndex += n);
-	}
-	
-	function currentSlide(n){
-		"use strict";
-		showImage(slideIndex = n);
-	}
-			
-	function showImage(n){
-		"use strict";
-		var slide = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		if(n>slide.length){
-			slideIndex = 1;
-		}
-		if(n<1){
-			slideIndex = slide.length;
-		}
-		for(var i = 0; i < slide.length; i++){
-			slide[i].style.display = "none";
-		}
-		slide[slideIndex-1].style.display = "block";
-		for(i=0; i < dots.length; i++){
-			dots[i].className = dots[i].className.replace(" active","");
-			}
-		dots[slideIndex-1].className += " active";
-	}
-	
-	function carousel() {
-		"use strict";
-		var i;
-		var x = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-			dots[i].className = dots[i].className.replace(" active","");
-		}
-		dots[slideIndex-1].className += " active";
-		slideIndex++;
-		if (slideIndex > x.length) {
-			slideIndex = 1;
-		}    
-		x[slideIndex-1].style.display = "block";  
-		setTimeout(carousel, 5000); // Change image every 2 seconds
-	}
-	
-	
-	
-	
+    AOS.init();
 </script>
 </body>
 </html>

@@ -6,9 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="betegjog, betegek jogai és kötelezettségei" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
 <link href="css/betegjog.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
@@ -112,9 +112,9 @@
   </header>
   <section>
 	<article class="betegjog_left_article">	
-	<h1 class="slideDown">Betegek jogai és kötelezettségei</h1>
-	<h3 class="slideDown">(Az 1997. évi CLIV. törvény alapján)</h3> 
-	<div class="fade-in">
+	<h1 data-aos="zoom-in" data-aos-duration="1000">Betegek jogai és kötelezettségei</h1>
+	<h3 data-aos="zoom-in" data-aos-duration="1000">(Az 1997. évi CLIV. törvény alapján)</h3> 
+	<div data-aos="fade-up" data-aos-duration="1000"  class="fade-in">
 	<h2>1. Az egészségügyi ellátáshoz való jog  </h2>
 		<p>Minden betegnek joga van – jogszabályban meghatározott keretek között – az egészségi állapota által indokolt, megfelelő, folyamatosan hozzáférhető és megkülönböztetés nélküli egészségügyi ellátáshoz, ezen belül joga van az ellátást végző orvos megválasztásához, amennyiben ezt az intézet működési rendje, a beteg egészségi állapota által indokolt ellátás szakmai tartalma, az ellátás sürgőssége nem zárja ki. </p>
  		<h2>2. Az emberi méltósághoz való jog </h2>
@@ -230,189 +230,7 @@
 
 </script>	
 <script>
-	//Slider
-	var slideIndex = 1;
-	showImage(slideIndex);
-	carousel();
-	function plusIndex(n){
-		"use strict";
-		showImage(slideIndex += n);
-	}
-	
-	function currentSlide(n){
-		"use strict";
-		showImage(slideIndex = n);
-	}
-			
-	function showImage(n){
-		"use strict";
-		var slide = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		if(n>slide.length){
-			slideIndex = 1;
-		}
-		if(n<1){
-			slideIndex = slide.length;
-		}
-		for(var i = 0; i < slide.length; i++){
-			slide[i].style.display = "none";
-		}
-		slide[slideIndex-1].style.display = "block";
-		for(i=0; i < dots.length; i++){
-			dots[i].className = dots[i].className.replace(" active","");
-			}
-		dots[slideIndex-1].className += " active";
-	}
-	
-	function carousel() {
-		"use strict";
-		var i;
-		var x = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-			dots[i].className = dots[i].className.replace(" active","");
-		}
-		dots[slideIndex-1].className += " active";
-		slideIndex++;
-		if (slideIndex > x.length) {
-			slideIndex = 1;
-		}    
-		x[slideIndex-1].style.display = "block";  
-		setTimeout(carousel, 5000); // Change image every 2 seconds
-	}
-	
-</script>
-<script>
-	(function($) {
-
-  /**
-   * Copyright 2012, Digital Fusion
-   * Licensed under the MIT license.
-   * http://teamdf.com/jquery-plugins/license/
-   *
-   * @author Sam Sehnert
-   * @desc A small plugin that checks whether elements are within
-   *     the user visible viewport of a web browser.
-   *     only accounts for vertical position, not horizontal.
-   */
-
-  $.fn.visible = function(partial) {
-
-    var $t = $(this),
-      $w = $(window),
-      viewTop = $w.scrollTop(),
-      viewBottom = viewTop + $w.height(),
-      _top = $t.offset().top,
-      _bottom = _top + $t.height(),
-      compareTop = partial === true ? _bottom : _top,
-      compareBottom = partial === true ? _top : _bottom;
-
-    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-
-  };
-
-})(jQuery);
-
-var win = $(window);
-var allMods = $(".betegjog_left_article p");
-var allMods3 = $(".betegjog_left_article h2");
-var allMods4 = $(".betegjog_left_article li");
-var allMods5 = $(".betegjog_left_article h3");
-var allMods6 = $(".betegjog_left_article .table");
-
-allMods.each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible");
-  }
-});
-
-
-allMods3.each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible");
-  }
-});
-	
-allMods4.each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible");
-  }
-	
-});
-	
-allMods5.each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible");
-  }
-	
-});
-	
-win.scroll(function(event) {
-  allMods.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in");
-    }
-	if($(window).width() < 768) {
-      el.classList.remove("come-in");
-    }
-  });
-});
-
-
-win.scroll(function(event) {
-  allMods3.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in");
-    }
-	if($(window).width() < 768) {
-      el.classList.remove("come-in");
-    }
-  });
-});
-
-win.scroll(function(event) {
-  allMods4.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in");
-    }
-	if($(window).width() < 768) {
-      el.classList.remove("come-in");
-    }
-  });
-});
-
-win.scroll(function(event) {
-  allMods5.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in");
-    }
-	if($(window).width() < 768) {
-      el.classList.remove("come-in");
-    }
-  });
-});
-
-win.scroll(function(event) {
-  allMods6.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in");
-    }
-	if($(window).width() < 768) {
-      el.classList.remove("come-in");
-    }
-  });
-});
-
+  AOS.init();
 </script>
 </body>
 </html>

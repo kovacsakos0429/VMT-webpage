@@ -55,6 +55,17 @@
 	color: green;
 }
 
+img {
+  	display:inline;
+  	margin-left: 10px;
+  	margin-right: 10px;
+	box-shadow: 5px 5px 10px #888888;
+}
+
+.center{
+	text-align: center;
+}
+
 @media (min-width: 769px) and (max-width: 1366px) {
 	.tortenet_left_article {
 		margin-bottom: 15%;

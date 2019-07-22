@@ -8,7 +8,8 @@
 <title>Tüdőgyógyintézet</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="css/koltsegvetes.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
@@ -111,8 +112,8 @@
 </section>
   </header>
 	<article class="koltsegvetes_left_article">
-	  <h1 class="slideDown">Költségvetési beszámolók</h1>
-		<div class="wrap fade-in one">
+	  <h1 data-aos="zoom-in" data-aos-duration="1000">Költségvetési beszámolók</h1>
+		<div data-aos="fade-up" data-aos-duration="1000" class="wrap">
 			<ul class="koltsegvetes_tabs">
 				<li><a href="#tab1" class="active"><span class="tab-text">2018</span></a></li>
 				<li><a href="#tab2"><span class="tab-text">2017</span></a></li>
@@ -131,119 +132,132 @@
 			<div class="koltsegvetes_sections">
 				<article id="tab1">
 					<ul class="fade-in one">
-							<li class="zoom2"><a href="./documents/koltsegvetes/2018/2018 évi költségvetési beszámoló.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló</a></li>
-							<li class="zoom2"><a href="./documents/koltsegvetes/2018/2018. évi szöveges beszámoló.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Szöveges beszámoló</a></li>
-							<li class="zoom2"><a href="documents/koltsegvetes/2018/2018. évi könyvvizsgálói jelentés.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Független könnyvvizsgálói jelentés</a></li>
-							<li class="zoom2"><a href="documents/koltsegvetes/2018/2018. évi elemi költségvetés.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Elemi költségvetés</a></li>
+							<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+							<li class="zoom2"><a href="./documents/koltsegvetes/2018/2018 évi költségvetési beszámoló.pdf" target="new">Éves költségvetési beszámoló</a></li>
+							<li class="zoom2"><a href="./documents/koltsegvetes/2018/2018. évi szöveges beszámoló.pdf" target="new">Szöveges beszámoló</a></li>
+							<li class="zoom2"><a href="documents/koltsegvetes/2018/2018. évi könyvvizsgálói jelentés.pdf" target="new">Független könnyvvizsgálói jelentés</a></li>
+							<li class="zoom2"><a href="documents/koltsegvetes/2018/2018. évi elemi költségvetés.pdf" target="new">Elemi költségvetés</a></li>
 					</ul>
 				</article>
 				<article id="tab2">
 					<ul class="fade-in one">
-							<li class="zoom2"><a href="./documents/koltsegvetes/2017/2017 évi beszámoló.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló</a></li>
-							<li class="zoom2"><a href="./documents/koltsegvetes/2017/2017. szöveges beszámoló.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Szöveges beszámoló</a></li>
-							<li class="zoom2"><a href="documents/koltsegvetes/2017/2017. független könyvvizsgálói jelentés.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Független könnyvvizsgálói jelentés</a></li>
-							<li class="zoom2"><a href="documents/koltsegvetes/2017/2017. évi teljességi nyilatkozat.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Teljességi nyilatkozat</a></li>
+							<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+							<li class="zoom2"><a href="./documents/koltsegvetes/2017/2017 évi beszámoló.pdf" target="new">Éves költségvetési beszámoló</a></li>
+							<li class="zoom2"><a href="./documents/koltsegvetes/2017/2017. szöveges beszámoló.pdf" target="new">Szöveges beszámoló</a></li>
+							<li class="zoom2"><a href="documents/koltsegvetes/2017/2017. független könyvvizsgálói jelentés.pdf" target="new">Független könnyvvizsgálói jelentés</a></li>
+							<li class="zoom2"><a href="documents/koltsegvetes/2017/2017. évi teljességi nyilatkozat.pdf" target="new">Teljességi nyilatkozat</a></li>
 					</ul>
 				</article>
 				<article id="tab3">
 					<ul class="fade-in one">
-							<li class="zoom2"><a href="./documents/koltsegvetes/2016/2016_eves_koltsegvetesi_beszamolo.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló</a></li>
-							<li class="zoom2"><a href="./documents/koltsegvetes/2016/Szöveges indoklás.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Szöveges indoklás</a></li>
-							<li class="zoom2"><a href="documents/koltsegvetes/2016/2016_eves_elemi_koltsegvetes.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Elemi költségvetés</a></li>
-							<li class="zoom2"><a href="documents/koltsegvetes/2016/2016_eves_elemi_koltsegvetes_indoklas.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Elemi költségvetés indoklása</a></li>
+							<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+							<li class="zoom2"><a href="./documents/koltsegvetes/2016/2016_eves_koltsegvetesi_beszamolo.pdf" target="new">Éves költségvetési beszámoló</a></li>
+							<li class="zoom2"><a href="./documents/koltsegvetes/2016/Szöveges indoklás.pdf" target="new">Szöveges indoklás</a></li>
+							<li class="zoom2"><a href="documents/koltsegvetes/2016/2016_eves_elemi_koltsegvetes.pdf" target="new">Elemi költségvetés</a></li>
+							<li class="zoom2"><a href="documents/koltsegvetes/2016/2016_eves_elemi_koltsegvetes_indoklas.pdf" target="new">Elemi költségvetés indoklása</a></li>
 					</ul>
 				</article>
 				<article id="tab4">
 					<ul class="fade-in one">
-						<li class="zoom2"><a href="documents/koltsegvetes/2015/2015_eves_koltsegvetesi_beszamolo.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló</a></li>
-						<li class="zoom2"><a href="./documents/koltsegvetes/2015/2015_eves_koltsegvetesi_beszamolo_2.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló 2</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2015/2015_teljessegi_nyilatkozat.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Teljességi nyilatkozat</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2015/2015_évi_elemi_költségvetés.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Elemi költségvetés</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2015/2015_évi_elemi_költségvetés_indoklása.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Elemi költségvetés indoklása</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/koltsegvetes/2015/2015_eves_koltsegvetesi_beszamolo.pdf" target="new">Éves költségvetési beszámoló</a></li>
+						<li class="zoom2"><a href="./documents/koltsegvetes/2015/2015_eves_koltsegvetesi_beszamolo_2.pdf" target="new">Éves költségvetési beszámoló 2</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2015/2015_teljessegi_nyilatkozat.pdf" target="new">Teljességi nyilatkozat</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2015/2015_évi_elemi_költségvetés.pdf" target="new">Elemi költségvetés</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2015/2015_évi_elemi_költségvetés_indoklása.pdf" target="new">Elemi költségvetés indoklása</a></li>
 					</ul>
 				</article>
 				<article id="tab5">
 					<ul class="fade-in one">
-						<li class="zoom2"><a href="documents/koltsegvetes/2014/Elemi_költségvetés_2014.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Elemi költségvetés</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2014/Elemi_költségvetés_indoklás_2014.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Elemi költségvetés indoklása</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2014/Költségvetési_beszámoló_2014.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2014/Költségvetési_beszámoló_mellékletek_2014.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló mellékletek</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2014/Szöveges_költségvetési_beszámoló_2014.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Szöveges éves költségvetési beszámoló</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2014/Teljességi_nyilatkozat_2014.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Teljességi nyilatkozat</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/koltsegvetes/2014/Elemi_költségvetés_2014.pdf" target="new">Elemi költségvetés</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2014/Elemi_költségvetés_indoklás_2014.pdf" target="new">Elemi költségvetés indoklása</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2014/Költségvetési_beszámoló_2014.pdf" target="new">Éves költségvetési beszámoló</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2014/Költségvetési_beszámoló_mellékletek_2014.pdf" target="new">Éves költségvetési beszámoló mellékletek</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2014/Szöveges_költségvetési_beszámoló_2014.pdf" target="new">Szöveges éves költségvetési beszámoló</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2014/Teljességi_nyilatkozat_2014.pdf" target="new">Teljességi nyilatkozat</a></li>
 					</ul>
 				</article>
 				<article id="tab6">
 					<ul class="fade-in one">
-						<li class="zoom2"><a href="documents/koltsegvetes/2013/Elemi_költségvetés_2013.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Elemi költségvetés</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2013/Elemi_költségvetés indoklás_2013.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Elemi költségvetés indoklása</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2013/Szöveges_költségvetési_beszámoló_2013.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Szöveges éves költségvetési beszámoló</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2013/Költségvetési_beszámoló_mellékletek_2013.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló mellékletek</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2013/Teljességi_nyilatkozat_2013.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Teljességi nyilatkozat</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/koltsegvetes/2013/Elemi_költségvetés_2013.pdf" target="new">Elemi költségvetés</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2013/Elemi_költségvetés indoklás_2013.pdf" target="new">Elemi költségvetés indoklása</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2013/Szöveges_költségvetési_beszámoló_2013.pdf" target="new">Szöveges éves költségvetési beszámoló</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2013/Költségvetési_beszámoló_mellékletek_2013.pdf" target="new">Éves költségvetési beszámoló mellékletek</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2013/Teljességi_nyilatkozat_2013.pdf" target="new">Teljességi nyilatkozat</a></li>
 					</ul>
 				</article>
 				<article id="tab7">
 					<ul class="fade-in one">
-						<li class="zoom2"><a href="documents/koltsegvetes/2012/Elemi_költségvetés_2012.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Elemi költségvetés</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2012/Elemi_költségvetés_indoklás_2012.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Elemi költségvetés indoklása</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2012/Költségvetési_beszámoló_2012.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2012/Könyvvizsgálói_jelentés_2012.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Könyvvizsgálói jelentés</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2012/Teljességi_nyilatkozat_2012.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Teljességi nyilatkozat</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2012/Éves_beszámoló_2012.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves beszámoló</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2012/Melékletek_2012.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Mellékletek</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/koltsegvetes/2012/Elemi_költségvetés_2012.pdf" target="new">Elemi költségvetés</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2012/Elemi_költségvetés_indoklás_2012.pdf" target="new">Elemi költségvetés indoklása</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2012/Költségvetési_beszámoló_2012.pdf" target="new">Éves költségvetési beszámoló</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2012/Könyvvizsgálói_jelentés_2012.pdf" target="new">Könyvvizsgálói jelentés</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2012/Teljességi_nyilatkozat_2012.pdf" target="new">Teljességi nyilatkozat</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2012/Éves_beszámoló_2012.pdf" target="new">Éves beszámoló</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2012/Melékletek_2012.pdf" target="new">Mellékletek</a></li>
 					</ul>
 				</article>
 				<article id="tab8">
 					<ul class="fade-in one">
-						<li class="zoom2"><a href="documents/koltsegvetes/2011/Költségvetési_beszámoló_2011.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2011/Szöveges_költségvetési_beszámoló_2011.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Szöveges éves költségvetési beszámoló</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2011/Költségvetési_beszámoló_mellékletek_2011.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló mellékletek</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2011/Könyvvizsgálói_jelentés_2011.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Könyvvizsgálói jelentés</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2011/Teljességi_nyilatkozat_2011.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Teljességi nyilatkozat</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/koltsegvetes/2011/Költségvetési_beszámoló_2011.pdf" target="new">Éves költségvetési beszámoló</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2011/Szöveges_költségvetési_beszámoló_2011.pdf" target="new">Szöveges éves költségvetési beszámoló</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2011/Költségvetési_beszámoló_mellékletek_2011.pdf" target="new">Éves költségvetési beszámoló mellékletek</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2011/Könyvvizsgálói_jelentés_2011.pdf" target="new">Könyvvizsgálói jelentés</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2011/Teljességi_nyilatkozat_2011.pdf" target="new">Teljességi nyilatkozat</a></li>
 					</ul>
 				</article>
 				<article id="tab9">
 					<ul class="fade-in one">
-						<li class="zoom2"><a href="documents/koltsegvetes/2010/Szöveges_költségvetési_beszámoló_2010.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Szöveges éves költségvetési beszámoló</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2010/Költségvetés_indoklás_2010.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Költségvetés indoklása</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2010/Költségvetési_beszámoló mellékletek_2010.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló mellékletek</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2010/Könyvvizsgálói_jelentés_2010.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Könyvvizsgálói jelentés</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2010/Teljességi_nyilatkozat_2010.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Teljességi nyilatkozat</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/koltsegvetes/2010/Szöveges_költségvetési_beszámoló_2010.pdf" target="new">Szöveges éves költségvetési beszámoló</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2010/Költségvetés_indoklás_2010.pdf" target="new">Költségvetés indoklása</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2010/Költségvetési_beszámoló mellékletek_2010.pdf" target="new">Éves költségvetési beszámoló mellékletek</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2010/Könyvvizsgálói_jelentés_2010.pdf" target="new">Könyvvizsgálói jelentés</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2010/Teljességi_nyilatkozat_2010.pdf" target="new">Teljességi nyilatkozat</a></li>
 					</ul>
 				</article>
 				<article id="tab10">
 					<ul class="fade-in one">
-						<li class="zoom2"><a href="documents/koltsegvetes/2009/Költségvetési_beszámoló_2009.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2009/Költségvetés_indoklás_2009.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Költségvetés indoklása</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2009/Beszámoló_mellékletei_2009.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló mellékletek</a></li>
-	  					<li class="zoom2"><a href="documents/koltsegvetes/2009/Elemi_költségvetés_2009.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Elemi költségvetés</a></li>
-	  					<li class="zoom2"><a href="documents/koltsegvetes/2009/Teljességi_nyilatkozat_2010.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Teljességi nyilatkozat</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/koltsegvetes/2009/Költségvetési_beszámoló_2009.pdf" target="new">Éves költségvetési beszámoló</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2009/Költségvetés_indoklás_2009.pdf" target="new">Költségvetés indoklása</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2009/Beszámoló_mellékletei_2009.pdf" target="new">Éves költségvetési beszámoló mellékletek</a></li>
+	  					<li class="zoom2"><a href="documents/koltsegvetes/2009/Elemi_költségvetés_2009.pdf" target="new">Elemi költségvetés</a></li>
+	  					<li class="zoom2"><a href="documents/koltsegvetes/2009/Teljességi_nyilatkozat_2010.pdf" target="new">Teljességi nyilatkozat</a></li>
 					</ul>
 				</article>
 				<article id="tab11">
 					<ul class="fade-in one">
-						<li class="zoom2"><a href="documents/koltsegvetes/2008/koltsegvetesi_beszamolo_2008.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2008/Költségvetés_indoklása_2008.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló indoklása</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2008/egyszerűsített_pénzforgalmi_jelentés.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Egyszerűsített pénzforgalmi jelentés</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2008/Elemi_költségvetés.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Elemi költségvetés</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2008/fuggetlen_konyvvizsgaloi_jelentes.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Könyvvizsgálói jelentés</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2008/teljessegi_nyilatkozat.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Teljességi nyilatkozat</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/koltsegvetes/2008/koltsegvetesi_beszamolo_2008.pdf" target="new">Éves költségvetési beszámoló</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2008/Költségvetés_indoklása_2008.pdf" target="new">Éves költségvetési beszámoló indoklása</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2008/egyszerűsített_pénzforgalmi_jelentés.pdf" target="new">Egyszerűsített pénzforgalmi jelentés</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2008/Elemi_költségvetés.pdf" target="new">Elemi költségvetés</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2008/fuggetlen_konyvvizsgaloi_jelentes.pdf" target="new">Könyvvizsgálói jelentés</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2008/teljessegi_nyilatkozat.pdf" target="new">Teljességi nyilatkozat</a></li>
 					</ul>
 				</article>
 				<article id="tab12">
 					<ul class="fade-in one">
-						<li class="zoom2"><a href="documents/koltsegvetes/2007/Költségvetési beszámoló_2007.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2007/Beszámoló_melékletei_2007.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló mellékletei</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2007/Költségvetés_indoklás_2007.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló indoklása</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2007/Elemi_költségvetés_2007.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Elemi költségvetés</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2007/Szöveges_beszámoló_2007.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Szöveges beszámoló</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/koltsegvetes/2007/Költségvetési beszámoló_2007.pdf" target="new">Éves költségvetési beszámoló</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2007/Beszámoló_melékletei_2007.pdf" target="new">Éves költségvetési beszámoló mellékletei</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2007/Költségvetés_indoklás_2007.pdf" target="new">Éves költségvetési beszámoló indoklása</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2007/Elemi_költségvetés_2007.pdf" target="new">Elemi költségvetés</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2007/Szöveges_beszámoló_2007.pdf" target="new">Szöveges beszámoló</a></li>
 					</ul>
 				</article>
 				<article id="tab13">
 					<ul class="fade-in one">
-						<li class="zoom2"><a href="documents/koltsegvetes/2006/Költségvetési_beszámoló_2006.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2006/Költségvetés_indoklása_2006.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Éves költségvetési beszámoló indoklása</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2006/Elemi_költségvetés_2006.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Elemi költségvetés</a></li>
-						<li class="zoom2"><a href="documents/koltsegvetes/2006/Szöveges_beszámoló_2006.pdf" target="new"><img src="images/pdf.png" width="40" alt=""> Szöveges beszámoló</a></li>
+						<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+						<li class="zoom2"><a href="documents/koltsegvetes/2006/Költségvetési_beszámoló_2006.pdf" target="new">Éves költségvetési beszámoló</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2006/Költségvetés_indoklása_2006.pdf" target="new">Éves költségvetési beszámoló indoklása</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2006/Elemi_költségvetés_2006.pdf" target="new">Elemi költségvetés</a></li>
+						<li class="zoom2"><a href="documents/koltsegvetes/2006/Szöveges_beszámoló_2006.pdf" target="new">Szöveges beszámoló</a></li>
 					</ul>
 				</article>
 			</div>
@@ -307,59 +321,6 @@
 
 </script>	
 <script>
-	//Slider
-	var slideIndex = 1;
-	showImage(slideIndex);
-	carousel();
-	function plusIndex(n){
-		"use strict";
-		showImage(slideIndex += n);
-	}
-	
-	function currentSlide(n){
-		"use strict";
-		showImage(slideIndex = n);
-	}
-			
-	function showImage(n){
-		"use strict";
-		var slide = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		if(n>slide.length){
-			slideIndex = 1;
-		}
-		if(n<1){
-			slideIndex = slide.length;
-		}
-		for(var i = 0; i < slide.length; i++){
-			slide[i].style.display = "none";
-		}
-		slide[slideIndex-1].style.display = "block";
-		for(i=0; i < dots.length; i++){
-			dots[i].className = dots[i].className.replace(" active","");
-			}
-		dots[slideIndex-1].className += " active";
-	}
-	
-	function carousel() {
-		"use strict";
-		var i;
-		var x = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-			dots[i].className = dots[i].className.replace(" active","");
-		}
-		dots[slideIndex-1].className += " active";
-		slideIndex++;
-		if (slideIndex > x.length) {
-			slideIndex = 1;
-		}    
-		x[slideIndex-1].style.display = "block";  
-		setTimeout(carousel, 5000); // Change image every 2 seconds
-	}
-</script>
-<script>
 	//tabs
 	$(document).ready(function(){
 		$('.wrap ul.koltsegvetes_tabs li a:first').addClass('active');
@@ -376,6 +337,9 @@
 			return false;
 		});
 	});
+</script>
+<script>
+  AOS.init();
 </script>
 </body>
 </html>

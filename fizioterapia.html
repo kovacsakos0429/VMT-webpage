@@ -47,9 +47,9 @@
 				<li>
 				  <a href="#!">FEKVŐBETEG ELLÁTÁS</a>
 					<ul class="nav-dropdown">
-							<li><a href="aktiv">I. PULMONOLÓGIA (AKTÍV)</a></li>
-							<li><a href="kronikus">II. PULMONOLÓGIA (KRÓNIKUS)</a></li>
-							<li><a href="rehab">III. PULMONOLÓGIA (REHABILITÁCIÓ)</a></li>
+							<li><a href="aktiv">I. PULMONOLÓGIA</a></li>
+							<li><a href="kronikus">II. PULMONOLÓGIA</a></li>
+							<li><a href="rehab">III. PULMONOLÓGIA</a></li>
 					</ul>
        			</li>
         		<li class="active">
@@ -111,12 +111,12 @@
 </section>
   </header>
   <div class="gondozo">
- 	<h1 class="slideDown">Fizioterápia</h1>
+ 	<h1 data-aos="zoom-in" data-aos-duration="1000">Fizioterápia</h1>
 	<article  data-aos="fade-right" data-aos-duration="1000"  class="gondozo_left_article">
       <p>A pulmonológiai fizioterápia a légzés rehabilitáció szerves részeként fontos szerepet tölt be a betegek légzőszervi tüneteinek csökkentésében, a napi tevékenységhez szükséges aktivitás megőrzésében, a terhelhetőség növelésében, a jobb életminőség elérésében, a kórházban töltött napok csökkentésében, s alkalmanként az élet prolongációjában.</p>
 	  <h3>Mellék:</h3>
 	  <p style="text-align: center">117</p>
-	  <h3>Gyógytornászok:</h3>
+	  <h3>Fizioterápiás asszisztensek:</h3>
 	  <p  style="text-align: center">Bolla Tamásné, Csurgay Dorottya, Gozsovics Károlyné, Kléri Ágnes, Lautner Judit, Czobor Noémi</p>
     </article>
     <aside  data-aos="fade-left" data-aos-duration="1000"  class="gondozo_right_article">
@@ -169,7 +169,7 @@
 	<div class="social">
 		<p><a href="impresszum">Impresszum</a></p>
 		<p><a href="joginyilatkozat">Jogi nyilatkozat</a></p>
-		<p><a href="irjonnekunk">Írjon nekünk</a></p>
+		<p><a href="documents/akl/2/adatvedelmi_es_adatbiztonsagi_szabalyzat_3.0.pdf">Adatvédelmi tájékozatató</a></p>
 		<p><a href="linkek">Hasznos linkek</a></p>
   	</div>
   	<hr width="50%">
@@ -295,7 +295,13 @@
 	});
 </script>
 <script>
-  AOS.init();
+	$(function() {
+
+		AOS.init();
+		AOS.init({disable: 'mobile'});
+		AOS.init({disable: 'tablet'});
+	});
+
 </script>
 </body>
 </html>

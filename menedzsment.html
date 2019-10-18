@@ -6,9 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="management, menedzsment" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="./css/management.css" rel="stylesheet" type="text/css" >
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
@@ -47,9 +47,9 @@
         <li>
           <a href="#!">FEKVŐBETEG ELLÁTÁS</a>
 			<ul class="nav-dropdown">
-					<li><a href="aktiv">I. PULMONOLÓGIA (AKTÍV)</a></li>
-					<li><a href="kronikus">II. PULMONOLÓGIA (KRÓNIKUS)</a></li>
-					<li><a href="rehab">III. PULMONOLÓGIA (REHABILITÁCIÓ)</a></li>
+					<li><a href="aktiv">I. PULMONOLÓGIA</a></li>
+					<li><a href="kronikus">II. PULMONOLÓGIA</a></li>
+					<li><a href="rehab">III. PULMONOLÓGIA</a></li>
           	</ul>
         </li>
         <li>
@@ -112,12 +112,12 @@
   </header>
   <section>
 	<article class="menedzsment_left_article">
-	<h1 class="slideDown">Menedzsment</h1>
+	<h1 data-aos="zoom-in" data-aos-duration="1000">Menedzsment</h1>
 		<div class="container-table100">
-			<div class="wrap-table100">
+			<div data-aos="fade-up" data-aos-duration="1000"  class="wrap-table100">
 				<div class="table100">
 					<table>
-						<thead  class="fade-in one">
+						<thead>
 							<tr class="table100-head">
 								<th class="column1">Név</th>
 								<th class="column2">Beosztás</th>
@@ -127,13 +127,13 @@
 								
 							</tr>
 						</thead>
-						<tbody class="fade-in two">
+						<tbody>
 								<tr>
 									<td class="column1">Dr. Medgyasszay Balázs</td>
 									<td class="column2">Főigazgató</td>
 									<td class="column3">06/89-358-013/180, 364</td>
 									<td class="column4">06/89-358-088 </td>
-									<td class="column5">tudogyogy@globonet.hu</td>
+									<td class="column5"><a href="mailto:tudogyogy@globonet.hu" title="E-mail küldése">tudogyogy@globonet.hu</a></td>
 									
 								</tr>
 								<tr>
@@ -142,7 +142,7 @@
 									II. pulmonológia osztályvezető főorvos</td>
 									<td class="column3">06/89-358-013/203</td>
 									<td class="column4">06/89-358-088 </td>
-									<td class="column5">tudogyogy@globonet.hu</td>
+									<td class="column5"><a href="mailto:tudogyogy@globonet.hu" title="E-mail küldése">tudogyogy@globonet.hu</a></td>
 									
 								</tr>
 								<tr>
@@ -150,7 +150,7 @@
 									<td class="column2">Gazdasági igazgató </td>
 									<td class="column3">06/89-358-013/180 </td>
 									<td class="column4">06/89-358-088</td>
-									<td class="column5">tudogyogy@globonet.hu</td>
+									<td class="column5"><a href="mailto:tudogyogy@globonet.hu" title="E-mail küldése">tudogyogy@globonet.hu</a></td>
 									
 								</tr>
 								<tr>
@@ -158,7 +158,7 @@
 									<td class="column2">Ápolási igazgató</td>
 									<td class="column3">06/89-358-013/152</td>
 									<td class="column4">06/89-358-088</td>
-									<td class="column5">apolasig@invitel.hu</td>
+									<td class="column5"><a href="mailto:apolasig@invitel.hu" title="E-mail küldése">apolasig@invitel.hu</a></td>
 									
 								</tr>
 								<tr>
@@ -166,7 +166,7 @@
 									<td class="column2">I. pulmonológia osztályvezető ápoló</td>
 									<td class="column3">06/89-358-013/135</td>
 									<td class="column4">06/89-358-088</td>
-									<td class="column5">palkovicse@fgyepu-tudokorhaz.hu</td>
+									<td class="column5"><a href="palkovicse@fgyepu-tudokorhaz.hu" title="E-mail küldése">palkovicse@fgyepu-tudokorhaz.hu</a></td>
 									
 								</tr>
 								<tr>
@@ -174,7 +174,7 @@
 									<td class="column2">II. pulmonológia osztályvezető ápoló</td>
 									<td class="column3">06/89-358-013/259</td>
 									<td class="column4">06/89-358-088</td>
-									<td class="column5">simong@fgyepu-tudokorhaz.hu</td>
+									<td class="column5"><a href="simong@fgyepu-tudokorhaz.hu" title="E-mail küldése">simong@fgyepu-tudokorhaz.hu</a></td>
 									
 								</tr>
 								<tr>
@@ -182,7 +182,7 @@
 									<td class="column2">III. pulmonológia osztályvezető ápoló</td>
 									<td class="column3">06/89-358-013/359</td>
 									<td class="column4">06/89-358-088</td>
-									<td class="column5">tudogyogy@globonet.hu</td>
+									<td class="column5"><a href="tudogyogy@globonet.hu" title="E-mail küldése">tudogyogy@globonet.hu</a></td>
 									
 								</tr>
 								<tr>
@@ -190,7 +190,7 @@
 									<td class="column2">Orvos diagnosztika vezető szakasszisztens</td>
 									<td class="column3">06/89-358-013/130</td>
 									<td class="column4">06/89-358-088</td>
-									<td class="column5">tudogyogy@globonet.hu</td>
+									<td class="column5"><a href="tudogyogy@globonet.hu" title="E-mail küldése">tudogyogy@globonet.hu</a></td>
 									
 								</tr>
 								<tr>
@@ -198,7 +198,7 @@
 									<td class="column2">Tüdőgondozó (Veszprém) vezető asszisztens</td>
 									<td class="column3">06/88-593-074<br />06/20-237-8200</td>
 									<td class="column4">06/89-358-088</td>
-									<td class="column5">egresi.emi@gmail.com</td>
+									<td class="column5"><a href="egresi.emi@gmail.com" title="E-mail küldése">egresi.emi@gmail.com</a></td>
 									
 								</tr>
 								<tr>
@@ -206,14 +206,14 @@
 									<td class="column2">Tüdőgondozó (Veszprém) Szűrésvezető</td>
 									<td class="column3">06/88-593-078<br />06/20-236-9707</td>
 									<td class="column4">06/89-358-088</td>
-									<td class="column5">tudogondozo.namenyi @gmail.com<br />tudogondozo@invitel.com</td>
+									<td class="column5"><a href="tudogondozo.namenyi@gmail.com" title="E-mail küldése">tudogondozo.namenyi @gmail.com</a><br /><a href="tudogondozo@invitel.hu" title="E-mail küldése">tudogondozo@invitel.hu</a></td>
 								</tr>
 								<tr>
 									<td class="column1">Földesiné Dr. Jungbluth Márta</td>
 									<td class="column2">Főgyógyszerész</td>
 									<td class="column3">06/89-358-013/176</td>
 									<td class="column4">06/89-358-088</td>
-									<td class="column5">jungbluthm@fgyepu-tudokorhaz.hu</td>
+									<td class="column5"><a href="jungbluthm@fgyepu-tudokorhaz.hu" title="E-mail küldése">jungbluthm@fgyepu-tudokorhaz.hu</a></td>
 									
 								</tr>
 								<tr>
@@ -221,7 +221,7 @@
 									<td class="column2">Pénzügyi és számviteli osztályvezető</td>
 									<td class="column3">06/89-358-013/158</td>
 									<td class="column4">06/89-358-088</td>
-									<td class="column5">penzugy@invitel.hu</td>
+									<td class="column5"><a href="penzugy@invitel.hu" title="E-mail küldése">penzugy@invitel.hu</a></td>
 									
 								</tr>
 								<tr>
@@ -229,42 +229,42 @@
 									<td class="column2">Főmérnök</td>
 									<td class="column3">06/89-358-013/155</td>
 									<td class="column4">06/89-358-088</td>
-									<td class="column5">fomernok@invitel.hu</td>
+									<td class="column5"><a href="fomernok@invitel.hu" title="E-mail küldése">fomernok@invitel.hu</a></td>
 								</tr>
 								<tr>
-									<td class="column1">Kozári Andrea Pálma </td>
+									<td class="column1"></td>
 									<td class="column2">Anyaggazdálkodási és logisztikai osztályvezető</td>
 									<td class="column3">06/89-358-013/154</td>
 									<td class="column4">06/89-358-088</td>
-									<td class="column5">anyaggazd@invitel.hu</td>
+									<td class="column5"><a href="anyaggazd@invitel.hu" title="E-mail küldése">anyaggazd@invitel.hu</a></td>
 								</tr>
 								<tr>
 									<td class="column1">Dr. Varadovics Krisztina</td>
 									<td class="column2">Humánpolitikai, bér és munkaügyi osztályvezető</td>
 									<td class="column3">06/89-358-013/153</td>
 									<td class="column4">06/89-358-088</td>
-									<td class="column5">munkaugy@invitel.hu</td>
+									<td class="column5"><a href="munkaugy@invitel.hu" title="E-mail küldése">munkaugy@invitel.hu</a></td>
 								</tr>
 								<tr>
 									<td class="column1">Reményiné Magasházi Henrietta</td>
 									<td class="column2">Minőségirányítási vezető</td>
 									<td class="column3">06/89-358-013/133</td>
 									<td class="column4">06/89-358-088</td>
-									<td class="column5">minoseg@fgyepu-tudokorhaz.hu</td>
+									<td class="column5"><a href="minoseg@fgyepu-tudokorhaz.hu" title="E-mail küldése">minoseg@fgyepu-tudokorhaz.hu</a></td>
 								</tr>
 								<tr>
 									<td class="column1">Gyeneséné Horváth Valéria</td>
 									<td class="column2">Élelmezésvezető-Dietetikus </td>
 									<td class="column3">06/89-358-013/162</td>
 									<td class="column4">06/89-358-088</td>
-									<td class="column5">elelmezes@fgyepu-tudokorhaz.hu</td>
+									<td class="column5"><a href="elelmezes@fgyepu-tudokorhaz.hu" title="E-mail küldése">elelmezes@fgyepu-tudokorhaz.hu</a></td>
 								</tr>
 								<tr>
 									<td class="column1">Czobor Péter</td>
 									<td class="column2">Titkárságvezető</td>
 									<td class="column3">06/89-358-013/180</td>
 									<td class="column4">06/89-358-088</td>
-									<td class="column5">tudogyogy@globonet.hu;<br />tudogyogytitk@globonet.hu</td>
+									<td class="column5"><a href="tudogyogy@globonet.hu" title="E-mail küldése">tudogyogy@globonet.hu</a>;<br /><a href="tudogyogytitk@globonet.hu" title="E-mail küldése">tudogyogytitk@globonet.hu</a></td>
 								</tr>
 						</tbody>
 					</table>
@@ -279,7 +279,7 @@
 	<br>
 		<p><a href="impresszum">Impresszum</a></p>
 		<p><a href="joginyilatkozat">Jogi nyilatkozat</a></p>
-		<p><a href="irjonnekunk">Írjon nekünk</a></p>
+		<p><a href="documents/akl/2/adatvedelmi_es_adatbiztonsagi_szabalyzat_3.0.pdf">Adatvédelmi tájékozatató</a></p>
 		<p><a href="linkek">Hasznos linkek</a></p>
   	</div>
   	<div align="center" style="padding-bottom: 10px;">
@@ -345,61 +345,13 @@
 
 </script>	
 <script>
-	//Slider
-	var slideIndex = 1;
-	showImage(slideIndex);
-	carousel();
-	function plusIndex(n){
-		"use strict";
-		showImage(slideIndex += n);
-	}
-	
-	function currentSlide(n){
-		"use strict";
-		showImage(slideIndex = n);
-	}
-			
-	function showImage(n){
-		"use strict";
-		var slide = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		if(n>slide.length){
-			slideIndex = 1;
-		}
-		if(n<1){
-			slideIndex = slide.length;
-		}
-		for(var i = 0; i < slide.length; i++){
-			slide[i].style.display = "none";
-		}
-		slide[slideIndex-1].style.display = "block";
-		for(i=0; i < dots.length; i++){
-			dots[i].className = dots[i].className.replace(" active","");
-			}
-		dots[slideIndex-1].className += " active";
-	}
-	
-	function carousel() {
-		"use strict";
-		var i;
-		var x = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-			dots[i].className = dots[i].className.replace(" active","");
-		}
-		dots[slideIndex-1].className += " active";
-		slideIndex++;
-		if (slideIndex > x.length) {
-			slideIndex = 1;
-		}    
-		x[slideIndex-1].style.display = "block";  
-		setTimeout(carousel, 5000); // Change image every 2 seconds
-	}
-	
-	
-	
-	
+	$(function() {
+
+		AOS.init();
+		AOS.init({disable: 'mobile'});
+		AOS.init({disable: 'tablet'});
+	});
+
 </script>
 </body>
 </html>

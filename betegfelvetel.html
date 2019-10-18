@@ -47,9 +47,9 @@
         <li>
           <a href="#!">FEKVŐBETEG ELLÁTÁS</a>
 			<ul class="nav-dropdown">
-					<li><a href="aktiv">I. PULMONOLÓGIA (AKTÍV)</a></li>
-					<li><a href="kronikus">II. PULMONOLÓGIA (KRÓNIKUS)</a></li>
-					<li><a href="rehab">III. PULMONOLÓGIA (REHABILITÁCIÓ)</a></li>
+					<li><a href="aktiv">I. PULMONOLÓGIA</a></li>
+					<li><a href="kronikus">II. PULMONOLÓGIA</a></li>
+					<li><a href="rehab">III. PULMONOLÓGIA</a></li>
           	</ul>
         </li>
         <li>
@@ -111,7 +111,7 @@
 </section>
   </header>
   <section class="betegfelvetel">
-  <h1 class="slideDown">Betegfelvétel</h1>
+  <h1 data-aos="zoom-in" data-aos-duration="1000">Betegfelvétel</h1>
 	<article  data-aos="fade-right" data-aos-duration="1000"  class="betegfelvetel_left_article">
 	 <h3>Nyitvatartás:</h3>
 	  <ul>
@@ -152,7 +152,7 @@
 	<div class="social">
 		<p><a href="impresszum">Impresszum</a></p>
 		<p><a href="joginyilatkozat">Jogi nyilatkozat</a></p>
-		<p><a href="irjonnekunk">Írjon nekünk</a></p>
+		<p><a href="documents/akl/2/adatvedelmi_es_adatbiztonsagi_szabalyzat_3.0.pdf">Adatvédelmi tájékozatató</a></p>
 		<p><a href="linkek">Hasznos linkek</a></p>
   	</div>
   	<hr width="50%">
@@ -263,7 +263,13 @@
 	
 </script>
 <script>
-  AOS.init();
+	$(function() {
+
+		AOS.init();
+		AOS.init({disable: 'mobile'});
+		AOS.init({disable: 'tablet'});
+	});
+
 </script>
 </body>
 </html>

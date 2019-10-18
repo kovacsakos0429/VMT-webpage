@@ -6,9 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="történet, tortenet" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
 <link href="css/tortenet.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
@@ -47,9 +47,9 @@
         <li>
           <a href="#!">FEKVŐBETEG ELLÁTÁS</a>
 			<ul class="nav-dropdown">
-				<li><a href="aktiv">I. PULMONOLÓGIA (AKTÍV)</a></li>
-				<li><a href="kronikus">II. PULMONOLÓGIA (KRÓNIKUS)</a></li>
-				<li><a href="rehab">III. PULMONOLÓGIA (REHABILITÁCIÓ)</a></li>
+				<li><a href="aktiv">I. PULMONOLÓGIA</a></li>
+				<li><a href="kronikus">II. PULMONOLÓGIA</a></li>
+				<li><a href="rehab">III. PULMONOLÓGIA</a></li>
           	</ul>
         </li>
         <li>
@@ -112,15 +112,20 @@
   </header>
   <section>
 	<article class="tortenet_left_article">
-		<h1 class="slideDown">Az intézet története (1928 – 2004)</h1>
-		<div class="fade-in">
+		<h1 data-aos="zoom-in" data-aos-duration="1000">Az intézet története (1928 – 2004)</h1>
+		<div data-aos="fade-up" data-aos-duration="1000">
  		<h2>ÜDÜLŐTELEP ÉS ERDEI ISKOLA (1928 – 1945)</h2>
 		<p>Farkasgyepű 22 kilométerre fekszik Pápától, a Pápa és Veszprém között közlekedő autóbusszal már az
 			1920-as években könnyen el lehetett érni. A bakonyi sváb községből üdülőtelepülés lett, panziók, kempingek
 			várták a turistákat. A nagy őspark volt itt ekkoriban nyírfahidakkal és pavilonokkal. Az erdei iskola egy
 			egészségügyi és oktatási intézmény szerencsés ötvözete volt, mely hűen tükrözte alapítóinak szociális
 			érzékenységét.</p>
-		<p>A Gyermekszanatóriumot és erdei iskolát 1928-ban Vass József népjóléti miniszter ideje alatt, építették.
+		<div class="center">
+			<a id="kep1" href="images/tortenet/vass.jpg" data-lightbox="tortenet"><img width="510" class="center" src="images/tortenet/vass.jpg"></a>
+			<a id="kep2" href="images/tortenet/Rott_Nándor.jpg" data-lightbox="tortenet"><img width="200" class="center" src="images/tortenet/Rott_Nándor.jpg"></a>
+			<a id="kep3" href="images/tortenet/kapu.bmp" data-lightbox="tortenet"><img width="555" class="center" src="images/tortenet/kapu.bmp"></a>
+		</div>
+		<p>A Gyermekszanatóriumot és erdei iskolát 1928-ban <a href="documents/a_korhaz_tortenete/Vass József.pdf" title="Életrajz" target="new">Vass József</a> népjóléti miniszter ideje alatt, építették.
 		   Erre a célra a veszprémi Római Katolikus Püspök (Rott Nándor) a farkasgyepűi Hallgató-hegyen, az erdőben
 			19 kat. hold nagyságú területet adományozott a Gyermekvédő Ligának. A leendő épületek helyén kivágták a
 			80-100 éves öreg bükk, cser és tölgyfákat. Utána utat építettek, majd megkezdődött vidéki építőiparosokkal és
@@ -286,7 +291,7 @@
 			örömet, felüdülést nyújt, nyugalmat sugároz. Nagy szerepe volt ebben az igazgató főorvoson kívül Juhász
 			Károly kertésznek, a "virágok professzorának", aki 72 éves korában is nagy odaadással gondozta kedves
 			növényeit.</p>
-		<p>A teljes növénylistáról készült katalógus megtekinthető a következő linken: <a href="documents/hazirend.pdf" onclick="target='newwindow'">Növénykatalógus</a></p>
+		<p>A teljes növénylistáról készült katalógus megtekinthető a következő linken: <a href="documents\a_korhaz_tortenete\Növénykatalógus.pdf" onclick="target='newwindow'">Növénykatalógus</a></p>
 		<p>Az 1980-as évek második felében az Intézeten belül egy 50 ágyas kardiológiai osztály létrehozására is
 			sor került. A Dr. Grics fémjelezte időszak alatt a dolgozók száma nőtt, új munkaköröket hoztak létre: könyvelő,
 			adminisztrátor, gépkocsi-előadó, lakatos, gépkocsi szerelő, betanított munkás, kertészeti dolgozó, illetve
@@ -340,7 +345,7 @@
 	<div class="social">
 		<p><a href="impresszum">Impresszum</a></p>
 		<p><a href="joginyilatkozat">Jogi nyilatkozat</a></p>
-		<p><a href="ironnekunk">Írjon nekünk</a></p>
+		<p><a href="documents/akl/2/adatvedelmi_es_adatbiztonsagi_szabalyzat_3.0.pdf">Adatvédelmi tájékozatató</a></p>
 		<p><a href="linkek">Hasznos linkek</a></p>
   	</div>
   	<hr width="50%">
@@ -456,10 +461,15 @@
 		x[slideIndex-1].style.display = "block";  
 		setTimeout(carousel, 5000); // Change image every 2 seconds
 	}
-	
-	
-	
-	
+</script>
+<script>
+	$(function() {
+
+		AOS.init();
+		AOS.init({disable: 'mobile'});
+		AOS.init({disable: 'tablet'});
+	});
+
 </script>
 </body>
 </html>

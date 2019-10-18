@@ -360,7 +360,7 @@ nav ul li ul li a {
 	text-align: justify;
 	line-height: 25px;
 	margin-top: 20px;
-	margin-bottom: 15px;
+	margin-bottom: 8px;
 	padding-left: 2%;
 	color: #717070;
 	font-size: 20px;
@@ -379,7 +379,7 @@ nav ul li ul li a {
 	font-family: "Source Sans Pro";
 	color: #A5A5A5;
 	line-height: 24px;
-	padding-top: 10px;
+	padding-top: 0px;
 	padding-bottom: 15px;
 	text-align: justify;
 	margin-top: 15px;
@@ -392,7 +392,7 @@ nav ul li ul li a {
 
 .news{
 	display: inline-block;
-	width: 23%;
+	width: 23.1%;
 	text-align: center;
 	padding-left: 1.4%;
 
@@ -452,11 +452,11 @@ nav ul li ul li a {
   padding: 7px 14px;
   border: 1px solid #fff;
   margin: 50px 0 0 0;
-  background-color: transparent;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .hovereffect a.info:hover {
-  box-shadow: 0 0 5px #fff;
+  box-shadow: 0 0 15px #fff;
 }
 
 .hovereffect a.info, .hovereffect h2 {
@@ -1123,7 +1123,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41965a', end
 	
 	.news{
 		display: inline-block;
-		width: 25%;
+		width: 23%;
+		
 	}
 	
 	.hovereffect h2 {

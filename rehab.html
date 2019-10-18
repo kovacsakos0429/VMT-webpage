@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="rehab, pulmonológiai rehabilitáció, rehabilitáció" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/rehab.css" rel="stylesheet" type="text/css">
 <link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
@@ -47,9 +47,9 @@
         <li class="active">
           <a href="#!">FEKVŐBETEG ELLÁTÁS</a>
 			<ul class="nav-dropdown">
-					<li><a href="aktiv">I. PULMONOLÓGIA (AKTÍV)</a></li>
-					<li><a href="kronikus">II. PULMONOLÓGIA (KRÓNIKUS)</a></li>
-					<li><a href="rehab">III. PULMONOLÓGIA (REHABILITÁCIÓ)</a></li>
+					<li><a href="aktiv">I. PULMONOLÓGIA</a></li>
+					<li><a href="kronikus">II. PULMONOLÓGIA</a></li>
+					<li><a href="rehab">III. PULMONOLÓGIA</a></li>
           	</ul>
         </li>
         <li>
@@ -111,10 +111,10 @@
 </section>
   </header>
   <section class="rehab">
-  <h1 class="slideDown">III. Pulmonológia (Rehabilitáció)</h1>
-	<article class="rehab_left_article fade-in">
-	 	<h3 class="fade-in two">Orvos kollégák:</h3>
-	 	<ul class="fade-in two">
+  <h1 data-aos="zoom-in" data-aos-duration="1000">III. Pulmonológia</h1>
+	<article data-aos="fade-right" data-aos-duration="1000"  class="rehab_left_article">
+	 	<h3>Orvos kollégák:</h3>
+	 	<ul>
 			<li>
 				dr. Medgyasszay Balázs (főigazgató)
 			</li>
@@ -125,18 +125,18 @@
 				dr. Csernák Balázs
 			</li>
 	  	</ul>
-      	<h3 class="fade-in three">Orvosírnokok:</h3>
-		<ul class="fade-in three">
+      	<h3>Orvosírnokok:</h3>
+		<ul>
 			  <li>Bene Zoltánné</li>
 			  <li>Szabó Ramóna</li>
 	  </ul>
-    <h3 class="fade-in four">Osztályos főnővér:</h3>
-    <ul class="fade-in four">
+    <h3>Osztályos főnővér:</h3>
+    <ul>
      	<li>Nagyné Izsa Ildikó</li>
     </ul>	
-	<h3 class="fade-in four" ><a href="mellekek#rehab">Mellékek</a></h3>
+	<h3><a href="mellekek#rehab">Mellékek</a></h3>
 	</article>
-    <aside class="rehab_right_article fade-in one">
+    <aside data-aos="fade-left" data-aos-duration="1000"  class="rehab_right_article">
     	<!-- Slider-->
    	  <div class="slideshow-container">
     		<div class="slides fade"><a href="./images/rehab/1.jpg" data-lightbox="mygallery"><img src="./images/rehab/1.jpg" alt=""/></a></div>
@@ -157,7 +157,7 @@
 	<div class="social">
 		<p><a href="impresszum">Impresszum</a></p>
 		<p><a href="joginyilatkozat">Jogi nyilatkozat</a></p>
-		<p><a href="irjonnekunk">Írjon nekünk</a></p>
+		<p><a href="documents/akl/2/adatvedelmi_es_adatbiztonsagi_szabalyzat_3.0.pdf">Adatvédelmi tájékozatató</a></p>
 		<p><a href="linkek">Hasznos linkek</a></p>
   	</div>
   	<hr width="50%">
@@ -261,10 +261,15 @@
 		x[slideIndex-1].style.display = "block";  
 		setTimeout(carousel, 5000); // Change image every 2 seconds
 	}
-	
-	
-	
-	
+</script>
+<script>
+	$(function() {
+
+		AOS.init();
+		AOS.init({disable: 'mobile'});
+		AOS.init({disable: 'tablet'});
+	});
+
 </script>
 </body>
 </html>

@@ -34,14 +34,19 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+
 </head>
 <body>
 <div class="container">
   <header>
     <div class="primary_header">
-    <h1 class="title">
+    	<a href="palyazatok"><img style="float: right;margin-top: 2px; margin-right: 2px; opacity: 0.8;" src="./images/eu2.png" width="130" class="default_img slideDown" alt=""/></a>
+    	<h1 class="title">
 		  <a href="index"><img src="./images/logo.png" class="mobile_img slideDown" alt=""/>
-		  <img src="./images/nev.png" class="default_img slideDown" alt=""/></a></h1>
+		  <img src="./images/nev.png" class="default_img slideDown" alt=""/></a>
+		</h1>
+   		
     </div>
    	<section class="navigation" id="menu">
   	<div class="nav-container">
@@ -63,9 +68,9 @@
         <li>
           <a class="fade-in" href="#!">FEKVŐBETEG ELLÁTÁS</a>
 			<ul class="nav-dropdown">
-					<li><a href="aktiv">I. PULMONOLÓGIA (AKTÍV)</a></li>
-					<li><a href="kronikus">II. PULMONOLÓGIA (KRÓNIKUS)</a></li>
-					<li><a href="rehab">III. PULMONOLÓGIA (REHABILITÁCIÓ)</a></li>
+					<li><a href="aktiv">I. PULMONOLÓGIA</a></li>
+					<li><a href="kronikus">II. PULMONOLÓGIA</a></li>
+					<li><a href="rehab">III. PULMONOLÓGIA</a></li>
           	</ul>
         </li>
         <li>
@@ -76,7 +81,7 @@
 				<li><a href="#">EKG</a></li>
 				<li><a href="citologia">CITOLÓGIA</a></li>
 				<li><a href="legzespatologia">LÉGZÉSPATOLÓGIA</a></li>
-				<li><a href="#">RADIOLÓGIA</a></li>
+				<li><a href="">RADIOLÓGIA</a></li>
 				<li><a href="#">BRONCHOLÓGIA</a></li>
 				<li><a href="alvasdiagnosztika">ALVÁSDIAGNOSZTIKA</a></li>
 				<li><a href="fizioterapia">FIZIOTERÁPIA</a></li>
@@ -203,6 +208,17 @@
 			</ul>
 			<div data-aos="fade-up" data-aos-duration="1000" class="sections">
 				<article class="fade-in" id="tab1">
+				<!--	<div class="news">
+						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+							<div class="hovereffect">
+								<img class="img-responsive" src="images/news/palyazat.jpg" alt="">
+								<div class="overlay">
+								   <h2>Pályázati felhívás büfé üzemeltetésére</h2>
+								   <a href="bufepalyazat.html" target="new" class="info">Részletek</a>
+								</div>
+							</div>
+						</div>
+					</div>-->
 					<div class="news">
 						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 							<div class="hovereffect">
@@ -220,7 +236,8 @@
 									<img class="img-responsive" src="images/news/dijatado.jpg" alt="">
 									<div class="overlay">
 									   <h2>Díjat kapott intézetünk</h2>
-									   <a class="info" href="#">Részletek</a>
+									   <a class="info" href="images/oklevel.jpg" data-lightbox="oklevel">Részletek</a>
+									
 									</div>
 								</div>
 							</div>
@@ -260,7 +277,7 @@
 	<div class="social">
 		<p><a href="impresszum">Impresszum</a></p>
 		<p><a href="joginyilatkozat">Jogi nyilatkozat</a></p>
-		<p><a href="irjonnekunk">Írjon nekünk</a></p>
+		<p><a href="documents/akl/2/adatvedelmi_es_adatbiztonsagi_szabalyzat_3.0.pdf">Adatvédelmi tájékozatató</a></p>
 		<p><a href="linkek">Hasznos linkek</a></p>
   	</div>
   	<hr width="50%">
@@ -420,8 +437,14 @@
 
 </script>
 <script>
-    AOS.init();
-</script>
+	$(function() {
+
+		AOS.init();
+		AOS.init({disable: 'mobile'});
+		AOS.init({disable: 'tablet'});
+	});
+
+	</script>
 
 </body>
 </html>

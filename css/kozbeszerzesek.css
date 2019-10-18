@@ -29,12 +29,10 @@
 
 ul.kozbeszerzesek_tabs{
 	width: 98%;
-	background: #363636;
 	list-style: none;
 	display: flex;
 	margin: 0;
 	padding: 0;
-	box-shadow: 5px 5px 10px #888888;
 	margin-left: 1%
 }
 
@@ -43,20 +41,24 @@ ul.kozbeszerzesek_tabs li{
 }
 
 ul.kozbeszerzesek_tabs li a{
-	color: #fff;
+	color: #111111;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 20px;
 	display: block;
 	padding: 15px 0px;
 	text-align: center;
 	
 }
 
+ul.kozbeszerzesek_tabs li a.active {
+	color: white;
+	border-radius: 35px;
+	font-weight: bold;
+}
+
 .kozbeszerzesek_sections{
 	width: 98%;
-	background: #DDD;
 	margin-left: 1%;
-	box-shadow: 5px 5px 10px #888888;
 }
 
 .kozbeszerzesek_sections article{
@@ -65,14 +67,23 @@ ul.kozbeszerzesek_tabs li a{
 }
 
 .kozbeszerzesek_sections h2{
-	margin-top: 15px;
+	margin-top: 30px;
 	margin-bottom: 0px;
 	color: #5E5D5E;
 	font-size: 25px;
+	text-align: center;
+}
+
+.kozbeszerzesek_sections i{
+	margin-top: 35px;
+	color: #5E5D5E;
+	font-size: 40px;
+	text-align: center;
 }
 
 .kozbeszerzesek_sections ul{
 	list-style-type: none;
+	text-align: center;
 }
 
 .kozbeszerzesek_sections ul li{
@@ -90,6 +101,9 @@ ul.kozbeszerzesek_tabs li a{
 	color: green;
 	
 }
+
+
+/* Create an active/current "tab button" class */
 	
 @media (min-width: 769px) and (max-width: 1366px) {	
 	.kozbeszerzesek_left_article h1 {	

@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="büfé pályázat" />
+<title>Tüdőgyógyintézet</title>
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<link href="css/efop1103.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
+<link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
+<script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">		
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="primary_header">
+      <h1 class="title"> 
+		    <a href="index"><img src="./images/logo.png" class="mobile_img" alt=""/>
+		  <img src="./images/nev.png" class="default_img" alt=""/></a></h1>
+    </div>
+     <section class="navigation" id="menu">
+  	<div class="nav-container">
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">INTÉZETÜNK</a>
+			<ul class="nav-dropdown">
+				<li><a href="index">BEMUTATKOZÁS</a></li>
+				<li><a href="tortenet">A KÓRHÁZ TÖRTÉNETE</a></li>
+				<li><a href="menedzsment">MENEDZSMENT</a></li>
+        		<li><a href="alapitvany">ALAPÍTVÁNYUNK</a></li>
+        		<li><a href="images/terkep.jpg" data-lightbox="terkep">TÉRKÉP</a></li>
+          	</ul>
+        </li>
+        <li>
+          <a href="#!">FEKVŐBETEG ELLÁTÁS</a>
+			<ul class="nav-dropdown">
+					<li><a href="aktiv">I. PULMONOLÓGIA</a></li>
+					<li><a href="kronikus">II. PULMONOLÓGIA</a></li>
+					<li><a href="rehab">III. PULMONOLÓGIA</a></li>
+          	</ul>
+        </li>
+        <li>
+          <a href="#!">JÁRÓBETEG ELLÁTÁS</a>
+			  <ul class="nav-dropdown">
+				<li><a href="szakambulancia">SZAKAMBULANCIA</a></li>
+				<li><a href="#">ULTRAHANG</a></li>
+				<li><a href="#">EKG</a></li>
+				<li><a href="citologia">CITOLÓGIA</a></li>
+				<li><a href="legzespatologia">LÉGZÉSPATOLÓGIA</a></li>
+				<li><a href="#">RADIOLÓGIA</a></li>
+				<li><a href="#">BRONCHOLÓGIA</a></li>
+				<li><a href="alvasdiagnosztika">ALVÁSDIAGNOSZTIKA</a></li>
+				<li><a href="fizioterapia">FIZIOTERÁPIA</a></li>
+				<li><a href="gondozo">VESZPRÉMI TÜDŐGONDOZÓ</a></li>
+			  </ul>
+        </li>
+        <li>
+          <a href="#!">SZOLGÁLTATÁSOK</a>
+			 <ul class="nav-dropdown">
+				<li><a href="patika">ROBERT KOCH PATIKA</a></li>
+        		<li><a href="vendeghaz">VENDÉGHÁZ</a></li>
+        		<li><a href="szolgaltatohaz">SZOLGÁLTATÓ HÁZ</a></li>
+				<li><a href="djp">DJP PONT</a></li>
+				<li><a href="bufe">BÜFÉ</a></li>
+				<li><a href="documents/etlap.pdf" target="new">ÉLELMEZÉS - ÉTLAP</a></li>
+				<li><a href="documents/teritesidijak.pdf" target="new">MINDEN TÉRÍTÉSI DÍJ</a></li>
+			  </ul>
+        </li>
+        <li class="active">
+          <a href="#!">KÖZÉRDEKŰ ADATOK</a>
+			  <ul class="nav-dropdown">
+				<li><a href="alapdokumentumok">ALAPDOKUMENTUMOK</a></li>
+				<li><a href="akl">ÁLTALÁNOS KÖZZÉTÉTELI LISTA</a></li>
+				<li><a href="palyazatok">PÁLYÁZATOK</a></li>
+				<li><a href="kozbeszerzesek">KÖZBESZERZÉSEK</a></li>
+				<li><a href="koltsegvetes">KÖLTSÉGVETÉSI BESZÁMOLÓK</a></li>
+				<li><a href="tanusitvanyok">TANÚSÍTVÁNYOK</a></li>
+				<li><a href="archivum">ARCHÍVUM</a></li>
+			  </ul>
+        </li>
+		<li>
+          <a href="#!">BETEGTÁJÉKOZTATÓ</a>
+			  <ul class="nav-dropdown">
+				<li><a href="betegfelvetel">BETEGFELVÉTEL</a></li>
+       		  	<li><a href="mellekek">MELLÉKEK</a></li>
+        		<li><a href="hazirend">HÁZIREND</a></li>
+				<li><a href="betegjog">BETEGEK JOGAI ÉS KÖTELEZETTSÉGEI</a></li>
+        		<li><a href="documents/betegjogi_kepviselo.pdf" target="new">BETEGJOGI KÉPVISELŐ</a></li>
+				<li><a href="beleegyezonyilatkozatok">BELEEGYEZŐ NYILATKOZATOK</a></li>
+				<li><a href="eletmodvaltovideok.html">ÉLETMÓDVÁLTÓ VIDEÓK</a></li>
+			  </ul>
+        </li>
+         <li><a href="allasok">ÁLLÁSAJÁNLATOK</a></li>
+		 <li><a href="elerhetosegek">ELÉRHETŐSÉGEK</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+  </header>
+  <section>
+	<article class="efop_left_article">	
+		<h1 data-aos="zoom-in" data-aos-duration="1000">Pályázati felhívás Veszprém Megyei Tüdőgyógyintézet büfé üzemeltetésére</h1>
+		<h3 data-aos="zoom-in" data-aos-duration="1000"></h3> 
+		<div data-aos="fade-up" data-aos-duration="1000">
+			<p><u>Az ajánlatkérő adatai:</u></p>
+		  <p><b>Ajánlatkérő neve:</b> Veszprém Megyei Tüdőgyógyintézet, Farkasgyepű</p>
+			<p><b>Ajánlatkérő címe, postacíme:</b> 8582 Farkasgyepű, 049/2. hrsz</p>
+			<p><b>Ajánlatkérő telefonszáma:</b> (89) 358-013</p>
+			<p><b>Ajánlatkérő e-mail címe: </b> <a href="mailto:tudogyogy@globonet.hu" title="E-mail küldése">tudogyogy@globonet.hu</a></p>
+			<br />
+			<p><u>A pályázat tárgya:</u></p>
+		  <p>A Veszprém Megyei Tüdőgyógyintézet, Farkasgyepű (8582 Farkasgyepű, hrsz 049/2) pályázatot hirdet a vagyonkezelésében lévő „Központi Igazgatás” elnevezésű épületének földszintjén kialakított 5 helyiségből álló, összesen 62 m² nagyságú büfé a szerződés tervezet mellékletét képező leltárkönyv és tárgyi eszköz listában felsorolt eszközöket üzemeltetésre 5 éves határozott időre.</p><br />
+			<p><u>A pályázat célja:</u></p>
+			<p>Bérleti szerződés kötése nyertes Ajánlattevővel a felhívásban szereplő büfé működtetésére.</p>
+			<p>A büfé működtetésének célja, hogy az Intézet betegei, hozzátartozói és dolgozói megfelelő színvonalú és árszintű büfé-szolgáltatást kapjanak.</p>
+			<p>Az Ajánlattevőnek a büfé kínálatának kialakításakor figyelemmel kell lenniük az Országos Élelmiszerbiztonsági és Táplálkozástudományi Intézet (OÉTI) ajánlásában foglaltakra. </p><br />
+			<p><u>A bérleti szerződés időtartama:</u></p>
+			<p>A szerződés megkötésétől számított 5 év. </p><br />
+			<p><u>Ajánlattevő által elvégzendő feladatok:</u></p>
+			<p>A büfé az Intézet betegeinek, hozzátartozóinak és dolgozóinak nyújtson szolgáltatást munkanapokon hétfőtől-péntekig minimum: 07:00-16:00 óráig, valamint szombaton minimum 07.00-12.00 óráig biztosított nyitva tartással. A vasárnapi nyitvatartás nem elvárás, de lehetséges.</p><br />
+			<p><u>A pénzügyi feltételek:</u></p>
+			<p>A pályázat kiírója minimálisan megajánlható bérleti díjat határoz meg, melynek összege: nettó 60.000 Ft/hó.</p>
+			<p>Ajánlattevő vállalja, hogy a büfé helyiség használatáért, Ajánlatkérő és Ajánlattevő között a nyertes ajánlat alapján létrejövő szerződésben szereplő bérleti díjat, minden hónap 10. napjáig megfizeti.</p>
+			<p>Az Ajánlatkérő jogosult minden év október 1-től az éves inflációval növelni a bérleti díjat.</p>
+			<p>A bérleti díj nem tartalmazza a rezsiköltségeket, melyek Bérlőt az alábbiak szerint terhelik:</p>
+		  <ul>
+				<li><u>Vízdíj:</u> az egyedi mérőóra alapján vételezett vízmennyiség és csatornadíj.</li>
+				<li><u>Villamos energia:</u> az önálló elektromos mérőóra alapján vételezett elektromos áram mennyisége.</li>
+				<li><u>Szemétszállítás:</u> a tevékenység folytatása során keletkezett hulladék elszállítása nettó 1.192 Ft + ÁFA (azaz Egyezeregyszázkilencvenkettő Ft + ÁFA) összegű átalánydíj.</li>
+				<li><u>Fűtés:</u> nettó15.055 Ft + ÁFA (azaz Tizenötezerötvenöt forint + ÁFA) összegű átalánydíj.</li>
+		  </ul>
+			<p>A rezsiköltségeket utólag, a közüzemi szolgáltatók által érvényesített egységárak alapján, a fűtést önköltségi áron a Bérbeadó által kibocsátott számla ellenében fizeti meg a Bérlő.</p>
+			<p>90 napnál hosszabb bérleti díj hátralék, rezsitartozás a szerződés azonnali felmondását eredményezi.</p>
+			<p>Ajánlatkérő a pályázatokat nem kizárólag a fizetendő bérleti díj egy havi (...- Ft/hó) összegére tett megajánlás alapján bírálja el, hanem a változatos árukínálat alapján is, azonban a magasabb bérleti díjra tett ajánlat előnyt jelent.</p><br />
+			<p><u>A szerződéskötés feltételei:</u></p>
+		  <ul>
+				<li>Ajánlattevőnek vállalnia kell a büfé megfelelő és biztonságos készülékkel, berendezésekkel való ellátását, működési engedélyének megszerzését, a megfelelő és biztonságos működéshez szükséges felújítások elvégzését, bérbeszámítási igény nélkül, saját költségen.</li>
+				<li>A bérbevétel napjától a bérlő köteles gondoskodni a bérelt eszköz, ingatlanrész biztonságával kapcsolatos feladatok végrehajtásáról, a tűz, munka és környezetvédelmi illetve a tevékenységre vonatkozó további hatósági előírások, rendszabályok betartásával, kidolgozásával.</li>
+				<li>Ajánlattevőnek vállalnia kell, hogy a bérleményt csak rendeltetésszerűen használja, betartja az Intézet szabályzatait és rendelkezéseit.</li>
+				<li>Ajánlattevőnek vállalnia kell az előírt szabványnak megfelelő felszereltség és üzemeltetés folyamatos biztosítását.</li>
+				<li>A bérleményben a büfé üzemeltetésén kívül más tevékenységi kör csak a kiíró hozzájárulásával folytatható.</li>
+				<li>A bérlemény albérletbe nem adható, a bérlő, mint jogi személy jogutód nélküli megszűnése esetén a szerződés megszűnik.</li>
+				<li>Az üzemeltetésre átvett helyiségek tisztántartása, napi takarítása az üzemeltető kötelessége.</li>
+				<li>Tisztasági festés, mázolás, a bérelt helyiségek állagmegóvása az üzemeltető feladata.</li>
+				<li>Az üzemeltető köteles a rovar- és rágcsálóirtást szükség szerint elvégeztetni.</li>
+				<li>A bérleti szerződés megszűnésekor a bérlő köteles a helyiséget és annak leltár szerinti berendezési tárgyait üzemképes állapotban a bérbeadónak visszaadni.</li>
+				<li>Az Ajánlattevőnek vállalnia kell a HACCP szabványnak megfelelő felszereltség és üzemeltetés folyamatos biztosítását.</li>
+				<li>Dohány és szeszesital árusítása TILOS!</li>
+		  </ul><br />
+			<p><u>Tevékenységi kör:</u></p>
+			<p>A nyitvatartási idő alatt forgalmazott termékek köre:</p>
+			<ul>
+				<li>alkoholmentes italok (szénsavas, szénsavmentes ásványvíz, üdítő, rostos és szűrt gyümölcslevek, tea stb.)</li>
+				<li>kávéital (eszpresszó, cappuccino, forró csokoládé, forró tea stb.), csomagolt kávé </li>
+				<li>cukrászati készítmény, édesipari termék (minimum 8 féle)</li>
+				<li>kenyér- és pékáru, sütőipari termékek</li>
+				<li>meleg étel (hot-dog, hamburger, pizza, fornetti, stb)</li>
+				<li>hentesáru (felvágottak, töltelékáruk, szalonna, stb.)</li>
+				<li>zöldség- és gyümölcs</li>
+				<li>tej, tejtermék</li>
+				<li>édesség-, sósáru (desszertek, táblás-, szelet csokoládék, chips, sós pálcika stb.)</li>
+				<li>egyéb élelmiszer (konzerv, savanyúság, ketchup, mustár,)</li>
+				<li>textil, ruházat (törölköző, hálóruha, zokni, póló)</li>
+				<li>kozmetikai termékek (higiéniai termékek, fésű, körömápolási termékek, hajkozmetikumok, borotválkozási termékek)</li>
+				<li>papír és egészségügyi termékek (WC papír, eü betét, szalvéta)</li>
+				<li>napi és heti újságok, könyvek</li>
+				<li>diabetikus termékek</li>
+		  </ul><br />
+		  <p><u>A pályázat formai és tartalmi követelményei:</u></p>
+		  <p>A pályázatot papír alapon, zárt borítékban kell benyújtani postai úton az alábbi címre: Veszprém Megyei Tüdőgyógyintézet, Farkasgyepű (8582 Farkasgyepű, hrsz 049/2) vagy személyesen átadás-átvételi elismervény aláírását követően az Intézet Gazdasági Hivatal Titkárságán.</p>
+		  <p>A borítékon kérjükfeltüntetni: „Pályázat a Veszprém Megyei Tüdőgyógyintézet, Farkasgyepű büfé üzemeltetésére.”</p>
+		  <p><b>A pályázatok beérkezésének határideje: 2019. október 14. 10.00 óra</b></p>
+		  <p>A pályázathoz csatolni kell:</p>
+          <ul>
+              <li>az ajánlattevő nevét, címét, egyéb elérhetőségeit (telefon, fax, e-mail cím, stb.)</li>
+              <li>köztartozásmentes adózói adatbázisban szereplésről nyilatkozat, vagy nemleges adóigazolás</li>
+              <li>a büfé működtetésére vonatkozó tervezetet, a büfé kínálatának részletes bemutatását</li>
+              <li>az ajánlattevő eddig tevékenységének rövid ismertetését, az üzemeltetésre, üzletpolitikájára vonatkozó elképzeléseit, koncepcióját, üzleti tervét</li>
+              <li>a havi bérleti díjra vonatkozó ajánlatot</li>
+              <li>ajánlattevő nyilatkozatát arról, hogy vállalja jelen pályázati kiírásban foglalt feltételek betartását</li>
+              <li>ajánlattevő nyilatkozatát, hogy nyertessége esetén a szerződés teljes időtartama alatt biztosítja a pályázatában bemutatott büfé kínálatnak megfelelően az árusítandó élelmiszerek egészséges táplálkozási és diabetikus választékát</li>
+              <li>céges pályázó esetén átláthatósági nyilatkozatot</li>
+          </ul><br />
+          <p><u>A pályázattal kapcsolatos egyéb információk:</u></p>
+          <p>Az Ajánlattevő feladatta – eredményes pályázat esetén - a bejelentés  köteles kereskedelmi tevékenységre vonatkozó nyilvántartás kezdeményezése, a  szükséges igazolás – a működési engedély kiadásáról – beszerzése és a  szakhatóságok által előírtak teljesítése.</p>
+          <p>A helyiségben kizárólag büfé működtethető. A tevékenység bejelentésköteles a  210/2009.(IX.29) Kormányrendelet alapján.</p>
+          <p>A bérleti díj NEM tartalmazza a víz (mérő alapján), villany (mérő alapján),  fűtés (átalány alapján), felhasználás, szemétszállítás díját.</p><br />
+          <p><u>A pályázati kiírás eredménytelensége:</u></p>
+          <p>Ajánlatkérő fenntartja a jogát a pályázati kiírás eredménytelennek nyilvántartására.</p>
+          <p>Eredménytelen, illetve részben eredménytelen a pályázati kiírás, ha</p>
+          <ul>
+              <li>nem érkezett pályázati ajánlat,</li>
+              <li>a benyújtott pályázatok egyike sem felelt meg a pályázati kiírásban foglalt feltételeknek,</li>
+              <li>az Ajánlatkérő az eljárás érvénytelenítéséről döntött, mert a pályázat elbírálásakor az összeférhetetlenségi szabályokat megsértették, illetve ha valamelyik Ajánlattevő az eljárás tisztaságát vagy a többi Ajánlattevő érdekeit súlyosan sértő cselekményt követett el.</li>
+          </ul><br />
+          <p><u>A pályázat bontása és elbírálása:</u></p>
+          <p><b>Az ajánlatok felbontásának helye, ideje:</b> 2019. október 14. 11.00 óra Veszprém Megyei Tüdőgyógyintézet, Farkasgyepű (8582 Farkasgyepű hrsz 049/2) hivatalos helyisége</p>
+          <p>A bontásnál jelen lehet az ajánlatadó személyesen vagy meghatalmazottja.</p>
+          <p><b>Szerződéskötés időpontja:</b> az ÁEEK engedély megérkezését követő 15. napon, munkaszüneti nap esetén a következő munkanapon.</p><br />
+          <p><u>A pályázatból kizárásra kerül az a pályázó:</u></p>
+          <ul>
+            <li>aki ellen csőd-, felszámolási eljárás van folyamatban, aki végelszámolás alatt áll</li>
+            <li>akinek az adóhatóságnál nyilvántartott adótartozása van</li>
+            <li>akinek a pályázat kiírója felé a pályázati beadási határidő lejártakor tartozása áll fenn</li>
+          </ul><br />
+          <p><u>A pályázat érvénytelen, ha:</u></p>
+          <ul>
+            <li>a pályázat benyújtására rendelkezésre álló határidő lejárta után nyújtották be</li>
+            <li>egyéb módon nem felel meg a pályázati felhívásban meghatározott feltételeknek</li>
+          </ul><br />
+          <p><u>Letölthető dokumentumok:</u></p>
+			<ul style="color: #39AEA9;">
+				<li ><a href="documents/palyazatok/bufe/Pályázati felhívás büfé üzemeltetésére.pdf" target="_blank" style="color: #39AEA9;"><b>Pályázati felhívás nyomtatható változat (PDF)</b></a></li>
+				<li style="color: #39AEA9;"><a href="documents/palyazatok/bufe/Bérleti Szerződés tervezet.pdf" target="_blank" style="color: #39AEA9;"><b>Bérleti szerződés tervezet (PDF)</b></a></li>
+			</ul><br />
+          <p>Az elbírálás eredményéről minden pályázónak külön értesítést küldünk.</p>
+          <p><b>A pályázat benyújtása előtt az helyiség megtekintésére lehetőség van.</b></p><br />
+          <p>Előzetes egyeztetés, illetve a pályázati eljárással kapcsolatban további felvilágosítás kérhető: </p>
+          <ul style="list-style-type:none">
+          	<li>Varga Róbert, főmérnök</li>
+          	<li>Veszprém Megyei Tüdőgyógyintézet, Farkasgyepű (8582 Farkasgyepű, 049/2 hrsz.)</li>
+          	<li>Email: <a href="mailto:fomernok@invitel.hu" title="E-mail küldése">fomernok@invitel.hu</a></li>
+          	<li>Telefon: (30) 696-8509</li>
+		  </ul>
+        </div>
+	</article>
+  </section>
+ <footer> 
+	<div class="social">
+		<p><a href="impresszum">Impresszum</a></p>
+		<p><a href="joginyilatkozat">Jogi nyilatkozat</a></p>
+		<p><a href="documents/akl/2/adatvedelmi_es_adatbiztonsagi_szabalyzat_3.0.pdf">Adatvédelmi tájékozatató</a></p>
+		<p><a href="linkek">Hasznos linkek</a></p>
+  	</div>
+  	<hr align="center" width="50%">
+    <div class="copyright">
+    	&copy;2010 -
+    	<script>
+			var currentTime = new Date();
+			var year = currentTime.getFullYear();
+			document.write(year);
+		</script>
+    	<strong>Veszprém Megyei Tüdőgyógyintézet, Farkasgyepű - Minden jog fenntartva!</strong>
+    </div>
+  </footer>
+</div>
+	
+<script>
+		//navbar
+	window.onscroll = function() {
+		"use strict";
+		myFunction();
+		};
+	
+		var navbar = document.getElementById("menu");
+		var sticky = navbar.offsetTop;
+		function myFunction() {
+			"use strict";
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky");
+			} else {
+				navbar.classList.remove("sticky");
+			}
+            if($(window).width() < 768) {
+                  navbar.classList.remove("sticky");
+            }
+			
+		}
+	
+		(function($) { // Begin jQuery
+			"use strict";
+		  $(function() { // DOM ready
+			// If a link has a dropdown, add sub menu toggle.
+			$('nav ul li a:not(:only-child)').click(function(e) {
+			  $(this).siblings('.nav-dropdown').toggle();
+			  // Close one dropdown when selecting another
+			  $('.nav-dropdown').not($(this).siblings()).hide();
+			  e.stopPropagation();
+			});
+			// Clicking away from dropdown will remove the dropdown class
+			$('html').click(function() {
+			  $('.nav-dropdown').hide();
+			});
+			// Toggle open and close nav styles on click
+			$('#nav-toggle').click(function() {
+			  $('nav ul').slideToggle();
+			});
+			// Hamburger to X toggle
+			$('#nav-toggle').on('click', function() {
+			  this.classList.toggle('active3');
+			});
+		  }); // end DOM ready
+})(jQuery); // end jQuery
+
+</script>		
+<script>
+	$(function() {
+
+		AOS.init();
+		AOS.init({disable: 'mobile'});
+		AOS.init({disable: 'tablet'});
+	});
+
+</script>
+</body>
+</html>
+
+		

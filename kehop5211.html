@@ -6,9 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="Fotovoltaikus rendszerek kialakítása a Veszprém Megyei Tüdőgyógyintézetben, kehop5211, kehop 5.2.11" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">	
 <link href="css/kehop5211.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
@@ -47,9 +47,9 @@
         <li>
           <a href="#!">FEKVŐBETEG ELLÁTÁS</a>
 			<ul class="nav-dropdown">
-					<li><a href="aktiv">I. PULMONOLÓGIA (AKTÍV)</a></li>
-					<li><a href="kronikus">II. PULMONOLÓGIA (KRÓNIKUS)</a></li>
-					<li><a href="rehab">III. PULMONOLÓGIA (REHABILITÁCIÓ)</a></li>
+					<li><a href="aktiv">I. PULMONOLÓGIA</a></li>
+					<li><a href="kronikus">II. PULMONOLÓGIA</a></li>
+					<li><a href="rehab">III. PULMONOLÓGIA</a></li>
           	</ul>
         </li>
         <li>
@@ -112,9 +112,9 @@
   </header>
   <section>
 	<article class="efop_left_article">	
-		<h1 class="slideDown">Fotovoltaikus rendszerek kialakítása</h1>
-		<h3 class="slideDown">(KEHOP-5.2.11-16-2016-00093)</h3> 
-		<div class="fade-in">
+		<h1 data-aos="zoom-in" data-aos-duration="1000">Fotovoltaikus rendszerek kialakítása</h1>
+		<h3 data-aos="zoom-in" data-aos-duration="1000">(KEHOP-5.2.11-16-2016-00093)</h3> 
+		<div data-aos="fade-up" data-aos-duration="1000">
 			<img alt="" width="450" align="right" src="documents/palyazatok/efop1103.png"/>
 			<p><b>Projekt címe:</b> Fotovoltaikus rendszerek kialakítása a Veszprém Megyei Tüdőgyógyintézetben</p>
 			<p><b>Projekt azonosítószáma:</b> KEHOP-5.2.11-16-2016-00093</p>
@@ -135,32 +135,33 @@
 				<li><a href="documents/palyazatok/kehop5211/A projekt bemutatása.pdf" target="new">A projekt bemutatása</a></li>
 				<li><a href="documents/palyazatok/kehop5211/Sajtóközlemény.pdf" target="new">Sajtóközlemény</a></li>
 			</ul>
-			<div class="kep_left_article">
-				<img src="documents/palyazatok/kehop5211/1.jpg" alt="">
-			</div>
-			<div class="kep_right_article">
-				<img src="documents/palyazatok/kehop5211/2.jpg" alt="">
-			</div>
-			<div class="kep_left_article">
-				<img src="documents/palyazatok/kehop5211/3.jpg" alt="">
-			</div>
-			<div class="kep_right_article">
-				<img src="documents/palyazatok/kehop5211/4.jpg" alt="">
-			</div>
-			<div class="kep_left_article">
-				<img src="documents/palyazatok/kehop5211/5.jpg" alt="">
-			</div>
-			<div class="kep_right_article">
-				<img src="documents/palyazatok/kehop5211/6.jpg" alt="">
-			</div>
 		</div>
+			<div class="kep_left_article">
+				<img data-aos="fade-right" data-aos-duration="1000" src="documents/palyazatok/kehop5211/1.jpg" alt="">
+			</div>
+			<div class="kep_right_article">
+				<img data-aos="fade-left" data-aos-duration="1000" src="documents/palyazatok/kehop5211/2.jpg" alt="">
+			</div>
+			<div class="kep_left_article">
+				<img data-aos="fade-right" data-aos-duration="1000" src="documents/palyazatok/kehop5211/3.jpg" alt="">
+			</div>
+			<div class="kep_right_article">
+				<img data-aos="fade-left" data-aos-duration="1000" src="documents/palyazatok/kehop5211/4.jpg" alt="">
+			</div>
+			<div class="kep_left_article">
+				<img data-aos="fade-right" data-aos-duration="1000" src="documents/palyazatok/kehop5211/5.jpg" alt="">
+			</div>
+			<div class="kep_right_article">
+				<img data-aos="fade-left" data-aos-duration="1000" src="documents/palyazatok/kehop5211/6.jpg" alt="">
+			</div>
+		
 	</article>
   </section>
  <footer> 
 	<div class="social">
 		<p><a href="impresszum">Impresszum</a></p>
 		<p><a href="joginyilatkozat">Jogi nyilatkozat</a></p>
-		<p><a href="irjonnekunk">Írjon nekünk</a></p>
+		<p><a href="documents/akl/2/adatvedelmi_es_adatbiztonsagi_szabalyzat_3.0.pdf">Adatvédelmi tájékozatató</a></p>
 		<p><a href="linkek">Hasznos linkek</a></p>
   	</div>
   	<hr width="50%">
@@ -225,58 +226,13 @@
 
 </script>	
 <script>
-	//Slider
-	var slideIndex = 1;
-	showImage(slideIndex);
-	carousel();
-	function plusIndex(n){
-		"use strict";
-		showImage(slideIndex += n);
-	}
-	
-	function currentSlide(n){
-		"use strict";
-		showImage(slideIndex = n);
-	}
-			
-	function showImage(n){
-		"use strict";
-		var slide = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		if(n>slide.length){
-			slideIndex = 1;
-		}
-		if(n<1){
-			slideIndex = slide.length;
-		}
-		for(var i = 0; i < slide.length; i++){
-			slide[i].style.display = "none";
-		}
-		slide[slideIndex-1].style.display = "block";
-		for(i=0; i < dots.length; i++){
-			dots[i].className = dots[i].className.replace(" active","");
-			}
-		dots[slideIndex-1].className += " active";
-	}
-	
-	function carousel() {
-		"use strict";
-		var i;
-		var x = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-			dots[i].className = dots[i].className.replace(" active","");
-		}
-		dots[slideIndex-1].className += " active";
-		slideIndex++;
-		if (slideIndex > x.length) {
-			slideIndex = 1;
-		}    
-		x[slideIndex-1].style.display = "block";  
-		setTimeout(carousel, 5000); // Change image every 2 seconds
-	}
-	
+	$(function() {
+
+		AOS.init();
+		AOS.init({disable: 'mobile'});
+		AOS.init({disable: 'tablet'});
+	});
+
 </script>
 </body>
 </html>

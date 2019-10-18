@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="robert koch patika, gyógyszertár, patika" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/patika.css" rel="stylesheet" type="text/css">
 <link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
@@ -47,9 +47,9 @@
         <li>
           <a href="#!">FEKVŐBETEG ELLÁTÁS</a>
 			<ul class="nav-dropdown">
-					<li><a href="aktiv">I. PULMONOLÓGIA (AKTÍV)</a></li>
-					<li><a href="kronikus">II. PULMONOLÓGIA (KRÓNIKUS)</a></li>
-					<li><a href="rehab">III. PULMONOLÓGIA (REHABILITÁCIÓ)</a></li>
+					<li><a href="aktiv">I. PULMONOLÓGIA</a></li>
+					<li><a href="kronikus">II. PULMONOLÓGIA</a></li>
+					<li><a href="rehab">III. PULMONOLÓGIA</a></li>
           	</ul>
         </li>
         <li>
@@ -111,21 +111,21 @@
 </section>
   </header>
   <section class="patika">
-  <h1 class="slideDown">Robert Koch Patika</h1>
-	<article class="patika_left_article fade-in">
+  <h1  data-aos="zoom-in" data-aos-duration="1000">Robert Koch Patika</h1>
+	<article  data-aos="fade-right" data-aos-duration="1000"  class="patika_left_article">
 		<p>A patika a TBC kórokozójának felfedezője, Robert Koch nevét viseli.</p>
-	 <h3 class="fade-in two">Nyitvatartás:</h3>
-	  <ul class="fade-in two">
+	 <h3>Nyitvatartás:</h3>
+	  <ul>
 		 <li>
 				<span>Hétfő - Péntek:</span> 08:00 - 14:00
 			</li>
 	  </ul>
-      <h3 class="fade-in three">Mellék:</h3>
-	  <ul class="fade-in three">
+      <h3>Mellék:</h3>
+	  <ul>
 		  <li>145</li>
 	  </ul>
-     <h3 class="fade-in four">Munkatársak:</h3>
-     <ul class="fade-in four">
+     <h3>Munkatársak:</h3>
+     <ul>
      	 <li>Földesiné Dr. Jungbluth Márta (Főgyógyszerész)</li>
          <li>Fódi Anikó</li>
 		 <li>Pintér Csilla</li>
@@ -133,7 +133,7 @@
 		
 	
 	</article>
-     <aside class="patika_right_article fade-in">
+     <aside data-aos="fade-left" data-aos-duration="1000"  class="patika_right_article">
     	<!-- Slider-->
    	  <div class="slideshow-container">
     		<div><a href="./images/patika.jpg" data-lightbox="patika"><img src="./images/patika.jpg" alt=""/></a></div>
@@ -145,7 +145,7 @@
 	<div class="social">
 		<p><a href="impresszum">Impresszum</a></p>
 		<p><a href="joginyilatkozat">Jogi nyilatkozat</a></p>
-		<p><a href="irjonnekunk">Írjon nekünk</a></p>
+		<p><a href="documents/akl/2/adatvedelmi_es_adatbiztonsagi_szabalyzat_3.0.pdf">Adatvédelmi tájékozatató</a></p>
 		<p><a href="linkek">Hasznos linkek</a></p>
   	</div>
   	<hr width="50%">
@@ -252,7 +252,15 @@
 	
 	
 	
-	
+</script>
+<script>
+	$(function() {
+
+		AOS.init();
+		AOS.init({disable: 'mobile'});
+		AOS.init({disable: 'tablet'});
+	});
+
 </script>
 </body>
 </html>

@@ -6,9 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="tiop 2.2.5, tiop225, Közép-Dunántúli Regionális Onkológiai Centrum létrehozása" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
 <link href="css/tiop225.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
@@ -47,9 +47,9 @@
         <li>
           <a href="#!">FEKVŐBETEG ELLÁTÁS</a>
 			<ul class="nav-dropdown">
-				<li><a href="aktiv">I. PULMONOLÓGIA (AKTÍV)</a></li>
-				<li><a href="kronikus">II. PULMONOLÓGIA (KRÓNIKUS)</a></li>
-				<li><a href="rehab">III. PULMONOLÓGIA (REHABILITÁCIÓ)</a></li>
+				<li><a href="aktiv">I. PULMONOLÓGIA</a></li>
+				<li><a href="kronikus">II. PULMONOLÓGIA</a></li>
+				<li><a href="rehab">III. PULMONOLÓGIA</a></li>
           	</ul>
         </li>
         <li>
@@ -112,9 +112,9 @@
   </header>
   <section>
 	<article class="tiop_left_article">	
-		<h1 class="slideDown">Közép-Dunántúli Regionális Onkológiai Centrum létrehozása</h1>
-		<h3 class="slideDown">(TIOP-2.2.5-09/1-2010-0006)</h3> 
-		<div class="fade-in">
+		<h1  data-aos="zoom-in" data-aos-duration="1000">Közép-Dunántúli Regionális Onkológiai Centrum létrehozása</h1>
+		<h3  data-aos="zoom-in" data-aos-duration="1000">(TIOP-2.2.5-09/1-2010-0006)</h3> 
+		<div data-aos="fade-up" data-aos-duration="1000">
 			<img alt="" width="260" align="right" src="documents/palyazatok/uszt.png"/>
 			<div class="cim"><p><b>Projekt címe:</b> Átfogó fejlesztés a Veszprém Megyei Kórházban konzorciális összefogással a Közép-Dunántúli Regionális Onkológiai Centrum létrehozásáért és az egységesregionális onkológiai ellátó hálózat kialakításáért</p></div>
 			<p><b>Projekt azonosítószáma:</b> TIOP-2.2.5-09/1-2010-0006</p>
@@ -146,10 +146,10 @@
 				<li><a href="documents/palyazatok/tiop225/Megnyitó.jpg" target="new">Megnyitó</a></li>
 			</ul>
 			<div class="kep_left_article">
-				<img src="documents/palyazatok/tiop225/Látványterv.jpg" alt="">
+				<img data-aos="fade-right" data-aos-duration="1000" src="documents/palyazatok/tiop225/Látványterv.jpg" alt="">
 			</div>
 			<div class="kep_right_article">
-				<img src="documents/palyazatok/tiop225/Támogatás.png" alt="">
+				<img data-aos="fade-left" data-aos-duration="1000" src="documents/palyazatok/tiop225/Támogatás.png" alt="">
 			</div>
 		</div>
 	</article>
@@ -158,7 +158,7 @@
 	<div class="social">
 		<p><a href="impresszum">Impresszum</a></p>
 		<p><a href="joginyilatkozat">Jogi nyilatkozat</a></p>
-		<p><a href="irjonnekunk">Írjon nekünk</a></p>
+		<p><a href="documents/akl/2/adatvedelmi_es_adatbiztonsagi_szabalyzat_3.0.pdf">Adatvédelmi tájékozatató</a></p>
 		<p><a href="linkek">Hasznos linkek</a></p>
   	</div>
   	<hr width="50%">
@@ -223,58 +223,13 @@
 
 </script>		
 <script>
-	//Slider
-	var slideIndex = 1;
-	showImage(slideIndex);
-	carousel();
-	function plusIndex(n){
-		"use strict";
-		showImage(slideIndex += n);
-	}
-	
-	function currentSlide(n){
-		"use strict";
-		showImage(slideIndex = n);
-	}
-			
-	function showImage(n){
-		"use strict";
-		var slide = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		if(n>slide.length){
-			slideIndex = 1;
-		}
-		if(n<1){
-			slideIndex = slide.length;
-		}
-		for(var i = 0; i < slide.length; i++){
-			slide[i].style.display = "none";
-		}
-		slide[slideIndex-1].style.display = "block";
-		for(i=0; i < dots.length; i++){
-			dots[i].className = dots[i].className.replace(" active","");
-			}
-		dots[slideIndex-1].className += " active";
-	}
-	
-	function carousel() {
-		"use strict";
-		var i;
-		var x = document.getElementsByClassName("slides");
-		var dots = document.getElementsByClassName("dots");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-			dots[i].className = dots[i].className.replace(" active","");
-		}
-		dots[slideIndex-1].className += " active";
-		slideIndex++;
-		if (slideIndex > x.length) {
-			slideIndex = 1;
-		}    
-		x[slideIndex-1].style.display = "block";  
-		setTimeout(carousel, 5000); // Change image every 2 seconds
-	}
-	
+	$(function() {
+
+		AOS.init();
+		AOS.init({disable: 'mobile'});
+		AOS.init({disable: 'tablet'});
+	});
+
 </script>
 </body>
 </html>

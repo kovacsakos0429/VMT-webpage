@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="szolgáltató ház, szolgaltato haz, fodrászat, pedikűr, manikűr, kozmetika, masszázs" />
 <title>Tüdőgyógyintézet</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
-<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+<script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">	
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/szolgaltatohaz.css" rel="stylesheet" type="text/css">
 <link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
@@ -47,9 +47,9 @@
         <li>
           <a href="#!">FEKVŐBETEG ELLÁTÁS</a>
 			<ul class="nav-dropdown">
-				<li><a href="aktiv">I. PULMONOLÓGIA (AKTÍV)</a></li>
-				<li><a href="kronikus">II. PULMONOLÓGIA (KRÓNIKUS)</a></li>
-				<li><a href="rehab">III. PULMONOLÓGIA (REHABILITÁCIÓ)</a></li>
+				<li><a href="aktiv">I. PULMONOLÓGIA</a></li>
+				<li><a href="kronikus">II. PULMONOLÓGIA</a></li>
+				<li><a href="rehab">III. PULMONOLÓGIA</a></li>
           	</ul>
         </li>
         <li>
@@ -111,10 +111,10 @@
 </section>
   </header>
   <section class="szolgaltatohaz">
-  <h1 class="slideDown">Szolgáltató ház</h1>
-	<article class="szolgaltatohaz_left_article">
-	 	<h3 class="fade-in one">Szolgáltatások:</h3>
-	 		<table class="center fade-in one">
+  <h1 data-aos="zoom-in" data-aos-duration="1000">Szolgáltató ház</h1>
+	<article data-aos="fade-right" data-aos-duration="1000" class="szolgaltatohaz_left_article">
+	 	<h3>Szolgáltatások:</h3>
+	 		<table class="center">
 		  <tr>
 			<th>Fodrászat:</th>
 			<td>06/30/568-4083</td>
@@ -131,13 +131,13 @@
 		  	<th>Masszázs</th>
 		  </tr>
 		</table> 
-   		<h3 class="fade-in two">Nyitva tartás:</h3>
-   		 <ul  class="fade-in two">
-			<li>Minden kedden</li>
+   		<h3>Nyitva tartás:</h3>
+   		 <ul>
+			<li>Minden kedden!</li>
 			<li>Előzetes bejelentkezés szükséges!</li>
 		 </ul>
 	</article>
-    <aside class="szolgaltatohaz_right_article fade-in one">
+    <aside data-aos="fade-left" data-aos-duration="1000" class="szolgaltatohaz_right_article">
     	<!-- Slider-->
    	  <div class="slideshow-container">
     		<div class="slides fade"><a href="./images/szolgaltato_haz/1.jpg" data-lightbox="mygallery"><img src="./images/szolgaltato_haz/1.jpg" alt=""/></a></div>
@@ -162,7 +162,7 @@
 	<div class="social">
 		<p><a href="impresszum">Impresszum</a></p>
 		<p><a href="joginyilatkozat">Jogi nyilatkozat</a></p>
-		<p><a href="irjonnekunk">Írjon nekünk</a></p>
+		<p><a href="documents/akl/2/adatvedelmi_es_adatbiztonsagi_szabalyzat_3.0.pdf">Adatvédelmi tájékozatató</a></p>
 		<p><a href="linkek">Hasznos linkek</a></p>
   	</div>
   	<hr width="50%">
@@ -266,11 +266,16 @@
 		}    
 		x[slideIndex-1].style.display = "block";  
 		setTimeout(carousel, 5000); // Change image every 2 seconds
-	}
-	
-	
-	
-	
+	}	
+</script>
+<script>
+	$(function() {
+
+		AOS.init();
+		AOS.init({disable: 'mobile'});
+		AOS.init({disable: 'tablet'});
+	});
+
 </script>
 </body>
 </html>

@@ -19,42 +19,23 @@
 	text-align: center;
 }
 
-figure {
+.row i{
+	margin-top: 30px;
+	color: #5E5D5E;
+	font-size: 50px;
 	text-align: center;
-	font-style: italic;
-	text-indent: 0;
-	
-	padding: 2em;
-	color: #717070;
-	font-weight: bold;
-	font-size: 22px;
 }
 
-.figure{
-	width: 18%;
-	display: inline-block;
-	margin: 1em;
+.row h4{
+	font-size: 20px;
 }
 
-.figure a{
-	text-decoration: none;
-	color: #717070;
+.thumbnail_align{
+	text-align: center;
 }
-
-
-img.scaled {
-  width: 100%;
-}
-
 
 .zoom {
     transition: transform .2s; /* Animation */
-}
-
-.zoom:hover {
-    transform: scale(1.5);
-	box-shadow: 5px 5px 10px #888888;
-	border: thin silver solid;
 }
 
 @media (min-width: 769px) and (max-width: 1366px) {

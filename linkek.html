@@ -7,7 +7,8 @@
 <meta name="keywords" content="linkek, hasznos linkek" />
 <title>Tüdőgyógyintézet</title>
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="css/linkek.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
@@ -46,9 +47,9 @@
         <li>
           <a href="#!">FEKVŐBETEG ELLÁTÁS</a>
 			<ul class="nav-dropdown">
-					<li><a href="aktiv">I. PULMONOLÓGIA (AKTÍV)</a></li>
-					<li><a href="kronikus">II. PULMONOLÓGIA (KRÓNIKUS)</a></li>
-					<li><a href="rehab">III. PULMONOLÓGIA (REHABILITÁCIÓ)</a></li>
+					<li><a href="aktiv">I. PULMONOLÓGIA</a></li>
+					<li><a href="kronikus">II. PULMONOLÓGIA</a></li>
+					<li><a href="rehab">III. PULMONOLÓGIA</a></li>
           	</ul>
         </li>
         <li>
@@ -110,8 +111,8 @@
 	</section>
   </header>
   <section>
-  	<h1 class="cim slideDown">Hasznos linkek</h1>
-	<article class="linkek_left_article fade-in one">
+  	<h1  data-aos="zoom-in" data-aos-duration="1000" class="cim">Hasznos linkek</h1>
+	<article data-aos="fade-right" data-aos-duration="1000" class="linkek_left_article">
 		<h1>Egészségügy:</h1>
 		<ul>
 			<li class="zoom">
@@ -215,7 +216,7 @@
 			</li>
 		</ul>
 	</article>
-    <aside class="linkek_right_article fade-in one">
+    <aside data-aos="fade-left" data-aos-duration="1000" class="linkek_right_article">
 		<h1>Gazdaság, munkaügy, pénzügy, informatika:</h1>
 		<ul>
 			<li class="zoom">
@@ -283,7 +284,7 @@
 	<div class="social">
 		<p><a href="impresszum">Impresszum</a></p>
 		<p><a href="joginyilatkozat">Jogi nyilatkozat</a></p>
-		<p><a href="irjonnekunk">Írjon nekünk</a></p>
+		<p><a href="documents/akl/2/adatvedelmi_es_adatbiztonsagi_szabalyzat_3.0.pdf">Adatvédelmi tájékozatató</a></p>
 		<p><a href="linkek">Hasznos linkek</a></p>
   	</div>
   	<hr width="50%">
@@ -347,6 +348,14 @@
 })(jQuery); // end jQuery
 
 </script>	
+<script>
+	$(function() {
 
+		AOS.init();
+		AOS.init({disable: 'mobile'});
+		AOS.init({disable: 'tablet'});
+	});
+
+</script>
 </body>
 </html>

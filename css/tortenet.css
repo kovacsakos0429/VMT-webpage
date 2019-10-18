@@ -55,7 +55,11 @@
 	color: green;
 }
 
+<<<<<<< HEAD
 .center img {
+=======
+img {
+>>>>>>> 54656ddb1ab4b40d4572446d224a935d2c967278
   	display:inline;
   	margin-left: 10px;
   	margin-right: 10px;
